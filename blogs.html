@@ -4,67 +4,60 @@
   <title>Kiprono Elijah Koech</title>
    <!-- for font icons -->
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <style>
-      a:link {
-        color: rgb(255,0,0);
-        background-color: transparent;
-        text-decoration: none;
-      }
-      a:visited {
-        color: rgb(255,0,0);
-        background-color: transparent;
-        text-decoration: none;
-      }
-      a:hover {
-        color: rgb(255,0,0);
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      a:active {
-        color: rgb(255,0,0);
-        background-color: transparent;
-        text-decoration: underline;
-      }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./csscopy/styles.css">
 </head>
  
-<body style="margin:0">
+<body >
+
 
 <!-- Start Header -->
-<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f3971b">
-  <tr>
-     <td>
-      <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
-           <tr>
-               <td>
-                  <font face="arial" color="black" size="4">
-                   <strong>Kiprono Projects</strong>
-                  </font>
-               </td>
-               <td width="30%">&nbsp;</td>
-               <td><a href="index.html">
-                  <font face="arial" color="#ffffff" size="3">
-                   Home
-                 </font></a>
-               </td>
-               <td nowrap><a href="projects.html">
-                <font face="arial" color="#ffffff" size="3">
+
+<table class="list-group-item-headers">
+     <tr>
+         <td>
+            <font color = "white" face="arial"  size="4">
+             <strong>Kiprono Blogs</strong>
+             <button onclick="myFunction()">Toggle light mode</button>
+            </font>
+         </td>
+         <td width="30%">&nbsp;</td>
+         <td><a href="index.html">
+            <font color=#f3971b face="arial"  size="3">
+             Home
+           </font></a>
+         </td>
+         <td><a href="projects.html">
+            <font color=#f3971b  face="arial" size="3">
                Projects
-                </font></a>
-               </td>
-               <td nowrap><a href="cv.html">
-                <font face="arial" color="#ffffff" size="3">
-               Curriculum Vitae
-                </font></a>
-               </td>
-               <td><a href="blogs.html">
-                <font face="arial" color="#ffffff" size="3">
-               Blogs
-                </font></a>
-               </td>
-           </tr>
-      </table>
-     </td>
-  </tr>
+            </font></a>
+          </td>
+         <td nowrap><a href="cv.html">
+          <font color=#f3971b  face="arial" size="3">
+         Curriculum Vitae
+          </font></a>
+         </td>
+         <td><a href="blogs.html">
+          <font color=#f3971b  face="arial"  size="3">
+         Blogs
+          </font></a>
+         </td>
+     </tr>
 </table>
-<!-- End Header -->
+
+<div class="about_title">
+  <center>
+    <h1>Blogs</h1>
+  </center>
+</div>
+
+
+
+<script>
+    function myFunction() {
+    var element = document.body;
+    element.classList.toggle("light-mode");
+    }
+</script>
+
+</body>
+</html> 

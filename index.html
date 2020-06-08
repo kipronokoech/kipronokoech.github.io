@@ -4,135 +4,81 @@
 	<title>Kiprono Elijah Koech</title>
 	 <!-- for font icons -->
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-      a:link {
-        color: rgb(255,0,0);
-        background-color: transparent;
-        text-decoration: none;
-      }
-      a:visited {
-        color: rgb(255,0,0);
-        background-color: transparent;
-        text-decoration: none;
-      }
-      a:hover {
-        color: rgb(255,0,0);
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      a:active {
-        color: rgb(255,0,0);
-        background-color: transparent;
-        text-decoration: underline;
-      }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./csscopy/styles.css">
 </head>
  
-<body style="margin:0">
+<body >
+
 
 <!-- Start Header -->
-<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f3971b">
-  <tr>
-     <td>
-      <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
-           <tr>
-               <td>
-                  <font face="arial" color="black" size="4">
-                   <strong>Kiprono Home</strong>
-                  </font>
-               </td>
-               <td width="30%">&nbsp;</td>
-               <td><a href="index.html">
-                  <font face="arial" color="#ffffff" size="3">
-                   Home
-                 </font></a>
-               </td>
-               <td><a href="projects.html">
-                  <font face="arial" color="#ffffff" size="3">
-                     Projects
-                  </font></a>
-                </td>
-               <td nowrap><a href="cv.html">
-                <font face="arial" color="#ffffff" size="3">
-               Curriculum Vitae
-                </font></a>
-               </td>
-               <td><a href="blogs.html">
-                <font face="arial" color="#ffffff" size="3">
-               Blogs
-                </font></a>
-               </td>
-           </tr>
-      </table>
-     </td>
-  </tr>
+
+<table class="list-group-item-headers">
+     <tr>
+         <td>
+            <font color = "white" face="arial"  size="4">
+             <strong>Kiprono Home</strong>
+             <button onclick="myFunction()">Toggle light mode</button>
+            </font>
+         </td>
+         <td width="30%">&nbsp;</td>
+         <td><a href="index.html">
+            <font color=#f3971b face="arial"  size="3">
+             Home
+           </font></a>
+         </td>
+         <td><a href="projects.html">
+            <font color=#f3971b  face="arial" size="3">
+               Projects
+            </font></a>
+          </td>
+         <td nowrap><a href="cv.html">
+          <font color=#f3971b  face="arial" size="3">
+         Curriculum Vitae
+          </font></a>
+         </td>
+         <td><a href="blogs.html">
+          <font color=#f3971b  face="arial"  size="3">
+         Blogs
+          </font></a>
+         </td>
+     </tr>
 </table>
+
 <!-- End Header -->
 
 
-<!-- Start Home -->
-<table border="0" id="home" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
-     <tr>
-     	   <td align="center" valign="middle" height="30">
-     	   	 <h10>
-     	   	 	<marquee behavior="alternate" direction="left" scrollamount="1">
-     	   	 	<font face="arial" color="#ffffff" size="4">
-     	   	     Hello, I'm Kiprono Elijah Koech
-     	   	    </font>
-     	   	   </marquee>
-     	   	</h10>
-     	   	 <h10>
-     	   	 	<marquee behavior="alternate" direction="right" scrollamount="1">
-     	   	 	<font face="arial" color="#f3971b" size="3">
-     	   	      Masters Student and Researcher at Stellenbosch University
-     	   	    </font>
-     	   	</marquee>
-     	   	</h10>
-     	   </td>
-     </tr>
-</table>
-<!-- End Home -->
-
-
 <!-- Start About -->
-<table border="0" id="about" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
-  <tr>
-  	 <td>
-  	 	<table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
-  	 		<!-- Heading Start-->
-           <tr>
-           	  <td height="20" align="center" valign="middle" colspan="2">
-           	  	 <font face="arial" size="5" color=" #f3971b">
-           	  	   About
-           	  	</font>
-           	  	<hr width="70" color="#f3971b">
-           	  </td>
-           </tr>
+<div class="about_title">
+  <h1>About</h1>
+</div>
+<table border="0" id="about" width="100%" cellpadding="0" cellspacing="0" >
            <!-- Heading  End-->
            <tr>
-           	   <td width="35%">
-           	   	  <img src="./images/myphoto1.jpg" width="100%" alt="me" />
+           	   <td class ="image">
+           	   	  <img src="./images/myphoto1.jpg" alt="me"  />
            	   </td>
            	   <td width="65%" valign="top">
            	   	  <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
            	   	  	  <tr>
-           	   	  	  	 <td height="40">
-           	   	  	  	 	<font face="arial" size="4" color=" #ffffff">
+           	   	  	  	 <td height="10">
+           	   	  	  	 	<font face="arial" size="4">
            	   	  	  	     Hello, I'm Kiprono Elijah Koech
            	   	  	  	    </font>
            	   	  	  	 </td>
            	   	  	  </tr>
            	   	  	  <tr>
            	   	  	  	 <td>
-           	   	  	  	 	<font face="arial" size="5" color=" #ffffff">
+           	   	  	  	 	<font face="arial" size="5">
            	   	  	  	    Data Scientist and Statistician
            	   	  	  	    </font>
            	   	  	  	</td>
            	   	  	  </tr>
-           	   	  	  <tr>
-           	   	  	  	<td>
-           	   	  	  		<p>
-           	   	  	  			<font face="arial" size="3" color="#c2c0c3">
+                      <td>
+                      <table>
+           	   	  	     <tr>
+           	   	  	  	   <td>
+           	   	  	  		  <p>
+           	   	  	  			<font face="arial" size="3">
 
            	   	  	  			• Highly analytical and process-oriented statistician and a data scientist with in-depth knowledge in statistical theories
                             and formulations, and proficiency in statistical modeling process.
@@ -175,21 +121,73 @@
            	   	  	  </tr>
            	   	  </table>  
            	   </td>
-           </tr>
           <!-- section padding bottom -->
            <tr>
            	  <td height="30" colspan="2">
-                 
            	  </td>
-           </tr>
-          <!-- section padding bottom End-->
-        </table>
-      </td>
-   </tr>
 </table>
 <!-- End About -->
+
+
+<!-- Start skills-->
+<div class="skills_title">
+  <h1>Skills</h1>
+</div>
+
+<div class ="block">
+  <h5>
+    Data Science and Statistical Skills
+  </h5>
+    <ul>
+      <li>Machine learning</li>
+      <li>Exploratory data analysis</li>
+      <li>Data visualization</li>
+      <li>Web scrapping</li>
+      <li>Regression analysis</li>
+      <li>Time series analysis</li>
+      <li>Data wrangling</li>
+    </ul>
+  </div>
+
+  <div class ="block">
+    <h5>Programming</h5>
+    <ul>
+      <li>Python</li>
+      <li>R</li>
+      <li>SAGEmath</li>
+      <li>Julia</li>
+    </ul>
+  </div>
+
+
+  <div class ="block">
+    <h5>Tools and technologies</h5>
+    <ul>
+      <li>SPSS</li>
+      <li>Git</li>
+      <li>Latex Typesetting</li>
+      <li>Microsoft Office suite</li>
+      <li>Tensorflow</li>
+      <li>Keras</li>
+      <li>Sklearn</li>
+      <li>Matplotlib</li>
+      <li>Beatifulsoup</li>
+      <li>OpenCv</li>
+    </ul>
+  </div>
+   <div class ="block">
+    <h5>Database management</h5>
+    <ul>
+      <li>MySQL</li>
+      <li>IQ care</li>
+    </ul>
+  </div>
+<!--End skills-->
+
+
+
 <!-- Start Footer -->
- <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
+ <table border="0" width="100%" cellpadding="0" cellspacing="0" >
   <tr>
      <td>
       <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
@@ -203,11 +201,11 @@
                   <span class="fa fa-phone"></span>
                 </font>
                 <br/><br/>
-                <font color="#ffffff" size="5" face="arial">
+                <font  size="5" face="arial">
                 Phone No
                   </font>
                   <p>
-                    <font color="#c2c0c3" size="3" face="arial">
+                    <font size="3" face="arial">
                     +(27) 0 67 690 5901
                     <br>
                     <br>
@@ -227,18 +225,18 @@
                   <span class="fa fa-envelope"></span>
                 </font>
                 <br/><br/>
-                <font color="#ffffff" size="5" face="arial">
+                <font size="5" face="arial">
                 Email
                   </font>
                   <p>
                     <a href="mailto: kiprono@aims.ac.za" target="_blank">
-                    <font color="#c2c0c3" size="3" face="arial">
+                    <font  size="3" face="arial">
                       kiprono@aims.ac.za
                    </font>
                    </a>
                    <br/><br/>
                    <a href="mailto: kipronokoech2719@gmail.com" target="_blank">
-                    <font color="#c2c0c3" size="3" face="arial">
+                    <font  size="3" face="arial">
                       kipronokoech2719@gmail.com
                    </font>
                    </a>
@@ -257,12 +255,12 @@
                   <span class="fa fa-map-marker"></span>
                 </font>
                 <br/><br/>
-                <font color="#ffffff" size="5" face="arial">
+                <font  size="5" face="arial">
                 Location
                   </font>
                   <p>
                      <a href="https://www.google.com/maps/place/Muizenberg,+Cape+Town,+7950/@-34.0977415,18.4490474,13z/data=!3m1!4b1!4m5!3m4!1s0x1dcc4102f81ee711:0xa36d9fb33bc0e165!8m2!3d-34.0898847!4d18.495859" target="_blank">
-                    <font color="#c2c0c3" size="3" face="arial">
+                    <font  size="3" face="arial">
                     6 Melrose Road, <br>
                     Muizenberg - 7945, <br>
                     Cape Town - 7950, <br>
@@ -303,9 +301,9 @@
                 <table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="#f3971b">
                   <tr>
                     <td align="center" valign="middle">
-                      <a href="https://live:kipronokoech2719">
+                      <a href="https://github.com/kipronokoech" target="_blank">
                       <font size="5" color="#ffffff">
-                      <span class="fa fa-skype"></span>
+                      <span class="fa fa-github"></span>
                        </font>
                     </a>
                     </td>
@@ -350,6 +348,11 @@
   </tr>
  </table>
 <!-- End Footer -->
-
+<script>
+    function myFunction() {
+    var element = document.body;
+    element.classList.toggle("light-mode");
+    }
+</script>
 </body>
 </html>
