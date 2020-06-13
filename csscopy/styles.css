@@ -4,7 +4,7 @@
 body {
       margin:auto;
       width:auto;
-      background-color: rgb(33,33,33);
+      background-color: rgb(48,48,48);
       color: white;
       font-size: 16px;
       font-family: Arial, Hevetica;
@@ -18,6 +18,7 @@ body {
       background-color: #DBDBDB;
       color: black;
 }
+
 
 
 a:link {
@@ -43,16 +44,16 @@ a:active {
 
 
 .headers{
-      background-color: rgb(33,33,33)
+      background-color: rgb(48,48,48)
 }
 img {
         border-radius: 50%;
 }
 .list-group-item-headers{
-  margin:0px;
-  background: rgb(33,33,33);
+  background: rgb(48,48,48);
   border:0;
   width: 100%;
+  margin:auto;
   padding: 15px 0px;
   text-align: center;
 }
@@ -64,13 +65,41 @@ img {
 }
 
 
+.list-group-item-headers .header{
+  color:#f3971b;
+  font-size: 24px;
+}
+
+.list-group-item-headers .header1{
+  color:#f3971b;
+  font-size: 28px;
+}
+
+
+.list-group-item-headers button{
+  background-color: #cccac6;
+  color:#000000;
+}
+
 #about img{
-  width: 100%;
+  width: 90%;
 }
 
 #about .image{
   width : 25%;
 }
+
+#about{
+  width:100%;
+  padding:0px
+  border:0px;
+}
+
+.cv_button_home{
+  background-color: #cccac6;
+}
+
+
 .block{
   float : left;
   width: 25%;
@@ -112,11 +141,16 @@ h1 {
   width:75%;
   text-align:center;
 }
+.projects .description{
+  font-size: 16px;
+  line-height: 1.6em;
+}
 
-
-.icon{vertical-align:bottom;
-  text-align:right;
+.projects span{
+  vertical-align:bottom;
+  text-align:left;
   font-size:30px;
+  color:#f3971b;
   }
 
 hr.projects_separator{
@@ -180,6 +214,7 @@ hr.projects_separator{
 
 .cv_button{
   float:right;
+  background-color: #cccac6;
 }
 
 
