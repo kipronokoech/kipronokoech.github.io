@@ -19,7 +19,9 @@ body {
       color: black !important;
 }
 
-
+.clr{
+  clear:both;
+}
 
 a:link {
         color: rgb(200,0,0);
@@ -279,9 +281,26 @@ hr.projects_separator{
   font-family: Arial,Hevetica;
 }
 
+hr.schools-separator{
+  width:100%;
+  margin:auto;
+}
 
+.block31{
+  width:70%;
+  float:left !important;
+  box-sizing: border-box;
+}
+.block32{
+  width:30%;
+  float:right !important;
+  box-sizing: border-box;
+  text-align: right;
+}
 
-
+.award-date{
+  color:#f3971b;
+}
 
 
 
