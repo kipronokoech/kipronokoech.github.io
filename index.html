@@ -1,45 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kiprono Elijah Koech</title>
+	<title>KE Home</title>
 	 <!-- for font icons -->
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="./csscopy/styles.css">
-  <link rel="shortcut icon" href="./images/icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="csscopy/styles.css">
+  <link rel="shortcut icon" href="./images/icon.png"> 
 </head>
- 
+ <style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
 <body >
 
 
 <!-- Start Header -->
 
-<table class="list-group-item-headers">
-   <tr>
-      <td class="header1" >
-         <strong>Kiprono Home</strong>
-         <button class="button" onclick="myFunction()">Toggle light mode</button>
-         <button>Work in progress</button>
-      </td>
-      <td width="30%">&nbsp;</td>
-      <td>
-         <a class="header" href="index.html">
-          Home
-        </a>
-      </td>
-      <td><a class="header" href="projects.html">
-        Projects
-        </a>
-      </td>
-      <td><a class="header" href="cv.html">
-      Curriculum Vitae
-      </a>
-      </td>
-      <td><a class="header" href="blogs.html">
-      Blogs
-      </a>
-      </td>
-   </tr>
-</table>
+<div class="topnav">
+   <div class="topnav-left">
+      <strong>Kiprono Home</strong>
+      <button class="button" onclick="myFunction()">Toggle light mode</button>
+   </div>
+  <div class="topnav-right">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="cv.html">Curriculum Vitae</a>
+      <a href="blogs.html">Blogs</a>
+  </div>
+</div>
 
 <!-- End Header -->
 
@@ -51,7 +41,7 @@
 <table id="about" >
            <!-- Heading  End-->
            <tr>
-               <td class ="image">
+               <td class ="image-home">
                   <img src="./images/myphoto1.jpg" alt="Me"  />
                </td>
                <td width="65%" valign="top">
@@ -116,7 +106,6 @@
               </td>
 </table>
 <!-- End About -->
-
 
 <!-- Start skills-->
 <div class="skills_title">
