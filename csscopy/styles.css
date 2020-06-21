@@ -171,6 +171,34 @@ a:active {
 
 
 /* projects.html */
+.project-container{
+  display:flex;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.project-container img{
+  flex:1;
+  margin-right: 30px;
+  height:200px;
+  width:300px;
+}
+.project-container .description{
+  flex:2;
+  min-width: 468px;
+}
+
+.project-container span{
+  text-align:left;
+  font-size:30px;
+  color:#f3971b;
+}
+.project-container .description b{
+  text-align: center;
+  color:#f3971b;
+}
+/*
 .projects img{
   border-radius: 0%;
   border:1px solid #cccccc;
@@ -205,7 +233,7 @@ a:active {
 hr.projects_separator{
   width:90%;
   margin:auto;
-}
+}*/
 
 /* cv.html */
 
