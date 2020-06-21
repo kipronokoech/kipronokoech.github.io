@@ -184,6 +184,13 @@ a:active {
   height:200px;
   width:300px;
 }
+@media(max-width: 768px){
+  .project-container img{
+  flex:1;
+  margin-right: 30px;
+  height:auto;
+  width:100%;
+}}
 .project-container .description{
   flex:2;
   min-width: 468px;
