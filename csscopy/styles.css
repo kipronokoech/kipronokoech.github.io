@@ -155,6 +155,13 @@ a:active {
   flex-wrap: wrap;
   text-align: center;
 }
+@media(max-width: 990px){
+.footer-container{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}}
 .footer-container span{
   color:#ffffff;
   font-size: 28px;
@@ -202,10 +209,6 @@ a:active {
 .project-container span{
   text-align:left;
   font-size:30px;
-  color:#f3971b;
-}
-.project-container .description b{
-  text-align: center;
   color:#f3971b;
 }
 /*
