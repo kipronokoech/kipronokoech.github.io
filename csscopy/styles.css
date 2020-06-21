@@ -184,7 +184,7 @@ a:active {
   height:200px;
   width:300px;
 }
-@media(max-width: 768px){
+@media(max-width: 700px){
   .project-container img{
   flex:1;
   margin-right: 30px;
