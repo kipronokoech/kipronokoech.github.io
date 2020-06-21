@@ -184,15 +184,19 @@ a:active {
   height:200px;
   width:300px;
 }
-@media(max-width: 700px){
+@media(max-width: 768px){
   .project-container img{
   flex:1;
   height:auto;
   width:100%;
 }}
+@media(max-width: 768px){
+  .project-container .description{
+  flex:2;
+  width:100%;
+}}
 .project-container .description{
   flex:2;
-  min-width: 468px;
 }
 
 .project-container span{
