@@ -134,7 +134,7 @@ a:active {
 .contacts-container{
   display:flex;
   justify-content: space-between;
-  width:66.66666%;
+  width:67%;
   margin: auto;
   flex-wrap: wrap;
   text-align: center;
@@ -211,104 +211,10 @@ a:active {
   font-size:30px;
   color:#f3971b;
 }
-/*
-.projects img{
-  border-radius: 0%;
-  border:1px solid #cccccc;
-}
-
-.projects{
-  width:90%;
-  text-align: left;
-  margin:auto;
-}
-
-.titles{
-  width:25%;
-  text-align: center;
-}
-.descriptions{
-  width:75%;
-  text-align:center;
-}
-.projects .description{
-  font-size: 16px;
-  line-height: 1.6em;
-}
-
-.projects span{
-  vertical-align:bottom;
-  text-align:left;
-  font-size:30px;
-  color:#f3971b;
-  }
-
-hr.projects_separator{
-  width:90%;
-  margin:auto;
-}*/
-
-/* cv.html */
 
 
+/*cv.html*/
 
-.education {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 90%;
-  margin:auto;
-}
-
-.education td {
-  padding-right: 8px;
-  padding-left: 8px;
-  padding-top: 8px;
-  padding-bottom: 40px
-}
-
-.education .col1{
-  width:75%;
-}
-
-.education .col2{
-  width:25%;
-  vertical-align: top;
-}
-
-.school{
-  font-size: 20px;
-}
-
-
-.awards {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 90%;
-  margin:auto;
-}
-.awards td {
-  padding-right: 8px;
-  padding-left: 8px;
-  padding-top: 8px;
-  padding-bottom: 40px
-}
-
-.awards .award{
-  width:75%;
-}
-
-.awards .col2{
-  width:25%;
-  vertical-align: top;
-}
-
-.cv_button{
-  float:right;
-  background-color: #cccac6;
-}
-
-
-/*cv28*/
 .kip-third{float:left;
   width:20%;}
 
@@ -373,7 +279,6 @@ hr.schools-separator{
   width:100%;
   margin:auto;
 }
-
 .block31{
   width:70%;
   float:left !important;
@@ -389,11 +294,163 @@ hr.schools-separator{
 .award-date{
   color:#f3971b;
 }
+.cv_button{
+  float:right;
+  background-color: #cccac6;
+}
 
 
 .bottom-line{
   width:100%;
 }
+
+
+
+
+
+
+
+/*cv33*/
+
+.cv-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+}
+.cv-container .left-bar{
+  flex:1;
+  margin-right:30px;
+}
+@media(max-width: 468px){
+  .cv-container .left-bar img{
+    flex:2;
+  width:100%;
+}}
+
+.cv-container .right-bar{
+  flex:5;
+  min-width: 50%;
+  
+}
+
+
+
+/*
+.header-title{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+}
+
+.header-title .empty{
+  flex:0.6;
+  margin-right: 30px;
+  width:100%;
+}
+.header-title .title{
+  flex:2;
+  text-align: center;
+}
+
+.photo-skills{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+}
+
+.photo-skills .photo{
+  flex:0.6;
+  margin-right: 30px;
+  width:100%;
+}
+.photo-skills .skills{
+  flex:2;
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  justify-content: space-between;
+}
+.photo-skills .header11{
+  text-align:center;
+}
+.about-education{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+}
+.about-education .about{
+  flex:0.6;
+}
+.about-education .education{
+  flex:2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:100%;
+}
+*/
+/*
+}
+.about-education .education .education1{
+  display:flex;
+  justify-content: space-between;
+}
+
+.about-education .education .education1 .block22{
+  flex:1;
+}
+.about-education .education .education1 .block23{
+  flex:2;
+}
+
+.about-education .about{
+  flex:0.6;
+  margin-right:30px;
+}
+.about-education .education{
+  flex:2;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:100%;
+}
+
+.education1{
+  display: flex;
+  justify-content: space-between;
+}
+.education1 .block22{
+  flex:2;
+}
+.education1 .block23{
+  flex:1
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*blogs*/
@@ -616,3 +673,102 @@ hr.schools-separator{
   color: white;
 }
 */
+
+
+
+
+
+/*
+.projects img{
+  border-radius: 0%;
+  border:1px solid #cccccc;
+}
+
+.projects{
+  width:90%;
+  text-align: left;
+  margin:auto;
+}
+
+.titles{
+  width:25%;
+  text-align: center;
+}
+.descriptions{
+  width:75%;
+  text-align:center;
+}
+.projects .description{
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.projects span{
+  vertical-align:bottom;
+  text-align:left;
+  font-size:30px;
+  color:#f3971b;
+  }
+
+hr.projects_separator{
+  width:90%;
+  margin:auto;
+}*/
+
+/* cv.html 
+
+
+
+.education {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin:auto;
+}
+
+.education td {
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 40px
+}
+
+.education .col1{
+  width:75%;
+}
+
+.education .col2{
+  width:25%;
+  vertical-align: top;
+}
+
+.school{
+  font-size: 20px;
+}
+
+
+.awards {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin:auto;
+}
+.awards td {
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 40px
+}
+
+.awards .award{
+  width:75%;
+}
+
+.awards .col2{
+  width:25%;
+  vertical-align: top;
+}
+
+
+
+cv28*/
