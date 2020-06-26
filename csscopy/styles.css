@@ -158,14 +158,16 @@ a:active {
   flex-wrap: wrap;
   text-align: center;
 }
-@media(max-width: 990px){
+@media(max-width: 968px){
 .contacts-container{
   width:100%;
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
+  flex-direction: column;
 }}
+
 
 .contacts-container span{
   color:#f3971b;
@@ -216,9 +218,10 @@ a:active {
   margin: auto;
   flex-wrap: wrap;
   text-align: left;
+  min-width: 70%;
 }
 .project-container img{
-  flex:1;
+  flex:0.6;
   margin-right: 30px;
   height:200px;
   width:300px;
@@ -236,6 +239,7 @@ a:active {
 }}
 .project-container .description{
   flex:2;
+  min-width:50%;
 }
 
 .project-container span{
