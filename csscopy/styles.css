@@ -132,9 +132,10 @@ a:active {
   flex-wrap: wrap;
 }
 
-@media(max-width: 768px){
-  .skills-container{
-  align-items: center;
+@media(max-width: 668px){
+.about-image img{
+  width:100%;
+  align-content: center;
 }}
 /*
 .skills-block{
