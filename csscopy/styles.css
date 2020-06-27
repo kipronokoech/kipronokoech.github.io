@@ -130,10 +130,15 @@ a:active {
   flex:2;
   min-width:50%;
 }
-@media(max-width:768px){
+@media(max-width:968px){
   .about-description{
-  background-color: grey;
   width:100%;
+}
+@media(max-width:968px){
+  .about-image{
+  display: flex;
+  margin:auto;
+  justify-content: center;
 }
 }
 .skills-container{
