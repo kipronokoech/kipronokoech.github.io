@@ -130,6 +130,12 @@ a:active {
   flex:2;
   min-width:50%;
 }
+@media(max-width:768px){
+  .about-description{
+  background-color: grey;
+  width:100%;
+}
+}
 .skills-container{
   display:flex;
   justify-content: space-between;
