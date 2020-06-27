@@ -8,7 +8,7 @@ body {
       color: white !important;
       font-size: 16px;
       font-family: "Roboto", sans-serif,"Trebuchet MS", Arial, Helvetica;
-      line-height: 1.6em !important;
+      line-height: 1.6em;
       padding-bottom: 100px;
       width: 90%;
       margin:auto;
@@ -119,37 +119,33 @@ a:active {
   flex-wrap: wrap;
 }
 
-.about-image img{
+.about-container .about-image{
   flex:1;
+  margin-right: 30px !important;
+}
+.about-container .about-image img{
   border-radius: 50%;
-  margin-right: 30px;
-  border: solid red 2px;
+  border:solid #f3971b 1px;
 }
-
-.about-description{
-  flex:2;
-  min-width:50%;
+.about-container .about-description{
+  flex:5;
+  min-width: 50%;
 }
-@media(max-width:968px){
-  .about-description{
-  width:100%;
+.about-container .about-description h1,h2{
+  color: #f3971b;
 }
-@media(max-width:968px){
-  .about-image{
+@media(max-width: 768px){
+.about-container .about-image{
   display: flex;
-  margin:auto;
+  flex:1;
+  width:100%;
   justify-content: center;
-}
-}
+}}
 .skills-container{
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.about-description h1, h2{
-  color:#f3971b;
-}
-
 /*
 .skills-block{
   float : left;
