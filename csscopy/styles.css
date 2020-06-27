@@ -1,6 +1,5 @@
 
 /* index.html */
-
 body {
       margin:auto;
       width:auto;
@@ -10,13 +9,14 @@ body {
       font-family: "Roboto", sans-serif,"Trebuchet MS", Arial, Helvetica;
       line-height: 1.6em;
       padding-bottom: 100px;
-      width: 90%;
+      width: 100%;
       margin:auto;
 }
 
 .light-mode {
       background-color: #DBDBDB !important;
       color: black !important;
+      width:100%;
 }
 
 .clr{
@@ -76,9 +76,8 @@ a:active {
   flex-flow: row;
   background-color: rgb(48,48,48);
   padding: 30px 0px;
-  margin-right:-100px;
-  margin-left:-100px;
 }
+
 .topnav button{
   background-color: #cccac6;
   color:#000000;
@@ -119,6 +118,8 @@ a:active {
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width:90%;
+  margin:auto;
 }
 
 .about-container .about-image{
@@ -152,6 +153,8 @@ a:active {
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width:90%;
+  margin:auto;
 }
 /*
 .skills-block{
@@ -235,6 +238,8 @@ a:active {
   margin: auto;
   flex-wrap: wrap;
   text-align: left;
+  width:90%;
+  margin:auto;
   min-width: 70%;
 }
 .project-container img{
@@ -267,7 +272,10 @@ a:active {
 
 
 /*cv.html*/
-
+.cv-container{
+  width:90%;
+  margin:auto;
+}
 .kip-third{float:left;
   width:20%;}
 
