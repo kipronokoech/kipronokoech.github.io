@@ -8,7 +8,7 @@ body {
       color: white !important;
       font-size: 16px;
       font-family: "Roboto", sans-serif,"Trebuchet MS", Arial, Helvetica;
-      line-height: 1.6em;
+      line-height: 1.6em !important;
       padding-bottom: 100px;
       width: 90%;
       margin:auto;
@@ -113,30 +113,32 @@ a:active {
   background-color: #cccac6;
   align-items: flex-end;
 }
-@media(min-width: 768px){
 .about-container{
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}}
+}
+
 .about-image img{
   flex:1;
   border-radius: 50%;
+  margin-right: 30px;
+  border: solid red 2px;
 }
+
 .about-description{
   flex:2;
+  min-width:50%;
 }
 .skills-container{
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.about-description h1, h2{
+  color:#f3971b;
+}
 
-@media(max-width: 668px){
-.about-image img{
-  width:100%;
-  align-content: center;
-}}
 /*
 .skills-block{
   float : left;
