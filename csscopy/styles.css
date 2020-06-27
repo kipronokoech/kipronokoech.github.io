@@ -204,9 +204,9 @@ a:active {
   flex-wrap: wrap;
   text-align: center;
 }
-@media(max-width: 990px){
+@media(max-width: 968px){
 .footer-container{
-  width:100%;
+  width:90%;
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -224,9 +224,9 @@ a:active {
   margin: auto;
 }
 
-@media (max-width: 990px){
+@media (max-width: 968px){
   .footer-sep{
-  width:100%;
+  width:90%;
   margin: auto;
 }}
 
@@ -340,6 +340,10 @@ hr.schools-separator{
   width:100%;
   margin:auto;
 }
+hr{
+  width:100%;
+  margin:auto;
+}
 .block31{
   width:70%;
   float:left !important;
@@ -358,6 +362,7 @@ hr.schools-separator{
 .cv_button{
   float:right;
   background-color: #cccac6;
+  margin-right: 30px
 }
 
 
@@ -366,10 +371,21 @@ hr.schools-separator{
 }
 
 
+.sep-full hr{
+  width:90%;
+  margin:auto;
+}
 
+.sep-smallscreen hr{
+ visibility: hidden;
+}
 
-
-
+@media (max-width: 768px){
+  .sep-smallscreen hr{
+ visibility: visible;
+ width:90%;
+ margin:auto;
+}}
 
 /*cv33*/
 
