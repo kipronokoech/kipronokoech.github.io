@@ -6,26 +6,20 @@ html, body{
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: Arial;
 }
 
 :root{
 
     /*      Theme colors        */
-    --text-gray: #3f4954;
+    --text-gray: #f3971b;
     --text-light : #686666da;
-    --bg-color:  #DBDBDB;
+    --bg-color: black;
     --white: #ffffff;
     --midnight: #104f55;
 
     /* gradient color   */
-    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-
-    /*      theme font-family   */
-    --Abel: 'Abel', cursive;
-    --Anton: 'Anton', cursive;
-    --Josefin : 'Josefin', cursive;
-    --Lexend: 'Lexend', cursive;
-    --Livvic : 'Livvic', cursive;
+    --sky: linear-gradient(120deg, #a88e45 0%, #c2a965 100%);
 }
 
 
@@ -47,16 +41,16 @@ ul{
 }
 
 h1{
-    font-family: var(--Lexend);
+    font-family: Lexend;
     font-size: 2.5rem;
 }
 
 h2{
-    font-family: var(--Lexend);
+    font-family: Lexend;
 }
 
 h3{
-    font-family: var(--Abel);
+    font-family: Abel;
     font-size: 1.3rem;
 }
 
@@ -65,12 +59,12 @@ button.btn{
     border-radius: 2rem;
     padding: 1rem 3rem;
     font-size: 1rem;
-    font-family: var(--Livvic);
+    font-family: Livvic;
     cursor: pointer;
 }
 
 span{
-    font-family: var(--Abel);
+    font-family: Abel;
 }
 
 .container{
@@ -82,8 +76,7 @@ span{
 }
 
 p{
-    font-family: var(--Lexend);
-    color: var(--text-light);
+    font-family: Arial;
 }
 
 /* ------x------- Global Classes -------x-------*/
@@ -135,7 +128,7 @@ p{
     padding: 1.6rem 1rem;
     font-size: 1.1rem;
     position: relative;
-    font-family: var(--Abel);
+    font-family: Abel;
     font-size: 1.1rem;
 }
 
@@ -151,7 +144,7 @@ p{
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
-    font-family: var(--Lexend);
+    font-family: Lexend;
     font-size: 1.6rem;
 }
 
@@ -312,8 +305,9 @@ main .site-content .post-content > .post-image .post-info span{
 }
 
 main .post-content .post-title a{
-    font-family: var(--Anton);
+    font-family: Anton;
     font-size: 1.5rem;
+    color:#f3971b;
 }
 
 .site-content .post-content .post-title .post-btn{
@@ -332,7 +326,7 @@ main .post-content .post-title a{
     padding: .6rem .9rem;
     border-radius: 2rem;
     margin: 0 .3rem;
-    font-family: var(--Lexend);
+    font-family: Lexend;
 }
 
 .site-content .pagination .pages{
@@ -346,7 +340,7 @@ main .post-content .post-title a{
 /* --------------- Sidebar ----------------------- */
 
 .site-content > .sidebar .category-list{
-    font-family: var(--Livvic);   
+    font-family: Livvic;   
 }
 
 .site-content > .sidebar .category-list .list-items{
@@ -395,7 +389,7 @@ main .post-content .post-title a{
     width: 80%;
     height: 1.9rem;
     padding: .3rem .5rem;
-    font-family: var(--Lexend);
+    font-family: Lexend;
     font-size: 1rem;
 }
 
@@ -456,7 +450,7 @@ footer.footer .newsletter .form-element input{
     border: none;
     background: transparent;
     color: white;
-    font-family: var(--Josefin);
+    font-family: Josefin;
     font-size: 1rem;
     width: 74%;
 }
@@ -481,7 +475,7 @@ footer.footer .follow div i{
 
 footer.footer .rights{
     justify-content: center;
-    font-family: var(--Josefin);
+    font-family: Josefin;
 }
 
 footer.footer .rights h4 a{

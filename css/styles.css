@@ -1,12 +1,11 @@
 
-/* index.html */
 body {
       margin:auto;
       width:auto;
       background-color: rgb(48,48,48) !important;
       color: white !important;
       font-size: 16px;
-      font-family: "Roboto", sans-serif,"Trebuchet MS", Arial, Helvetica;
+      font-family: Arial, "Roboto", sans-serif,"Trebuchet MS", Helvetica;
       line-height: 1.6em;
       padding-bottom: 100px;
       width: 100%;
@@ -512,26 +511,6 @@ hr{
   font-size: 72px;
 }
 
-
-:root{
-
-    /*      Theme colors        */
-    --text-gray: #3f4954;
-    --text-coral: #f3971b;
-    --text-light : #686666da;
-    --white: #ffffff;
-    --midnight: #104f55;
-
-    /* gradient color   */
-    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-
-    /*      theme font-family   */
-    --Abel: 'Abel', cursive;
-    --Anton: 'Anton', cursive;
-    --Josefin : 'Josefin', cursive;
-    --Lexend: 'Lexend', cursive;
-    --Livvic : 'Livvic', cursive;
-}
 
 .text-gray{
     color: var(--text-coral);
