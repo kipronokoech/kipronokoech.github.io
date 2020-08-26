@@ -509,9 +509,17 @@ hr{
 
 .coming-up h1{
   text-align: center;
-  font-size: 72px;
+  font-size: 32px;
+  padding: 100px;
 }
 
+.coming-up a{
+  text-decoration: underline;
+}
+.coming-up a:hover{
+  text-decoration: underline;
+  color: #a1302f;
+}
 
 .text-gray{
     color: var(--text-coral);
