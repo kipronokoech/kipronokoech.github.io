@@ -6,7 +6,7 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="../css/styles.css">
-  <link rel="shortcut icon" href="../images/icon.png"> 
+  <link rel="shortcut icon" href="../images/icon.png">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
@@ -15,7 +15,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <div class="topnav">
    <div class="topnav-left">
       <strong>Kiprono CV</strong>
-      <button class="button" onclick="myFunction()">Toggle light mode</button>
    </div>
   <div class="topnav-right">
       <a href="../">Home</a>
@@ -371,12 +370,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </div>
 
 <!-- End Footer -->
-
 <script>
-   function myFunction() {
-   var element = document.body;
-   element.classList.toggle("light-mode");
-   }
+  // function to set a given theme/color-scheme
+function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
 </script>
+
 </body>
 </html>

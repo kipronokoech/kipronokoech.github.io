@@ -1,72 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kiprono Elijah Koech | Website</title>
+	<title>KE Home</title>
 	 <!-- for font icons -->
+  <script src="js/nav.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="shortcut icon" href="./images/icon.png"> 
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/Style.css">  -->
+  <link rel="shortcut icon" href="images/icon.png"> 
+  <link id="theme" rel="stylesheet" type="text/css" href="dark-theme.css" />
+  <style>
+    .m-hero__picture {
+      background-image: url(./images/canva.jpg);
+    }
+  
+    @media(max-width: 1000px) {
+      .m-hero__picture {
+        background-image: url(./images/canva.jpg);
+      }
+    }
+  
+    @media(max-width: 600px) {
+      .m-hero__picture {
+        background-image: url(./images/canva.jpg);
+      }
+    }
+  </style>
 </head>
+
 <body >
-
-
-<!-- Start Header -->
-
-<div class="topnav">
-   <div class="topnav-left">
-      <strong>Kiprono Home</strong>
-      <button class="button" onclick="myFunction()">Toggle light mode</button>
-   </div>
-  <div class="topnav-right">
-      <a href=".">Home</a>
-      <a href="./projects/">Projects</a>
-      <a href="./cv/">Curriculum Vitae</a>
-      <a href="./blogs/">Blogs</a>
-  </div>
-</div>
-
+	<nav class="navbar">
+        <div class="brand-title" data-aos="fade-down">
+	        <strong><a href="./">Kiprono</a></strong>
+	        <button id="theme-toggle" >Toggle dark mode</button>
+    	</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links" data-aos="fade-down">
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./projects/">Projects</a></li>
+            <li><a href="./assets/files/Kiprono-CV.pdf" target="_blank">CV</a></li>
+      		<li><a href="https://medium.com/@kiprono_65591">Blogs</a></li>
+            <li><a href="#contacts-container">Contact</a></li>
+            <!-- <li><a href="./about/" target="_blank">About Me</a></li> -->
+            <li><a href="https://www.linkedin.com/in/kiprono-elijah-koech-24b2798b" target="_blank">
+		    <i class="fa fa-linkedin" aria-hidden="true"></i>
+		    </a></li>
+			<li><a href="https://github.com/kipronokoech" target="_blank">
+		      <i class="fa fa-github" aria-hidden="true"></i>
+		    </a></li>
+			<li><a href="https://twitter.com/koech_kiprono1" target="_blank">
+		    	<i class="fa fa-twitter" aria-hidden="true"></i>
+		    </a></li>
+			<li><a href="https://www.facebook.com/kipronokoech2719/" target="_blank">
+		    	<i class="fa fa-facebook" aria-hidden="true"></i>
+		   </a></li>
+			<li><a href="https://medium.com/@kiprono_65591" target="_blank">
+		    	<i class="fa fa-medium" aria-hidden="true"></i>
+		   </a></li>
+          </ul>
+        </div>
+      </nav>
+<!-- Move to top button -->
+<a href="#" class="to-top">
+ 	<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+</a>
 
 <!-- End Header -->
-
+<div class="clr">
+</div>
 
 <!-- Start About -->
-<div class="about_title">
-  <h1>About</h1>
+<!-- <div class="about_title">
+  <h1 data-aos="fade-up">About </h1>
+<<<<<<< HEAD
 </div>
 
+<a href="about/">link</a>
+=======
+</div> -->
 
-<div class="about-container">
-  <div class="about-image">
-    <img src="./images/myphoto1.jpg">
+<section class="m-hero with-picture" data-aos="fade">
+    <div class="m-hero__picture "></div>
+  <div class="m-hero__content" data-aos="fade-down">
+      <h1 class="m-hero-title bigger">Kiprono Elijah Koech</h1>
+      <p class="m-hero-description bigger">Data Scientist || Statistician || Writer</p>
   </div>
-  <div class="about-description">
-    <h1> Hello, I am Kiprono Elijah Koech</h1>
-    <h2>Data Scientist and Statistician</h2>
-      <p> 
-        1.5 years of experience in statistics field and 8 months of research in the field of data science. Highly analytical and process-oriented statistician and a data scientist with in-depth knowledge in statistical theories
-        and formulations, proficiency in statistical modeling process, and a dynamic data scientist. 
-      </p>
-      <p>
-        Currently a masters student in <a href="http://www.sun.ac.za/english" target="_blank">Stellenbosch University, South Africa</a> under <a href="https://aims.ac.za/" target="_blank">African Institute for Mathematical Sciences(AIMS), South Africa</a> scholarship working towards MSc in Mathematics (Data Science Major). Research work supervised by Dr Bubacarr Bah 
-        <a href="https://aims.ac.za/research/data-science-and-information-systems/dr-bubacarr-bah/">[1]</a> 
-        <a href="https://sites.google.com/aims.ac.za/bubacarr">[2]</a>
-        <a href="https://scholar.google.co.za/citations?user=Y_bXZfMAAAAJ&hl=en">[3]</a>
-        <a href="https://www.researchgate.net/profile/Bubacarr_Bah">[4]</a>
-        <a href="https://en.wikipedia.org/wiki/Bubacarr_Bah">[5]</a>
+</section>
 
-        .Graduated with MSc Mathematical Sciences from <a href="http://www.sun.ac.za/english" target="_blank">Stellenbosch University, South Africa</a> in 2019. Also obtained BSc in Statistics in 2017 from <a href="http://www.jkuat.ac.ke/" target="_blank">Jomo Kenyatta University of Agriculture and Technology, Kenya</a>.
-      </p>
-      <br>
-      <button class="cv_button_home" type="button">
-        <a href="./assets/files/Kiprono-CV.pdf" target="_blank">
-         View CV - PDF Version
-        </a>   
-      </button>
-  </div>
-</div>
+
+<main>
+      <article>
+        <div class="l-content">
+          <div class="l-wrapper in-post" data-aos="fade-up" data-aos-delay="300">
+            <div class="l-post-content">
+              <div class="pos-relative js-post-content">
+                <!--kg-card-begin: markdown--><!-- wp:paragraph {"align":"justify"} -->
+                  <p> 1.5 years of experience in statistics field and 8 months of research in the field of data science. Highly analytical and process-oriented statistician and a data scientist with in-depth knowledge in statistical theories and formulations, proficiency in statistical modeling process, and a dynamic data scientist.  </p>
+                  <!-- /wp:paragraph -->
+                  <!-- wp:paragraph {"align":"justify"} -->
+                  <p> Currently a masters student in <a href="http://www.sun.ac.za/english" target="_blank">Stellenbosch University, South Africa</a> under <a href="https://aims.ac.za/" target="_blank">African Institute for Mathematical Sciences(AIMS), South Africa</a> scholarship working towards MSc in Mathematics (Data Science Major). Research work supervised by Dr Bubacarr Bah 
+                  <a href="https://sites.google.com/aims.ac.za/bubacarr">[1]</a>
+
+                  .Graduated with MSc Mathematical Sciences from <a href="http://www.sun.ac.za/english" target="_blank">Stellenbosch University, South Africa</a> in 2019. Also obtained BSc in Statistics in 2017 from <a href="http://www.jkuat.ac.ke/" target="_blank">Jomo Kenyatta University of Agriculture and Technology, Kenya</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+
 
 <div class="sep-smallscreen">
   <hr noshade>
@@ -87,13 +138,12 @@
         <li>Machine learning</li>
         <li>Exploratory data analysis</li>
         <li>Data visualization</li>
-        <li>Web scrapping</li>
+        <li>Web scraping</li>
         <li>Regression analysis</li>
         <li>Time series analysis</li>
         <li>Data wrangling</li>
       </ul>
     </div>
-
     <div class ="skills-block">
       <h5>Programming</h5>
       <ul>
@@ -104,24 +154,23 @@
         <li>HTML and CSS (Novice)</li>
       </ul>
     </div>
-
-
     <div class ="skills-block">
       <h5>Tools and technologies</h5>
       <ul>
         <li>SPSS</li>
-        <li>Git Version Control</li>
+        <li>Git</li>
         <li>Latex Typesetting</li>
         <li>Microsoft Office suite</li>
         <li>TensorFlow and Keras</li>
+        <li>Scrapy</li>
+        <li>Selenium</li>
+        <li>BeautifulSoup</li>
         <li>Sklearn</li>
         <li>Matplotlib</li>
-        <li>Selenium and Beatifulsoup</li>
         <li>OpenCv</li>
-        <li>Linux OS</li>
       </ul>
-    </div>
-     <div class ="skills-block">
+      </div>
+      <div class ="skills-block">
       <h5>Database management</h5>
       <ul>
         <li>MySQL</li>
@@ -138,7 +187,7 @@
 <div class="clr"></div>
 <!-- Start Footer -->
 
-<div class="contacts-container">
+<div id="contacts-container">
   <div class="phone">
     <span class="fa fa-phone"></span>
     <br/>
@@ -181,41 +230,74 @@
   </div>
 </div>
 
+
+
 <div class="footer-sep">
   <hr noshade>
   <br>
 </div>
-<div class="footer-container">
-  <div class="linkedin">
-    <a href="https://www.linkedin.com/in/kiprono-elijah-koech-24b2798b" target="_blank">
-    <span class="fa fa-linkedin"></span>
-    </a>
 
-  </div>
-  <div class="github">
-    <a href="https://github.com/kipronokoech" target="_blank">
-      <span class="fa fa-github"></span>
-    </a>
-  </div>
-  <div class="twitter">
-    <a href="https://twitter.com/koech_kiprono1" target="_blank">
-    <span class="fa fa-twitter"></span>
-    </a>
-  </div>
-  <div class="facebook">
-    <a href="https://www.facebook.com/kipronokoech2719/" target="_blank">
-    <span class="fa fa-facebook"></span>
-   </a>
-  </div>
+<div class="footer-copyright">
+	<div id="footer-container">
+	  <div class="linkedin">
+	    <a href="https://www.linkedin.com/in/kiprono-elijah-koech-24b2798b" target="_blank">
+	    <i class="fa fa-linkedin" aria-hidden="true"></i>
+	    </a>
+	  </div>
+	  <div class="github">
+	    <a href="https://github.com/kipronokoech" target="_blank">
+	      <i class="fa fa-github" aria-hidden="true"></i>
+	    </a>
+	  </div>
+	  <div class="twitter">
+	    <a href="https://twitter.com/koech_kiprono1" target="_blank">
+	    <i class="fa fa-twitter" aria-hidden="true"></i>
+	    </a>
+	  </div>
+	  <div class="facebook">
+	    <a href="https://www.facebook.com/kipronokoech2719/" target="_blank">
+	    <i class="fa fa-facebook" aria-hidden="true"></i>
+	   </a>
+	  </div>
+	  <div class="medium">
+	    <a href="https://medium.com/@kiprono_65591" target="_blank">
+	    <i class="fa fa-medium" aria-hidden="true"></i>
+	   </a>
+	  </div>
+	</div>
+	<!-- End Footer -->
+	<p>Copyright 
+		<i class="fa fa-copyright" aria-hidden="true"></i>
+		2020 | Kiprono Elijah Koech
+	</p>
 </div>
 
-<!-- End Footer -->
 
-<script>
-    function myFunction() {
-    var element = document.body;
-    element.classList.toggle("light-mode");
+
+<script src="js/to-top.js"></script>
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CPromise%2CArray.prototype.includes%2CString.prototype.endsWith%2CString.prototype.startsWith%2CObject.assign%2CNodeList.prototype.forEach"></script>
+ <script type="text/javascript">
+      
+    const themeStylesheet = document.getElementById('theme');
+    const storedTheme = localStorage.getItem('theme');
+    if(storedTheme){
+        themeStylesheet.href = storedTheme;
     }
-</script>
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+        // if it's light -> go dark
+        if(themeStylesheet.href.includes('light')){
+            themeStylesheet.href = 'dark-theme.css';
+            // themeToggle.innerText = 'Toggle light mode';
+        } else {
+            // if it's dark -> go light
+            themeStylesheet.href = 'light-theme.css';
+            // themeToggle.innerText = 'Toggle dark mode';
+        }
+        // save the preference to localStorage
+        localStorage.setItem('theme',themeStylesheet.href)  
+    })
+
+    </script>
 </body>
 </html>
