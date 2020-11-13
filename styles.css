@@ -13,26 +13,26 @@ body {
 }
 
 a:link {
-	color: #12befc;
+	color: #008ee0;
 	background-color: transparent;
 	text-decoration: none
 }
 
 a:visited {
-	color: #12befc;
+	color:#008ee0;
 	background-color: transparent;
 	text-decoration: underline
 }
 
 a:hover {
-	color: #12befc;
+	color:#008ee0;
 	background-color: none;
 	text-decoration: underline
 }
 
 a:active {
-	color: #12befc;
-	background-color: red;
+	color:#008ee0;
+	background-color: none;
 	text-decoration: underline
 }
 
@@ -60,7 +60,7 @@ a:active {
 	position: relative;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgb(48, 48, 48);
+	/*background-color: rgb(48, 48, 48);*/
 }
 
 .brand-title {
@@ -96,7 +96,7 @@ a:active {
 
 .navbar-links li:hover {
 	background-color: #555;
-	border-radius: 10%;
+	border-radius: 5px;
 }
 
 .toggle-button {
@@ -113,8 +113,8 @@ a:active {
 .toggle-button .bar {
 	height: 3px;
 	width: 100%;
-	background-color: #fff;
-	border-radius: 10px
+	border-radius: 10px;
+	background-color: #008ee0;
 }
 
 @media (max-width:800px) {
@@ -145,18 +145,16 @@ a:active {
 }
 
 .to-top {
-	background-color: #fff;
 	position: fixed;
-	bottom: 16px;
-	right: 32px;
+	bottom: 5%;
+	right: 5%;
 	width: 10px;
 	height: 50px;
-	border-radius: 50%;
+	border-radius: 5px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 48px;
-	color: #1f1f1f;
 	text-decoration: none;
 	opacity: 0;
 	pointer-events: none;
@@ -164,7 +162,7 @@ a:active {
 }
 
 .to-top.active {
-	bottom: 32px;
+	bottom: 5%;
 	pointer-events: auto;
 	opacity: 1
 }
@@ -182,16 +180,47 @@ a:active {
 	flex-direction: column;
 	min-height: 365px;
 	overflow: hidden;
-	padding: 100px 0 75px;
+	padding: 100px 75px;
 	background-color: #f4f8fd
 }
 
 @media only screen and (min-width:48rem) {
 	.m-hero {
 		min-height: 400px;
-		padding: 75px 0 75px
+		padding: 75px 60px
 	}
 }
+@media(max-width:48rem) {
+	.m-hero {
+		min-height: 150px;
+		padding: 10px 10px;
+		overflow: hidden;
+	}
+	.m-hero.with-picture .m-hero-title {
+	color: #fff;
+	font-size: 1.60rem;
+	}
+	.m-hero.with-picture {
+	color: #fff;
+	background-color: #000;
+	font-size: 1.00rem;
+}
+	.m-hero__picture {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	z-index: 1;
+	opacity: .7;
+}}
+
+
+
+
 
 .m-hero.with-picture {
 	color: #fff;
@@ -223,7 +252,7 @@ a:active {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 150%;
 	background-repeat: no-repeat;
 	background-position: 50%;
 	background-size: cover;
@@ -244,7 +273,7 @@ a:active {
 
 @media only screen and (min-width:48rem) {
 	.m-hero__content {
-		max-width: 700px
+		max-width: 1200px;
 	}
 }
 
@@ -314,7 +343,7 @@ a:active {
 @media only screen and (min-width:48rem) {
 	.m-hero-title.bigger {
 		letter-spacing: .8px;
-		font-size: 3.25rem;
+		font-size: 3.05rem;
 		margin-bottom: 10px
 	}
 }
@@ -534,7 +563,8 @@ main {
 
 @media(max-width:800px) {
 	.row-2 {
-		width: 100%
+		width: 98%;
+		margin:auto;
 	}
 }
 
@@ -561,13 +591,21 @@ main {
 
 @media(max-width:800px) {
 	.row-3 {
-		width: 100%
+		width: 98%;
+		margin:auto;
 	}
 }
 
 .row-3 article {
 	justify-content: space-between
 }
+
+
+.m-article-card__timestamp{
+	display: flex;
+	justify-content: space-between;
+}
+
 
 .l-post-content {
 	padding-bottom: 15px
@@ -579,6 +617,14 @@ main {
 		margin: 0 auto
 	}
 }
+
+@media only screen and (max-width:48rem) {
+	.l-post-content {
+		max-width: 95%;
+		margin: 0 auto
+	}
+}
+
 
 @media only screen and (min-width:48rem) and (min-width:48rem) {
 	.l-post-content {
@@ -701,8 +747,12 @@ main {
 }
 
 .l-post-content a {
-	color: #ccc;
-	text-decoration: underline
+	color:#008ee0;
+	text-decoration: none;
+}
+.l-post-content a:hover {
+	color:#008ee0;
+	text-decoration: underline;
 }
 
 .l-post-content ol,
@@ -1344,11 +1394,11 @@ main {
 	flex-direction: column;
 	position: relative;
 	margin-bottom: 20px;
-	height: 600px;
+	/*height: 600px;*/
 	border-radius: 10px;
 	border: 1px solid #0f0f0f;
 	z-index: 1;
-	transition: all .25s cubic-bezier(.02, .01, .47, 1)
+	transition: all .25s cubic-bezier(.02, .01, .47, 1);
 }
 
 .m-article-card:hover {
@@ -1528,14 +1578,21 @@ main {
 .m-article-card__info {
 	flex: 1;
 	position: relative;
-	padding-top: 48px;
-	height: 200px;
-	border-radius: 0 0 10px 10px
+	padding: 10px 10px 10px 10px;
+	border-radius: 0 0 10px 10px;
+	word-wrap: break-word;
 }
+
+@media(max-width:768px) {
+	.m-article-card__info .project__brief{
+		padding: 5px 5px;
+	}
+}
+
 
 @media only screen and (min-width:48rem) {
 	.m-article-card__info {
-		padding-top: 53px
+		padding-top: 28px
 	}
 }
 
@@ -1552,6 +1609,8 @@ main {
 		padding-top: 53px
 	}
 }
+
+
 
 .m-article-card__tag {
 	position: absolute;
@@ -1600,14 +1659,15 @@ main {
 	color: #b4b4b4;
 	letter-spacing: .4px;
 	line-height: 1.3;
-	font-size: 1.25rem;
+	font-size: 1.50rem;
 	font-weight: 400;
-	margin: 0
+	margin: 0;
+	padding:10px 10px;
 }
 
 @media only screen and (min-width:48rem) {
 	.m-article-card__title {
-		font-weight: 600
+		font-weight: 600;
 	}
 }
 
@@ -1625,15 +1685,16 @@ main {
 .m-article-card__author-stats,
 .m-article-card__timestamp {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	color: #b4b4b4;
 	letter-spacing: .2px;
-	font-size: .875rem
+	font-size: .875rem;
+	padding: 10px 10px 10px 10px;
 }
 
 .m-article-card__author-stats span:nth-child(2),
 .m-article-card__timestamp span:nth-child(2) {
-	padding: 0 10px
+	padding: 0 10px;
 }
 
 .m-article-card__author-stats {
@@ -1736,15 +1797,17 @@ h2 {
 	}
 }
 
-@media(max-width:500px) {
+
+@media(max-width:968px) {
 	.skills-container {
-		width: 100%;
+		width: 95%;
 		padding: 0px !important;
+		margin:auto;
 	}
 }
 
 .skills-block {
-	justify-content: space-between
+	justify-content: space-between;
 }
 
 .skills_title {
@@ -1780,12 +1843,13 @@ h2 {
 }
 
 #contacts-container span {
-	color: #f3971b;
+	color: #d9d9d9;
 	font-size: 28px
 }
 
 #contacts-container h2 {
-	font-weight: 400
+	font-weight: 400;
+	color: #d9d9d9;
 }
 
 #footer-container {
@@ -1795,7 +1859,7 @@ h2 {
 	margin: auto;
 	flex-wrap: wrap;
 	text-align: center;
-	padding: 10px;
+	padding: 10px 10px;
 }
 
 @media(max-width:36rem) {
@@ -1806,7 +1870,6 @@ h2 {
 		flex-wrap: wrap
 	}
 }
-
 
 
 #footer-container span {
