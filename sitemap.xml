@@ -1,59 +1,25 @@
-<?xml version='1.0' encoding='UTF-8'?><urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url>
-  <loc>https://kipronokoech.github.io/</loc>
-  <lastmod>2021-02-17T14:29:23+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/projects/</loc>
-  <lastmod>2021-02-17T14:29:23+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/assets/files/Kiprono-CV.pdf</loc>
-  <lastmod>2021-02-17T14:29:23+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/contacts/</loc>
-  <lastmod>2021-02-17T14:29:23+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/about/index.html</loc>
-  <lastmod>2021-02-17T14:29:23+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/projects/reviews-classification/</loc>
-  <lastmod>2021-02-17T14:29:23+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/projects/web-scraping-and-crawling/</loc>
-  <lastmod>2021-02-17T14:29:23+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/projects/crop-disease-classification/</loc>
-  <lastmod>2021-02-17T14:29:23+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/projects/titanic-dataset/</loc>
-  <lastmod>2021-02-17T14:29:23+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/projects/pandas-comprehensive-guide/</loc>
-  <lastmod>2021-02-17T14:29:23+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/about/</loc>
-  <lastmod>2021-02-17T14:29:23+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/archives/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+  </url>
+  
 </urlset>
