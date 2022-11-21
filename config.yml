@@ -1,0 +1,36 @@
+baseURL: ""
+languageCode: en-us
+title: Kiprono Elijah
+theme: "PaperMod"
+
+params:
+  homeInfoParams:
+    Title: "Kiprono Elijah Koech"
+    Content:  Highly analytical, ingenious and results-oriented data scientist and statistician with 3 years of experience and focusing on being a grounded researcher in machine learning and deep learning applied to business decisions. Possessing working knowledge in programming in Python and data management using SQL with the application in Data Science fields like Predictive Modeling, Data Analytics, and Computer Vision, among other areas. Currently a Data Science Intern at Kenya Meteorological Department working on streamlining computational processes through automation and optimization. Also focused on reviewing current parameterization schemes and data assimilation procedures used at KMD with aim of developing better strategies and procedures to improve weather forecasting. Previously, a Research Fellow at Science of Intelligence(SCIoI) in Technische Universität Berlin , Berlin, Germany. Graduate of MSc in Applied Mathematics (Data Science) (2022) and MSc. Mathematical Sciences (2019) from Stellenbosch University, South Africa, under African Institute for Mathematical Sciences(AIMS), South Africa scholarship. Research work was supervised by Dr. Bubacarr Bah [1]. Also graduated with BSc. in Statistics in 2017 from Jomo Kenyatta University of Agriculture and Technology, Kenya. 
+  socialIcons:
+    - name: facebook
+      url: "http://www.facebook.com"
+    - name: twitter
+      url: "http://twitter.com"
+  cover:
+    linkFullImages: true
+
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: Archives
+      name: Archives
+      url: /archives/
+      weight: 30
+
