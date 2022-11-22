@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Kiprono Elijah Koech</title>
-    <link>https://superb-babka-70d940.netlify.app/categories/</link>
+    <link>https://kipronokoech.github.io/categories/</link>
     <description>Recent content in Categories on Kiprono Elijah Koech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Nov 2022 17:49:14 +0300</lastBuildDate><atom:link href="https://superb-babka-70d940.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Nov 2022 17:49:14 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
-      <link>https://superb-babka-70d940.netlify.app/categories/linux/</link>
+      <link>https://kipronokoech.github.io/categories/linux/</link>
       <pubDate>Mon, 21 Nov 2022 17:49:14 +0300</pubDate>
       
-      <guid>https://superb-babka-70d940.netlify.app/categories/linux/</guid>
+      <guid>https://kipronokoech.github.io/categories/linux/</guid>
       <description></description>
     </item>
     

@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Kiprono Elijah Koech</title>
-    <link>https://superb-babka-70d940.netlify.app/tags/</link>
+    <link>https://kipronokoech.github.io/tags/</link>
     <description>Recent content in Tags on Kiprono Elijah Koech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Nov 2022 17:49:14 +0300</lastBuildDate><atom:link href="https://superb-babka-70d940.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Nov 2022 17:49:14 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python</title>
-      <link>https://superb-babka-70d940.netlify.app/tags/python/</link>
+      <link>https://kipronokoech.github.io/tags/python/</link>
       <pubDate>Mon, 21 Nov 2022 17:49:14 +0300</pubDate>
       
-      <guid>https://superb-babka-70d940.netlify.app/tags/python/</guid>
+      <guid>https://kipronokoech.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>example</title>
-      <link>https://superb-babka-70d940.netlify.app/tags/example/</link>
+      <link>https://kipronokoech.github.io/tags/example/</link>
       <pubDate>Mon, 21 Nov 2022 11:36:10 +0300</pubDate>
       
-      <guid>https://superb-babka-70d940.netlify.app/tags/example/</guid>
+      <guid>https://kipronokoech.github.io/tags/example/</guid>
       <description></description>
     </item>
     
