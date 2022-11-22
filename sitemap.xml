@@ -1,25 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/archives/</loc>
+    <loc>https://superb-babka-70d940.netlify.app/</loc>
+    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
+  </url><url>
+    <loc>https://superb-babka-70d940.netlify.app/posts/post3/</loc>
+    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
+  </url><url>
+    <loc>https://superb-babka-70d940.netlify.app/posts/</loc>
+    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
+  </url><url>
+    <loc>https://superb-babka-70d940.netlify.app/categories/</loc>
+    <lastmod>2022-11-21T17:49:14+03:00</lastmod>
+  </url><url>
+    <loc>https://superb-babka-70d940.netlify.app/categories/linux/</loc>
+    <lastmod>2022-11-21T17:49:14+03:00</lastmod>
+  </url><url>
+    <loc>https://superb-babka-70d940.netlify.app/posts/post2/</loc>
+    <lastmod>2022-11-21T17:49:14+03:00</lastmod>
+  </url><url>
+    <loc>https://superb-babka-70d940.netlify.app/tags/python/</loc>
+    <lastmod>2022-11-21T17:49:14+03:00</lastmod>
+  </url><url>
+    <loc>https://superb-babka-70d940.netlify.app/tags/</loc>
+    <lastmod>2022-11-21T17:49:14+03:00</lastmod>
+  </url><url>
+    <loc>https://superb-babka-70d940.netlify.app/posts/post1/</loc>
+    <lastmod>2022-11-21T17:48:17+03:00</lastmod>
+  </url><url>
+    <loc>https://superb-babka-70d940.netlify.app/tags/example/</loc>
+    <lastmod>2022-11-21T11:36:10+03:00</lastmod>
+  </url><url>
+    <loc>https://superb-babka-70d940.netlify.app/posts/example/</loc>
+    <lastmod>2022-11-21T11:36:10+03:00</lastmod>
+  </url><url>
+    <loc>https://superb-babka-70d940.netlify.app/archives/</loc>
+  </url><url>
+    <loc>https://superb-babka-70d940.netlify.app/search/</loc>
   </url>
-  
-  <url>
-    <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-  </url>
-  
 </urlset>

@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Categories on Kiprono Elijah</title>
-    <link>/categories/</link>
-    <description>Recent content in Categories on Kiprono Elijah</description>
+    <title>Categories on Kiprono Elijah Koech</title>
+    <link>https://superb-babka-70d940.netlify.app/categories/</link>
+    <description>Recent content in Categories on Kiprono Elijah Koech</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Nov 2022 17:49:14 +0300</lastBuildDate><atom:link href="https://superb-babka-70d940.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://superb-babka-70d940.netlify.app/categories/linux/</link>
+      <pubDate>Mon, 21 Nov 2022 17:49:14 +0300</pubDate>
+      
+      <guid>https://superb-babka-70d940.netlify.app/categories/linux/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

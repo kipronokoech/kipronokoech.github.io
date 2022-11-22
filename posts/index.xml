@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Kiprono Elijah</title>
-    <link>/posts/</link>
-    <description>Recent content in Posts on Kiprono Elijah</description>
+    <title>Posts on Kiprono Elijah Koech</title>
+    <link>https://superb-babka-70d940.netlify.app/posts/</link>
+    <description>Recent content in Posts on Kiprono Elijah Koech</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Nov 2022 17:49:17 +0300</lastBuildDate><atom:link href="https://superb-babka-70d940.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post3</title>
+      <link>https://superb-babka-70d940.netlify.app/posts/post3/</link>
+      <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
+      
+      <guid>https://superb-babka-70d940.netlify.app/posts/post3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post2</title>
+      <link>https://superb-babka-70d940.netlify.app/posts/post2/</link>
+      <pubDate>Mon, 21 Nov 2022 17:49:14 +0300</pubDate>
+      
+      <guid>https://superb-babka-70d940.netlify.app/posts/post2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post1</title>
+      <link>https://superb-babka-70d940.netlify.app/posts/post1/</link>
+      <pubDate>Mon, 21 Nov 2022 17:48:17 +0300</pubDate>
+      
+      <guid>https://superb-babka-70d940.netlify.app/posts/post1/</guid>
+      <description>   Syntax Description     Header Title   Paragraph Text       Syntax Description Test Text     Header Title Here&amp;rsquo;s this   Paragraph Text And more    </description>
+    </item>
+    
+    <item>
+      <title>Example Post</title>
+      <link>https://superb-babka-70d940.netlify.app/posts/example/</link>
+      <pubDate>Mon, 21 Nov 2022 11:36:10 +0300</pubDate>
+      
+      <guid>https://superb-babka-70d940.netlify.app/posts/example/</guid>
+      <description>This post will...</description>
+    </item>
     
   </channel>
 </rss>
