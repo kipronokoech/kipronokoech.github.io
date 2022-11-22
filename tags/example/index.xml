@@ -16,5 +16,14 @@
       <description>This post will...</description>
     </item>
     
+    <item>
+      <title>Example Post</title>
+      <link>https://kipronokoech.github.io/posts/medium/example/</link>
+      <pubDate>Mon, 21 Nov 2022 11:36:10 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/medium/example/</guid>
+      <description>This post will...</description>
+    </item>
+    
   </channel>
 </rss>
