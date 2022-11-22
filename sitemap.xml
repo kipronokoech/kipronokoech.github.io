@@ -2,9 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kipronokoech.github.io/posts/example/</loc>
+    <lastmod>2022-11-21T11:36:10+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/categories/</loc>
+    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
+  </url><url>
     <loc>https://kipronokoech.github.io/</loc>
     <lastmod>2022-11-21T17:49:17+03:00</lastmod>
-    <priority>0</priority>
+  </url><url>
+    <loc>https://kipronokoech.github.io/categories/linux/</loc>
+    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
   </url><url>
     <loc>https://kipronokoech.github.io/posts/post3/</loc>
     <lastmod>2022-11-21T17:49:17+03:00</lastmod>
@@ -12,19 +20,13 @@
     <loc>https://kipronokoech.github.io/posts/</loc>
     <lastmod>2022-11-21T17:49:17+03:00</lastmod>
   </url><url>
-    <loc>https://kipronokoech.github.io/categories/</loc>
-    <lastmod>2022-11-21T17:49:14+03:00</lastmod>
-  </url><url>
-    <loc>https://kipronokoech.github.io/categories/linux/</loc>
-    <lastmod>2022-11-21T17:49:14+03:00</lastmod>
-  </url><url>
-    <loc>https://kipronokoech.github.io/posts/post2/</loc>
-    <lastmod>2022-11-21T17:49:14+03:00</lastmod>
-  </url><url>
     <loc>https://kipronokoech.github.io/tags/python/</loc>
-    <lastmod>2022-11-21T17:49:14+03:00</lastmod>
+    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
   </url><url>
     <loc>https://kipronokoech.github.io/tags/</loc>
+    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/post2/</loc>
     <lastmod>2022-11-21T17:49:14+03:00</lastmod>
   </url><url>
     <loc>https://kipronokoech.github.io/posts/post1/</loc>
@@ -33,10 +35,11 @@
     <loc>https://kipronokoech.github.io/tags/example/</loc>
     <lastmod>2022-11-21T11:36:10+03:00</lastmod>
   </url><url>
-    <loc>https://kipronokoech.github.io/posts/example/</loc>
-    <lastmod>2022-11-21T11:36:10+03:00</lastmod>
-  </url><url>
     <loc>https://kipronokoech.github.io/archives/</loc>
+  </url><url>
+    <loc>https://kipronokoech.github.io/blog/</loc>
+  </url><url>
+    <loc>https://kipronokoech.github.io/resume/</loc>
   </url><url>
     <loc>https://kipronokoech.github.io/search/</loc>
   </url>
