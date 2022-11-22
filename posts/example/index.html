@@ -119,8 +119,8 @@ document.addEventListener("DOMContentLoaded", function() {
   "keywords": [
     "example", "Python"
   ],
-  "articleBody": "Hello there Here are some dummy text here\nHello there h2 Hello there h3 Some link Link to Unsplash\nimport psycopg2 data_folder = \"clean_data/August\" import os import pandas as pd import numpy as np #Establishing the connection conn = psycopg2.connect( database=\"kiprono_database2\", user='postgres', password='destinyx2719*KE', host='127.0.0.1', port= '5432' ) #Setting auto commit false conn.autocommit = True #Creating a cursor object using the cursor() method cursor = conn.cursor() files = os.listdir(data_folder) print(files) for file in files: df = pd.read_csv(os.path.join(data_folder, file)) df = df[['wmoID', 'kmdID', 'Year', 'Month', 'Day', 'Hour', 'AirTemp', 'Tmax', 'Tmin']] data = df.to_dict(orient=\"records\") for data_point in data: result = list(data_point.values()) insert_command = '''INSERT INTO AMSS(wmoID, kmdID, Year, Month, Day, Hour, AirTemp, Tmax, Tmin)\\ VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)''' try: cursor.execute(insert_command, result) # Commit your changes in the database conn.commit() except psycopg2.errors.UniqueViolation as e: print(e) continue # Closing the connection conn.close() div.highlight button { color: #adb5bd; box-sizing: border-box; transition: 0.2s ease-out; cursor: pointer; user-select: none; background: rgba(0, 0, 0, 0.15); border: 1px solid rgba(0, 0, 0, 0); padding: 5px 10px; font-size: 0.8em; position: absolute; top: 0; right: 0; border-radius: 0 0.15rem; } The Cauchy-Schwarz Inequality $$\\left( \\sum_{k=1}^n a_k b_k \\right)^2 \\leq \\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)$$\nThe following example show the quadratic equation. $$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$$\nvar copy = function(target) { var textArea = document.createElement('textarea') textArea.setAttribute('style','width:1px;border:0;opacity:0;') document.body.appendChild(textArea) textArea.value = target.innerHTML textArea.select() document.execCommand('copy') document.body.removeChild(textArea) } var pres = document.querySelectorAll(\".comment-body  pre\") pres.forEach(function(pre){ var button = document.createElement(\"button\") button.className = \"btn btn-sm\" button.innerHTML = \"copy\" pre.parentNode.insertBefore(button, pre) button.addEventListener('click', function(e){ e.preventDefault() copy(pre.childNodes[0]) }) }) ",
-  "wordCount" : "253",
+  "articleBody": "Hello there Here are some dummy text here\nHello there h2 Hello there h3 Some link Link to Unsplash\nUse HTML code if you want to oepn link on a new tab. Here is an example.\na href=\"https://unsplash.com\" target=\"_blank\" Link2a/ Which is rendered as\nLink2\nimport psycopg2 data_folder = \"clean_data/August\" import os import pandas as pd import numpy as np #Establishing the connection conn = psycopg2.connect( database=\"kiprono_database2\", user='postgres', password='destinyx2719*KE', host='127.0.0.1', port= '5432' ) #Setting auto commit false conn.autocommit = True #Creating a cursor object using the cursor() method cursor = conn.cursor() files = os.listdir(data_folder) print(files) for file in files: df = pd.read_csv(os.path.join(data_folder, file)) df = df[['wmoID', 'kmdID', 'Year', 'Month', 'Day', 'Hour', 'AirTemp', 'Tmax', 'Tmin']] data = df.to_dict(orient=\"records\") for data_point in data: result = list(data_point.values()) insert_command = '''INSERT INTO AMSS(wmoID, kmdID, Year, Month, Day, Hour, AirTemp, Tmax, Tmin)\\ VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)''' try: cursor.execute(insert_command, result) # Commit your changes in the database conn.commit() except psycopg2.errors.UniqueViolation as e: print(e) continue # Closing the connection conn.close() div.highlight button { color: #adb5bd; box-sizing: border-box; transition: 0.2s ease-out; cursor: pointer; user-select: none; background: rgba(0, 0, 0, 0.15); border: 1px solid rgba(0, 0, 0, 0); padding: 5px 10px; font-size: 0.8em; position: absolute; top: 0; right: 0; border-radius: 0 0.15rem; } The Cauchy-Schwarz Inequality $$\\left( \\sum_{k=1}^n a_k b_k \\right)^2 \\leq \\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)$$\nThe following example show the quadratic equation. $$x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$$\nvar copy = function(target) { var textArea = document.createElement('textarea') textArea.setAttribute('style','width:1px;border:0;opacity:0;') document.body.appendChild(textArea) textArea.value = target.innerHTML textArea.select() document.execCommand('copy') document.body.removeChild(textArea) } var pres = document.querySelectorAll(\".comment-body  pre\") pres.forEach(function(pre){ var button = document.createElement(\"button\") button.className = \"btn btn-sm\" button.innerHTML = \"copy\" pre.parentNode.insertBefore(button, pre) button.addEventListener('click', function(e){ e.preventDefault() copy(pre.childNodes[0]) }) }) ",
+  "wordCount" : "279",
   "inLanguage": "en",
   "image":"https://kipronokoech.github.io/images/example1.jpg","datePublished": "2022-11-21T11:36:10+03:00",
   "dateModified": "2022-11-21T11:36:10+03:00",
@@ -229,11 +229,12 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="post-description">
       This post will...
     </div>
-    <div class="post-meta"><span title='2022-11-21 11:36:10 +0300 EAT'>November 21, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;253 words&nbsp;·&nbsp;Kiprono Elijah (kiprono@aims.ac.za)
+    <div class="post-meta"><span title='2022-11-21 11:36:10 +0300 EAT'>November 21, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;279 words&nbsp;·&nbsp;Kiprono Elijah (kiprono@aims.ac.za)
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="lazy" src="https://kipronokoech.github.io/images/example1.jpg" alt="Featured image">
+<figure class="entry-cover"><a href="https://kipronokoech.github.io/images/example1.jpg" target="_blank"
+            rel="noopener noreferrer"><img loading="lazy" src="https://kipronokoech.github.io/images/example1.jpg" alt="Featured image"></a>
         <p>Source <a href="https://unsplash.com/@chelseanscott?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">https://unsplash.com/@chelseanscott?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText</a></p>
 </figure><div class="toc">
     <details >
@@ -259,6 +260,10 @@ document.addEventListener("DOMContentLoaded", function() {
 <h2 id="hello-there-h2">Hello there h2<a hidden class="anchor" aria-hidden="true" href="#hello-there-h2">#</a></h2>
 <h3 id="hello-there-h3">Hello there h3<a hidden class="anchor" aria-hidden="true" href="#hello-there-h3">#</a></h3>
 <p>Some link <a href="https://unsplash.com/@chelseanscott?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Link to Unsplash</a></p>
+<p>Use HTML code if you want to oepn link on a new tab. Here is an example.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unsplash.com&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; Link2&lt;<span style="color:#f92672">a</span>/&gt;
+</code></pre></div><p>Which is rendered as</p>
+<p><a href="https://unsplash.com" target="_blank"> Link2<a/></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> psycopg2
 data_folder <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;clean_data/August&#34;</span>
 <span style="color:#f92672">import</span> os 
@@ -349,10 +354,10 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</p>
       <li><a href="https://kipronokoech.github.io/tags/python/">Python</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="https://kipronokoech.github.io/posts/post3/">
+  <a class="next" href="https://kipronokoech.github.io/posts/post4/">
     <span class="title">Next »</span>
     <br>
-    <span>Post3</span>
+    <span>Post 4</span>
   </a>
 </nav>
 

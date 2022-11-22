@@ -184,10 +184,28 @@ document.addEventListener("DOMContentLoaded", function() {
   <div class="entry-content">
     <p>Hello there Here are some dummy text here
 Hello there h2 Hello there h3 Some link Link to Unsplash
-import psycopg2 data_folder = &#34;clean_data/August&#34; import os import pandas as pd import numpy as np #Establishing the connection conn = psycopg2.connect( database=&#34;kiprono_database2&#34;, user=&#39;postgres&#39;, password=&#39;destinyx2719*KE&#39;, host=&#39;127.0.0.1&#39;, port= &#39;5432&#39; ) #Setting auto commit false conn.autocommit = True #Creating a cursor object using the cursor() method cursor = conn.cursor() files = os.listdir(data_folder) print(files) for file in files: df = pd....</p>
+Use HTML code if you want to oepn link on a new tab. Here is an example.
+&lt;a href=&#34;https://unsplash.com&#34; target=&#34;_blank&#34;&gt; Link2&lt;a/&gt; Which is rendered as
+Link2
+import psycopg2 data_folder = &#34;clean_data/August&#34; import os import pandas as pd import numpy as np #Establishing the connection conn = psycopg2.connect( database=&#34;kiprono_database2&#34;, user=&#39;postgres&#39;, password=&#39;destinyx2719*KE&#39;, host=&#39;127.0.0.1&#39;, port= &#39;5432&#39; ) #Setting auto commit false conn....</p>
   </div>
-  <footer class="entry-footer"><span title='2022-11-21 11:36:10 +0300 EAT'>November 21, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;253 words&nbsp;·&nbsp;Kiprono Elijah (kiprono@aims.ac.za)</footer>
+  <footer class="entry-footer"><span title='2022-11-21 11:36:10 +0300 EAT'>November 21, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;279 words&nbsp;·&nbsp;Kiprono Elijah (kiprono@aims.ac.za)</footer>
   <a class="entry-link" aria-label="post link to Example Post" href="https://kipronokoech.github.io/posts/example/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Post 4
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Notes for Self Use hugo server -D to open a local server which renderes drafts. By default, hugo organizes posts by date.
+If you want to override that provide the weight: &lt;int&gt; on the front-matter. The smaller the &lt;int the higher the article in the list. I have provided the value 2 for this article.
+Some MarkDown Syntax Itemized list on Markdown:
+- Item 1 - Item 2 - sub item 1 - sub item 2 - Item 3 Rendered as:...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-11-21 17:49:17 +0300 EAT'>November 21, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;127 words&nbsp;·&nbsp;Kiprono Elijah (kiprono@aims.ac.za)</footer>
+  <a class="entry-link" aria-label="post link to Post 4" href="https://kipronokoech.github.io/posts/post4/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
