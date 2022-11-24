@@ -25,7 +25,9 @@
       <description>Notes for Self Use hugo server -D to open a local server which renderes drafts. By default, hugo organizes posts by date.
 If you want to override that provide the weight: &amp;lt;int&amp;gt; on the front-matter. The smaller the &amp;lt;int the higher the article in the list. I have provided the value 2 for this article.
 Some MarkDown Syntax Itemized list on Markdown:
-- Item 1 - Item 2 - sub item 1 - sub item 2 - Item 3 Rendered as:</description>
+1 2 3 4 5  - Item 1 - Item 2 - sub item 1 - sub item 2 - Item 3   Rendered as:
+ Item 1 Item 2  sub item 1 sub item 2   Item 3  Numbered list on Markdown:
+1 2 3 4 5  1. Item 1 1. Item 2 1. sub item 1 1. sub item 2 1. Item 3    Item 1 Item 2  sub item 1 sub item 2   Item 3  Conclusion This is the conclusion Use at least H2 on the title headings.</description>
     </item>
     
     <item>
