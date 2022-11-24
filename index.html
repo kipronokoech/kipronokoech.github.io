@@ -160,10 +160,10 @@
 <main class="main"> 
 <article class="first-entry home-info">
     <header class="entry-header">
-        <h1>Hi there 👋</h1>
+        <h1>Hello, there 👋</h1>
     </header>
     <div class="entry-content">
-        Hi, there. Here is a little about me. <br> <br> Highly analytical, ingenious and results-oriented data scientist and statistician with 3 years of experience and focusing on being a grounded researcher in machine learning and deep learning applied to business decisions. <br> <br> 📌 Possessing working knowledge in programming in Python and data management using SQL with the application in Data Science fields like Predictive Modeling, Data Analytics, and Computer Vision, among other areas. <br> <br> You can read more about me on the <a href="/resume/">resume tab</a>
+        Here is a little about me. <br> <br> Highly analytical, ingenious and results-oriented data scientist and statistician with 3 years of experience and focusing on being a grounded researcher in machine learning and deep learning applied to business decisions. <br> <br> 📌 Possessing working knowledge in programming in Python and data management using SQL with the application in Data Science fields like Predictive Modeling, Data Analytics, and Computer Vision, among other areas. <br> <br> You can read more about me on the <a href="/resume/">resume tab</a>
     </div>
     <footer class="entry-footer">
         <div class="social-icons">
@@ -232,6 +232,21 @@ Link2
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Using SSH to Connect to a Remote Server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Generate SSH Keys Generate SSH Keys of RSA type and 4096 bytes in size.
+1  ssh-keygen -t rsa -b 4096   You can then copy the contents of id_rsa.pub and share them as needed for verification. You can use the following commands as well in the process of copying.
+1 2 3  ls ~/.ssh ssh-add ~/.ssh/id_rsa cat ~/.ssh/id_rsa.pub | xclip -sel clip   Connecting to a Remote Server through SSH  Install an OpenSSH Client   Check if the client is installed by running ssh on the terminal. If the OpenSSH client is not installed, you can install it using the line  1  sudo apt-get install openssh-client   Install an OpenSSH Server    Check if OpenSSH Server is installed by running ssh localhost.
+  If the server is not installed you will see something like this:...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-11-24 22:37:56 +0300 EAT'>November 24, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;325 words&nbsp;·&nbsp;Kiprono Elijah (kiprono@aims.ac.za)</footer>
+  <a class="entry-link" aria-label="post link to Using SSH to Connect to a Remote Server" href="https://kipronokoech.github.io/posts/ssh1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Post 4
     </h2>
   </header>
@@ -270,18 +285,12 @@ Some MarkDown Syntax Itemized list on Markdown:
   <footer class="entry-footer"><span title='2022-11-21 17:49:14 +0300 EAT'>November 21, 2022</span>&nbsp;·&nbsp;0 min&nbsp;·&nbsp;0 words&nbsp;·&nbsp;Kiprono Elijah (kiprono@aims.ac.za)</footer>
   <a class="entry-link" aria-label="post link to Post2" href="https://kipronokoech.github.io/posts/post2/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Post1
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>   Syntax Description     Header Title   Paragraph Text       Syntax Description Test Text     Header Title Here’s this   Paragraph Text And more    </p>
-  </div>
-  <footer class="entry-footer"><span title='2022-11-21 17:48:17 +0300 EAT'>November 21, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;18 words&nbsp;·&nbsp;Kiprono Elijah (kiprono@aims.ac.za)</footer>
-  <a class="entry-link" aria-label="post link to Post1" href="https://kipronokoech.github.io/posts/post1/"></a>
-</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://kipronokoech.github.io/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">
