@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Kiprono Elijah Koech</title>
+    <title>Posts on Kiprono Elijah K</title>
     <link>https://kipronokoech.github.io/posts/</link>
-    <description>Recent content in Posts on Kiprono Elijah Koech</description>
+    <description>Recent content in Posts on Kiprono Elijah K</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Nov 2022 22:37:56 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -17,17 +17,40 @@
     </item>
     
     <item>
+      <title>Example Post</title>
+      <link>https://kipronokoech.github.io/posts/medium/example/</link>
+      <pubDate>Mon, 21 Nov 2022 11:36:10 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/medium/example/</guid>
+      <description>This post will...</description>
+    </item>
+    
+    <item>
       <title>Using SSH to Connect to a Remote Server</title>
-      <link>https://kipronokoech.github.io/posts/using-ssh-to-connect-to-a-remote-server/</link>
+      <link>https://kipronokoech.github.io/posts/ssh1/</link>
       <pubDate>Thu, 24 Nov 2022 22:37:56 +0300</pubDate>
       
-      <guid>https://kipronokoech.github.io/posts/using-ssh-to-connect-to-a-remote-server/</guid>
+      <guid>https://kipronokoech.github.io/posts/ssh1/</guid>
       <description>Generate SSH Keys Generate SSH Keys of RSA type and 4096 bytes in size.
 1 ssh-keygen -t rsa -b 4096 You can then copy the contents of id_rsa.pub and share them as needed for verification. You can use the following commands as well in the process of copying.
 1 2 3 ls ~/.ssh ssh-add ~/.ssh/id_rsa cat ~/.ssh/id_rsa.pub | xclip -sel clip Connecting to a Remote Server through SSH Install an OpenSSH Client Check if the client is installed by running ssh on the terminal. If the OpenSSH client is not installed, you can install it using the line 1 sudo apt-get install openssh-client Install an OpenSSH Server Check if OpenSSH Server is installed by running ssh localhost.
 If the server is not installed you will see something like this:
 ssh: connect to host localhost port 22: Connection refused
 If the server is not installed, you can install it using the following line</description>
+    </item>
+    
+    <item>
+      <title>Post 4</title>
+      <link>https://kipronokoech.github.io/posts/medium/post4/</link>
+      <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/medium/post4/</guid>
+      <description>Notes for Self Use hugo server -D to open a local server which renderes drafts. By default, hugo organizes posts by date.
+If you want to override that provide the weight: &amp;lt;int&amp;gt; on the front-matter. The smaller the &amp;lt;int the higher the article in the list. I have provided the value 2 for this article.
+Some MarkDown Syntax Itemized list on Markdown:
+1 2 3 4 5 - Item 1 - Item 2 - sub item 1 - sub item 2 - Item 3 Rendered as:
+Item 1 Item 2 sub item 1 sub item 2 Item 3 Numbered list on Markdown:
+1 2 3 4 5 1. Item 1 1. Item 2 1. sub item 1 1. sub item 2 1. Item 3 Item 1 Item 2 sub item 1 sub item 2 Item 3 Conclusion This is the conclusion Use at least H2 on the title headings.</description>
     </item>
     
     <item>
@@ -45,12 +68,30 @@ Item 1 Item 2 sub item 1 sub item 2 Item 3 Numbered list on Markdown:
     </item>
     
     <item>
-      <title>Post3</title>
+      <title>Post 3</title>
       <link>https://kipronokoech.github.io/posts/post3/</link>
       <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
       
       <guid>https://kipronokoech.github.io/posts/post3/</guid>
+      <description>Some text </description>
+    </item>
+    
+    <item>
+      <title>Post3</title>
+      <link>https://kipronokoech.github.io/posts/medium/post3/</link>
+      <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/medium/post3/</guid>
       <description>Some H1 text </description>
+    </item>
+    
+    <item>
+      <title>Post2</title>
+      <link>https://kipronokoech.github.io/posts/medium/post2/</link>
+      <pubDate>Mon, 21 Nov 2022 17:49:14 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/medium/post2/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -60,6 +101,15 @@ Item 1 Item 2 sub item 1 sub item 2 Item 3 Numbered list on Markdown:
       
       <guid>https://kipronokoech.github.io/posts/post2/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Post1</title>
+      <link>https://kipronokoech.github.io/posts/medium/post1/</link>
+      <pubDate>Mon, 21 Nov 2022 17:48:17 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/medium/post1/</guid>
+      <description> Syntax Description Header Title Paragraph Text Syntax Description Test Text Header Title Here&amp;rsquo;s this Paragraph Text And more </description>
     </item>
     
     <item>
