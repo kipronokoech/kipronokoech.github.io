@@ -6,50 +6,23 @@
     <description>Recent content in Python on Kiprono</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Nov 2022 17:49:17 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Nov 2022 14:09:52 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Example Post</title>
-      <link>https://kipronokoech.github.io/posts/example/</link>
-      <pubDate>Mon, 21 Nov 2022 11:36:10 +0300</pubDate>
+      <title>How to Install Python Manually in Linux</title>
+      <link>https://kipronokoech.github.io/posts/how-to-install-python-manually-in-linux/</link>
+      <pubDate>Mon, 28 Nov 2022 14:09:52 +0300</pubDate>
       
-      <guid>https://kipronokoech.github.io/posts/example/</guid>
-      <description>This post will...</description>
-    </item>
-    
-    <item>
-      <title>Example Post</title>
-      <link>https://kipronokoech.github.io/posts/medium/example/</link>
-      <pubDate>Mon, 21 Nov 2022 11:36:10 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/medium/example/</guid>
-      <description>This post will...</description>
-    </item>
-    
-    <item>
-      <title>Post 3</title>
-      <link>https://kipronokoech.github.io/posts/post3/</link>
-      <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/post3/</guid>
-      <description>Some text </description>
+      <guid>https://kipronokoech.github.io/posts/how-to-install-python-manually-in-linux/</guid>
+      <description>This post covers the steps to install Python manually and how to remove it.</description>
     </item>
     
     <item>
       <title>Post3</title>
-      <link>https://kipronokoech.github.io/posts/medium/post3/</link>
+      <link>https://kipronokoech.github.io/posts/post3/</link>
       <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
       
-      <guid>https://kipronokoech.github.io/posts/medium/post3/</guid>
+      <guid>https://kipronokoech.github.io/posts/post3/</guid>
       <description>Some H1 text </description>
-    </item>
-    
-    <item>
-      <title>Post2</title>
-      <link>https://kipronokoech.github.io/posts/medium/post2/</link>
-      <pubDate>Mon, 21 Nov 2022 17:49:14 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/medium/post2/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -59,6 +32,15 @@
       
       <guid>https://kipronokoech.github.io/posts/post2/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Example Post</title>
+      <link>https://kipronokoech.github.io/posts/example/</link>
+      <pubDate>Mon, 21 Nov 2022 11:36:10 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/example/</guid>
+      <description>This post will...</description>
     </item>
     
   </channel>

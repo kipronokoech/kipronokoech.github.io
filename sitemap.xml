@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kipronokoech.github.io/posts/example/</loc>
-    <lastmod>2022-11-21T11:36:10+03:00</lastmod>
+    <loc>https://kipronokoech.github.io/categories/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
   </url><url>
-    <loc>https://kipronokoech.github.io/posts/medium/example/</loc>
-    <lastmod>2022-11-21T11:36:10+03:00</lastmod>
+    <loc>https://kipronokoech.github.io/posts/how-to-install-python-manually-in-linux/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
   </url><url>
-    <loc>https://kipronokoech.github.io/posts/ssh1/</loc>
-    <lastmod>2022-11-24T22:37:56+03:00</lastmod>
-  </url><url>
-    <loc>https://kipronokoech.github.io/posts/medium/post4/</loc>
-    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
-  </url><url>
-    <loc>https://kipronokoech.github.io/posts/post4/</loc>
-    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
-  </url><url>
-    <loc>https://kipronokoech.github.io/posts/example2/</loc>
-    <lastmod>2022-11-27T11:00:50+03:00</lastmod>
+    <loc>https://kipronokoech.github.io/tags/install/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
   </url><url>
     <loc>https://kipronokoech.github.io/</loc>
-    <lastmod>2022-11-27T11:00:50+03:00</lastmod>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
   </url><url>
-    <loc>https://kipronokoech.github.io/posts/</loc>
-    <lastmod>2022-11-27T11:00:50+03:00</lastmod>
-  </url><url>
-    <loc>https://kipronokoech.github.io/categories/</loc>
-    <lastmod>2022-11-24T22:37:56+03:00</lastmod>
+    <loc>https://kipronokoech.github.io/tags/linux/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
   </url><url>
     <loc>https://kipronokoech.github.io/categories/linux/</loc>
-    <lastmod>2022-11-24T22:37:56+03:00</lastmod>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/tags/python/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/tags/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/using-ssh-key-based-authentication-instead-of-a-password/</loc>
+    <lastmod>2022-11-25T09:57:15+03:00</lastmod>
   </url><url>
     <loc>https://kipronokoech.github.io/tags/ssh/</loc>
     <lastmod>2022-11-24T22:37:56+03:00</lastmod>
@@ -38,32 +38,20 @@
     <loc>https://kipronokoech.github.io/categories/ssh/</loc>
     <lastmod>2022-11-24T22:37:56+03:00</lastmod>
   </url><url>
-    <loc>https://kipronokoech.github.io/tags/</loc>
+    <loc>https://kipronokoech.github.io/posts/using-ssh-to-connect-to-a-remote-server/</loc>
     <lastmod>2022-11-24T22:37:56+03:00</lastmod>
   </url><url>
-    <loc>https://kipronokoech.github.io/tags/loops/</loc>
+    <loc>https://kipronokoech.github.io/tags/markdown/</loc>
+    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/notes-for-markdown-and-hugo/</loc>
     <lastmod>2022-11-21T17:49:17+03:00</lastmod>
   </url><url>
     <loc>https://kipronokoech.github.io/posts/post3/</loc>
     <lastmod>2022-11-21T17:49:17+03:00</lastmod>
   </url><url>
-    <loc>https://kipronokoech.github.io/posts/medium/post3/</loc>
-    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
-  </url><url>
-    <loc>https://kipronokoech.github.io/tags/python/</loc>
-    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
-  </url><url>
-    <loc>https://kipronokoech.github.io/categories/python/</loc>
-    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
-  </url><url>
-    <loc>https://kipronokoech.github.io/posts/medium/post2/</loc>
-    <lastmod>2022-11-21T17:49:14+03:00</lastmod>
-  </url><url>
     <loc>https://kipronokoech.github.io/posts/post2/</loc>
     <lastmod>2022-11-21T17:49:14+03:00</lastmod>
-  </url><url>
-    <loc>https://kipronokoech.github.io/posts/medium/post1/</loc>
-    <lastmod>2022-11-21T17:48:17+03:00</lastmod>
   </url><url>
     <loc>https://kipronokoech.github.io/posts/post1/</loc>
     <lastmod>2022-11-21T17:48:17+03:00</lastmod>
@@ -71,11 +59,14 @@
     <loc>https://kipronokoech.github.io/tags/example/</loc>
     <lastmod>2022-11-21T11:36:10+03:00</lastmod>
   </url><url>
+    <loc>https://kipronokoech.github.io/posts/example/</loc>
+    <lastmod>2022-11-21T11:36:10+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/about-me/</loc>
+  </url><url>
     <loc>https://kipronokoech.github.io/archives/</loc>
   </url><url>
     <loc>https://kipronokoech.github.io/blog/</loc>
-  </url><url>
-    <loc>https://kipronokoech.github.io/resume/</loc>
   </url><url>
     <loc>https://kipronokoech.github.io/search/</loc>
   </url>
