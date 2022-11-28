@@ -155,8 +155,6 @@ By:&nbsp;kiprono@aims.ac.za">
 </header>
 
 <article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://kipronokoech.github.io/images/example1.jpg" alt="Featured image">
-</figure>
   <header class="entry-header">
     <h2>Example Post
     </h2>
@@ -169,14 +167,12 @@ Use HTML code if you want to oepn link on a new tab. Here is an example.
 Link2
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 import psycopg2 data_folder = &#34;clean_data/August&#34; import os import pandas as pd import numpy as np #Establishing the connection conn = psycopg2.connect( database=&#34;kiprono_database2&#34;, user=&#39;postgres&#39;, password=&#39;destinyx2719*KE&#39;, host=&#39;127.0.0.1&#39;, port= &#39;5432&#39; ) #Setting auto commit false conn.autocommit = True #Creating a cursor object using the cursor() method cursor = conn.cursor() files = os.listdir(data_folder) print(files) for file in files: df = pd.read_csv(os.path.join(data_folder, file)) df = df[[&#39;wmoID&#39;, &#39;kmdID&#39;, &#39;Year&#39;, &#39;Month&#39;, &#39;Day&#39;, &#39;Hour&#39;, &#39;AirTemp&#39;, &#39;Tmax&#39;, &#39;Tmin&#39;]] data = df....</p>
   </div>
-  <footer class="entry-footer"><span title='2022-11-21 11:36:10 +0300 EAT'>Nov 21, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;353 words&nbsp;·&nbsp;
+  <footer class="entry-footer"><span title='2022-11-21 11:36:10 +0300 EAT'>Nov 21, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;357 words&nbsp;·&nbsp;
 By:&nbsp;kiprono@aims.ac.za</footer>
   <a class="entry-link" aria-label="post link to Example Post" href="https://kipronokoech.github.io/posts/example/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://kipronokoech.github.io/images/example1.jpg" alt="Featured image">
-</figure>
   <header class="entry-header">
     <h2>Example Post
     </h2>
