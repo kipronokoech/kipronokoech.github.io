@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Kiprono Elijah K</title>
+    <link>https://kipronokoech.github.io/tags/</link>
+    <description>Recent content in Tags on Kiprono Elijah K</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Nov 2022 22:37:56 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ssh</title>
+      <link>https://kipronokoech.github.io/tags/ssh/</link>
+      <pubDate>Thu, 24 Nov 2022 22:37:56 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>loops</title>
+      <link>https://kipronokoech.github.io/tags/loops/</link>
+      <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/tags/loops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://kipronokoech.github.io/tags/python/</link>
+      <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>example</title>
+      <link>https://kipronokoech.github.io/tags/example/</link>
+      <pubDate>Mon, 21 Nov 2022 11:36:10 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/tags/example/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
