@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>SSH on Kiprono Elijah K</title>
+    <title>SSH on Kiprono</title>
     <link>https://kipronokoech.github.io/categories/ssh/</link>
-    <description>Recent content in SSH on Kiprono Elijah K</description>
+    <description>Recent content in SSH on Kiprono</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Nov 2022 22:37:56 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
