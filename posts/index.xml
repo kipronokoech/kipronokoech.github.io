@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Kiprono</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Nov 2022 22:37:56 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Nov 2022 11:00:50 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example Post</title>
       <link>https://kipronokoech.github.io/posts/example/</link>
@@ -65,6 +65,15 @@ Some MarkDown Syntax Itemized list on Markdown:
 1 2 3 4 5 - Item 1 - Item 2 - sub item 1 - sub item 2 - Item 3 Rendered as:
 Item 1 Item 2 sub item 1 sub item 2 Item 3 Numbered list on Markdown:
 1 2 3 4 5 1. Item 1 1. Item 2 1. sub item 1 1. sub item 2 1. Item 3 Item 1 Item 2 sub item 1 sub item 2 Item 3 Conclusion This is the conclusion Use at least H2 on the title headings.</description>
+    </item>
+    
+    <item>
+      <title>Example2</title>
+      <link>https://kipronokoech.github.io/posts/example2/</link>
+      <pubDate>Sun, 27 Nov 2022 11:00:50 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/example2/</guid>
+      <description>This is a new post</description>
     </item>
     
     <item>
