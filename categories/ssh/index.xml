@@ -6,19 +6,23 @@
     <description>Recent content in SSH on Kiprono</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Nov 2022 22:37:56 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Nov 2022 09:57:15 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using SSH Key-Based Authentication Instead of a Password</title>
+      <link>https://kipronokoech.github.io/posts/using-ssh-key-based-authentication-instead-of-a-password/</link>
+      <pubDate>Fri, 25 Nov 2022 09:57:15 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/using-ssh-key-based-authentication-instead-of-a-password/</guid>
+      <description>This post discusses the step to following to set up SSH to use RSA keys for authentication instead of using a password.</description>
+    </item>
+    
     <item>
       <title>Using SSH to Connect to a Remote Server</title>
       <link>https://kipronokoech.github.io/posts/using-ssh-to-connect-to-a-remote-server/</link>
       <pubDate>Thu, 24 Nov 2022 22:37:56 +0300</pubDate>
       
       <guid>https://kipronokoech.github.io/posts/using-ssh-to-connect-to-a-remote-server/</guid>
-      <description>Generate SSH Keys Generate SSH Keys of RSA type and 4096 bytes in size.
-1 ssh-keygen -t rsa -b 4096 You can then copy the contents of id_rsa.pub and share them as needed for verification. You can use the following commands as well in the process of copying.
-1 2 3 ls ~/.ssh ssh-add ~/.ssh/id_rsa cat ~/.ssh/id_rsa.pub | xclip -sel clip Connecting to a Remote Server through SSH Install an OpenSSH Client Check if the client is installed by running ssh on the terminal. If the OpenSSH client is not installed, you can install it using the line 1 sudo apt-get install openssh-client Install an OpenSSH Server Check if OpenSSH Server is installed by running ssh localhost.
-If the server is not installed you will see something like this:
-ssh: connect to host localhost port 22: Connection refused
-If the server is not installed, you can install it using the following line</description>
+      <description>This post disscusses how to connect to a remove server using SSH.</description>
     </item>
     
   </channel>

@@ -7,12 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Using SSH to Connect to a Remote Server | Kiprono</title>
 <meta name="keywords" content="ssh">
-<meta name="description" content="Generate SSH Keys Generate SSH Keys of RSA type and 4096 bytes in size.
-1 ssh-keygen -t rsa -b 4096 You can then copy the contents of id_rsa.pub and share them as needed for verification. You can use the following commands as well in the process of copying.
-1 2 3 ls ~/.ssh ssh-add ~/.ssh/id_rsa cat ~/.ssh/id_rsa.pub | xclip -sel clip Connecting to a Remote Server through SSH Install an OpenSSH Client Check if the client is installed by running ssh on the terminal. If the OpenSSH client is not installed, you can install it using the line 1 sudo apt-get install openssh-client Install an OpenSSH Server Check if OpenSSH Server is installed by running ssh localhost.
-If the server is not installed you will see something like this:
-ssh: connect to host localhost port 22: Connection refused
-If the server is not installed, you can install it using the following line">
+<meta name="description" content="This post disscusses how to connect to a remove server using SSH.">
 <meta name="author" content="kiprono@aims.ac.za">
 <link rel="canonical" href="https://kipronokoech.github.io/posts/using-ssh-to-connect-to-a-remote-server/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.256a900aed8231e95b357487d1df8dbf255a40a62cfdf1737c9045ba4bfd1b0b.css" integrity="sha256-JWqQCu2CMelbNXSH0d&#43;NvyVaQKYs/fFzfJBFukv9Gws=" rel="preload stylesheet" as="style">
@@ -67,12 +62,7 @@ If the server is not installed, you can install it using the following line">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
 <meta property="og:title" content="Using SSH to Connect to a Remote Server" />
-<meta property="og:description" content="Generate SSH Keys Generate SSH Keys of RSA type and 4096 bytes in size.
-1 ssh-keygen -t rsa -b 4096 You can then copy the contents of id_rsa.pub and share them as needed for verification. You can use the following commands as well in the process of copying.
-1 2 3 ls ~/.ssh ssh-add ~/.ssh/id_rsa cat ~/.ssh/id_rsa.pub | xclip -sel clip Connecting to a Remote Server through SSH Install an OpenSSH Client Check if the client is installed by running ssh on the terminal. If the OpenSSH client is not installed, you can install it using the line 1 sudo apt-get install openssh-client Install an OpenSSH Server Check if OpenSSH Server is installed by running ssh localhost.
-If the server is not installed you will see something like this:
-ssh: connect to host localhost port 22: Connection refused
-If the server is not installed, you can install it using the following line" />
+<meta property="og:description" content="This post disscusses how to connect to a remove server using SSH." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kipronokoech.github.io/posts/using-ssh-to-connect-to-a-remote-server/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-24T22:37:56+03:00" />
@@ -80,12 +70,7 @@ If the server is not installed, you can install it using the following line" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using SSH to Connect to a Remote Server"/>
-<meta name="twitter:description" content="Generate SSH Keys Generate SSH Keys of RSA type and 4096 bytes in size.
-1 ssh-keygen -t rsa -b 4096 You can then copy the contents of id_rsa.pub and share them as needed for verification. You can use the following commands as well in the process of copying.
-1 2 3 ls ~/.ssh ssh-add ~/.ssh/id_rsa cat ~/.ssh/id_rsa.pub | xclip -sel clip Connecting to a Remote Server through SSH Install an OpenSSH Client Check if the client is installed by running ssh on the terminal. If the OpenSSH client is not installed, you can install it using the line 1 sudo apt-get install openssh-client Install an OpenSSH Server Check if OpenSSH Server is installed by running ssh localhost.
-If the server is not installed you will see something like this:
-ssh: connect to host localhost port 22: Connection refused
-If the server is not installed, you can install it using the following line"/>
+<meta name="twitter:description" content="This post disscusses how to connect to a remove server using SSH."/>
 
 
 <script type="application/ld+json">
@@ -114,7 +99,7 @@ If the server is not installed, you can install it using the following line"/>
   "@type": "BlogPosting",
   "headline": "Using SSH to Connect to a Remote Server",
   "name": "Using SSH to Connect to a Remote Server",
-  "description": "Generate SSH Keys Generate SSH Keys of RSA type and 4096 bytes in size.\n1 ssh-keygen -t rsa -b 4096 You can then copy the contents of id_rsa.pub and share them as needed for verification. You can use the following commands as well in the process of copying.\n1 2 3 ls ~/.ssh ssh-add ~/.ssh/id_rsa cat ~/.ssh/id_rsa.pub | xclip -sel clip Connecting to a Remote Server through SSH Install an OpenSSH Client Check if the client is installed by running ssh on the terminal. If the OpenSSH client is not installed, you can install it using the line 1 sudo apt-get install openssh-client Install an OpenSSH Server Check if OpenSSH Server is installed by running ssh localhost.\nIf the server is not installed you will see something like this:\nssh: connect to host localhost port 22: Connection refused\nIf the server is not installed, you can install it using the following line",
+  "description": "This post disscusses how to connect to a remove server using SSH.",
   "keywords": [
     "ssh"
   ],
@@ -222,6 +207,9 @@ If the server is not installed, you can install it using the following line"/>
     <h1 class="post-title">
       Using SSH to Connect to a Remote Server
     </h1>
+    <div class="post-description">
+      This post disscusses how to connect to a remove server using SSH.
+    </div>
     <div class="post-meta"><span title='2022-11-24 22:37:56 +0300 EAT'>Nov 24, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;325 words&nbsp;·&nbsp;kiprono@aims.ac.za
 
 </div>
@@ -349,7 +337,7 @@ If the server is not installed, you can install it using the following line"/>
   <a class="prev" href="https://kipronokoech.github.io/posts/using-ssh-key-based-authentication-instead-of-a-password/">
     <span class="title">« Prev</span>
     <br>
-    <span>Using SSH Key Based Authentication Instead of a Password</span>
+    <span>Using SSH Key-Based Authentication Instead of a Password</span>
   </a>
   <a class="next" href="https://kipronokoech.github.io/posts/notes-for-markdown-and-hugo/">
     <span class="title">Next »</span>

@@ -16,32 +16,5 @@
       <description>This post covers the steps to install Python manually and how to remove it.</description>
     </item>
     
-    <item>
-      <title>Post3</title>
-      <link>https://kipronokoech.github.io/posts/post3/</link>
-      <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/post3/</guid>
-      <description>Some H1 text </description>
-    </item>
-    
-    <item>
-      <title>Post2</title>
-      <link>https://kipronokoech.github.io/posts/post2/</link>
-      <pubDate>Mon, 21 Nov 2022 17:49:14 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/post2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Example Post</title>
-      <link>https://kipronokoech.github.io/posts/example/</link>
-      <pubDate>Mon, 21 Nov 2022 11:36:10 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/example/</guid>
-      <description>This post will...</description>
-    </item>
-    
   </channel>
 </rss>
