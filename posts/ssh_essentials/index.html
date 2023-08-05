@@ -103,8 +103,8 @@
   "keywords": [
     "ssh"
   ],
-  "articleBody": "Connecting to a Remote Server through SSH SSH (Secured Shell) is a program for accessing and managing remote machines. It is intended to provide secure encrypted communications between two untrusted hosts over an insecure network.\nIn this article, we will refer to the machine initiating the SSH connection as the local or client system and the device on the receiving end as the server or remote machine.\nNote that the installation commands may be different based on the system you are running. Nevertheless, it should be easy to tweak these commands on Linux and MacOS.\nInstall an OpenSSH Client on the Local Machine Check if the SSH client is installed by running ssh on the terminal. If the OpenSSH client is not installed, you can install it using the line 1 sudo apt install openssh-client Install an OpenSSH Server on the Remote System Check if OpenSSH Server is installed by running ssh localhost.\nIf the server is not installed, you will see something like this:\nssh: connect to host localhost port 22: Connection refused\nIf the server is not installed on the remote, you can install it using the following line```bash sudo apt-get install openssh-server\n1 2 3 4 5 6 7 **Note:** _If you intend to connect to and from the remote machine, you should install OpenSSH Client and OpenSSH Server on the local and remote machines._ 3. **Verify that OpenSSH Server is running (by default, it should be running after installation)** - Run `sudo service ssh status` - If the server daemon is not running, you can restart it with, ```bash sudo service ssh restart Connect via SSH General syntax to connect: ssh your_username@host_ip_address Get the IP address of the remote machine using the sudo ifconfig -a' command. (You may need to install net-tools if ifconfig is not found: sudo apt install net-tools`)\nAllow SSH to establish the connection via firewall using UFW.\nInstall UFW: sudo apt install ufw, Check if UFW is running: sudo ufw status, Start UFW: sudo ufw enable, When the VPS is set up for IPv6, make sure to confirm that UFW is set up to handle IPv6 as well: sudo nano /etc/default/ufw, Allow SSH: sudo ufw allow ssh or sudo ufw allow 22/tcp, The TCP protocol facilitates the communication on port 22 with this instruction. Allow TCP to connect using sudo ufw allow 2222/tcp Revoke permission for SSH: sudo ufw delete allow ssh. The same can be done for TCP. Every time you SSH to a remote server, you will be required to input the password for the remote machine as a form of authentication. Another way of authentication is to use SSH Keys.\nGenerating SSH Keys Generate SSH Keys of RSA type and 4096 bytes in size by running the command\n1 ssh-keygen -t rsa -b 4096 You can accept the defaults and set the passphrase if you want (keep the passphrase safe).\nAt this point, you can then copy the contents of id_rsa.pub and share them as needed for verification. You can do the copying manually or use the following commands.\n1 2 3 ls ~/.ssh ssh-add ~/.ssh/id_rsa cat ~/.ssh/id_rsa.pub | xclip -sel clip Using SSH Key-Based Authentication This Section discusses how to use the SSH Keys you generated above for authentication instead of using a password every time we SSH to a server.\n[On the local] After generating the SSH Keys in the previous Section, you will have a .ssh folder in the home directory with two files: id_rsa - This is a private key. DO NOT SHARE IT. id_rsa.pub - The associated public key. This is the key you should be sharing for authentication. [On the remote] Make a .ssh folder on the remotes’s home directory (if it does not exist already). Copy the public key on the local machine into the .ssh folder in the remote. You can rename it in the process (recommended). 1 scp ~/.ssh/id_rsa.pub koech@192.168.100.55:/home/koech/.ssh/dell_id_rsa.pub The command above copied id_rsa.pub as dell_id_rsa.pub to the remote machine with the user name koech and IP as 192.168.100.55.\nTo complete steps 4 and 5, you need to SSH into the remote machine (at this point, you have to use the password) using the ssh username@remove_ip command, for example, ssh koech@192.168.100.5.\n[On the remote] Copy the content of the file copied in (3) into another file named authorized_keys (don’t name that file any other way) by running 1 2 cd ~/.ssh/ cat dell_id_rsa.pub \u003e\u003e authorized_keys You can check that the keys were correctly copied by running:\n1 cat authorized_keys [On the remote] Run the following commands on the .ssh folder chmod 700 path/to/ssh_folder\nchmod 600 path/to/ssh_folder_contents\nthat is,\n1 2 chmod 700 . chmod 600 * At this point, you should be able to SSH into the remote machine without a password.\n",
-  "wordCount" : "793",
+  "articleBody": "Connecting to a Remote Server through SSH SSH (Secured Shell) is a program for accessing and managing remote machines. It is intended to provide secure encrypted communications between two untrusted hosts over an insecure network.\nIn this article, we will refer to the machine initiating the SSH connection as the local or client system and the device on the receiving end as the server or remote machine.\nNote that the installation commands may be different based on the system you are running. Nevertheless, it should be easy to tweak these commands on Linux and MacOS.\nInstall an OpenSSH Client on the Local Machine Check if the SSH client is installed by running ssh on the terminal. If the OpenSSH client is not installed, you can install it using the line 1 sudo apt install openssh-client Install an OpenSSH Server on the Remote System Check if OpenSSH Server is installed by running ssh localhost.\nIf the server is not installed, you will see something like this:\nssh: connect to host localhost port 22: Connection refused\nIf the server is not installed on the remote, you can install it using the following line\n1 sudo apt-get install openssh-server Note: If you intend to connect to and from the remote machine, you should install OpenSSH Client and OpenSSH Server on the local and remote machines.\nVerify that OpenSSH Server is running (by default, it should be running after installation) Run sudo service ssh status If the server daemon is not running, you can restart it with, 1 sudo service ssh restart Get the IP address of the remote machine using the sudo ifconfig -a command. (You may need to install net-tools if ifconfig is not found: sudo apt install net-tools) Connect via SSH General syntax to connect: ssh your_username@host_ip_address Allow SSH to establish the connection via firewall using UFW. Install UFW: sudo apt install ufw, Check if UFW is running: sudo ufw status, Start UFW: sudo ufw enable, When the VPS is set up for IPv6, make sure to confirm that UFW is set up to handle IPv6 as well: sudo nano /etc/default/ufw, Allow SSH: sudo ufw allow ssh or sudo ufw allow 22/tcp, The TCP protocol facilitates the communication on port 22 with this instruction. Allow TCP to connect using sudo ufw allow 2222/tcp Revoke permission for SSH: sudo ufw delete allow ssh. The same can be done for TCP. Every time you SSH to a remote server, you will be required to input the password for the remote machine as a form of authentication. Another way of authentication is to use SSH Keys.\nGenerating SSH Keys Generate SSH Keys of RSA type and 4096 bytes in size by running the command\n1 ssh-keygen -t rsa -b 4096 You can accept the defaults and set the passphrase if you want (keep the passphrase safe).\nAt this point, you can then copy the contents of id_rsa.pub and share them as needed for verification. You can do the copying manually or use the following commands.\n1 2 3 ls ~/.ssh ssh-add ~/.ssh/id_rsa cat ~/.ssh/id_rsa.pub | xclip -sel clip Using SSH Key-Based Authentication This Section discusses how to use the SSH Keys you generated above for authentication instead of using a password every time we SSH to a server.\n[On the local] After generating the SSH Keys in the previous Section, you will have a .ssh folder in the home directory with two files: id_rsa - This is a private key. DO NOT SHARE IT. id_rsa.pub - The associated public key. This is the key you should be sharing for authentication. [On the remote] Make a .ssh folder on the remotes’s home directory (if it does not exist already). Copy the public key on the local machine into the .ssh folder in the remote. You can rename it in the process (recommended). 1 scp ~/.ssh/id_rsa.pub koech@192.168.100.55:/home/koech/.ssh/dell_id_rsa.pub The command above copied id_rsa.pub as dell_id_rsa.pub to the remote machine with the user name koech and IP as 192.168.100.55.\nTo complete steps 4 and 5, you need to SSH into the remote machine (at this point, you have to use the password) using the ssh username@remove_ip command, for example, ssh koech@192.168.100.5.\n[On the remote] Copy the content of the file copied in (3) into another file named authorized_keys (don’t name that file any other way) by running 1 2 cd ~/.ssh/ cat dell_id_rsa.pub \u003e\u003e authorized_keys You can check that the keys were correctly copied by running:\n1 cat authorized_keys [On the remote] Run the following commands on the .ssh folder chmod 700 path/to/ssh_folder\nchmod 600 path/to/ssh_folder_contents\nthat is,\n1 2 chmod 700 . chmod 600 * At this point, you should be able to SSH into the remote machine without a password.\n",
+  "wordCount" : "784",
   "inLanguage": "en",
   "datePublished": "2022-11-24T22:37:56+03:00",
   "dateModified": "2022-11-24T22:37:56+03:00",
@@ -210,7 +210,7 @@
     <div class="post-description">
       This post discusses how to connect to a remote server using SSH.
     </div>
-    <div class="post-meta"><span title='2022-11-24 22:37:56 +0300 EAT'>Nov 24, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;793 words&nbsp;·&nbsp;Kiprono
+    <div class="post-meta"><span title='2022-11-24 22:37:56 +0300 EAT'>Nov 24, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;784 words&nbsp;·&nbsp;Kiprono
 
 </div>
   </header> <div class="toc">
@@ -263,42 +263,48 @@
 <p><em>ssh: connect to host localhost port 22: Connection refused</em></p>
 </li>
 <li>
-<p>If the server is not installed on the remote, you can install it using the following line```bash
-sudo apt-get install openssh-server</p>
+<p>If the server is not installed on the remote, you can install it using the following line</p>
 </li>
 </ul>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>**Note:** _If you intend to connect to and from the remote machine, you should install OpenSSH Client and OpenSSH Server on the local and remote machines._
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>3. **Verify that OpenSSH Server is running (by default, it should be running after installation)**
-</span></span><span style="display:flex;"><span>- Run `sudo service ssh status`
-</span></span><span style="display:flex;"><span>- If the server daemon is not running, you can restart it with,
-</span></span><span style="display:flex;"><span>```bash
-</span></span><span style="display:flex;"><span>sudo service ssh restart
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install openssh-server
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Note:</strong> <em>If you intend to connect to and from the remote machine, you should install OpenSSH Client and OpenSSH Server on the local and remote machines.</em></p>
+<ol start="3">
+<li><strong>Verify that OpenSSH Server is running (by default, it should be running after installation)</strong></li>
+</ol>
+<ul>
+<li>Run <code>sudo service ssh status</code></li>
+<li>If the server daemon is not running, you can restart it with,</li>
+</ul>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo service ssh restart
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="4">
+<li>Get the IP address of the remote machine using the <code>sudo ifconfig -a</code> command. (You may need to install net-tools if ifconfig is not found: <code>sudo apt install net-tools</code>)</li>
+</ol>
+<p><img loading="lazy" src="/images/ifconfig_remote2.png#center" alt="Getting Remote IP"  />
+</p>
+<ol start="5">
 <li><strong>Connect via SSH</strong></li>
 </ol>
 <ul>
 <li>General syntax to connect: <code>ssh your_username@host_ip_address</code></li>
 </ul>
-<ol start="5">
-<li>
-<p>Get the IP address of the remote machine using the <code>sudo ifconfig -a' command. (You may need to install net-tools if ifconfig is not found: </code>sudo apt install net-tools`)</p>
-</li>
-<li>
-<p><strong>Allow SSH to establish the connection via firewall using UFW.</strong></p>
+<p><img loading="lazy" src="/images/login_to_remote.png#center" alt="Connecting to the Remote via SSH"  />
+</p>
+<ol start="6">
+<li><strong>Allow SSH to establish the connection via firewall using UFW.</strong>
 <ul>
 <li>Install UFW: <code>sudo apt install ufw</code>,</li>
 <li>Check if UFW is running: <code>sudo ufw status</code>,</li>
