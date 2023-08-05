@@ -17,24 +17,6 @@
     </item>
     
     <item>
-      <title>Using SSH Key-Based Authentication Instead of a Password</title>
-      <link>https://kipronokoech.github.io/posts/using-ssh-key-based-authentication-instead-of-a-password/</link>
-      <pubDate>Fri, 25 Nov 2022 09:57:15 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/using-ssh-key-based-authentication-instead-of-a-password/</guid>
-      <description>This post discusses the step to following to set up SSH to use RSA keys for authentication instead of using a password.</description>
-    </item>
-    
-    <item>
-      <title>Using SSH to Connect to a Remote Server</title>
-      <link>https://kipronokoech.github.io/posts/using-ssh-to-connect-to-a-remote-server/</link>
-      <pubDate>Thu, 24 Nov 2022 22:37:56 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/using-ssh-to-connect-to-a-remote-server/</guid>
-      <description>This post disscusses how to connect to a remove server using SSH.</description>
-    </item>
-    
-    <item>
       <title>Notes on Hugo and Markdown</title>
       <link>https://kipronokoech.github.io/posts/notes-for-markdown-and-hugo/</link>
       <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
