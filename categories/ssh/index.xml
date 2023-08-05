@@ -6,23 +6,14 @@
     <description>Recent content in SSH on Kiprono Elijah Koech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Nov 2022 09:57:15 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Nov 2022 22:37:56 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Using SSH Key-Based Authentication Instead of a Password</title>
-      <link>https://kipronokoech.github.io/posts/using-ssh-key-based-authentication-instead-of-a-password/</link>
-      <pubDate>Fri, 25 Nov 2022 09:57:15 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/using-ssh-key-based-authentication-instead-of-a-password/</guid>
-      <description>This post discusses the step to following to set up SSH to use RSA keys for authentication instead of using a password.</description>
-    </item>
-    
-    <item>
-      <title>Using SSH to Connect to a Remote Server</title>
-      <link>https://kipronokoech.github.io/posts/using-ssh-to-connect-to-a-remote-server/</link>
+      <title>SSH Essentials</title>
+      <link>https://kipronokoech.github.io/posts/ssh_essentials/</link>
       <pubDate>Thu, 24 Nov 2022 22:37:56 +0300</pubDate>
       
-      <guid>https://kipronokoech.github.io/posts/using-ssh-to-connect-to-a-remote-server/</guid>
-      <description>This post disscusses how to connect to a remove server using SSH.</description>
+      <guid>https://kipronokoech.github.io/posts/ssh_essentials/</guid>
+      <description>This post discusses how to connect to a remote server using SSH.</description>
     </item>
     
   </channel>

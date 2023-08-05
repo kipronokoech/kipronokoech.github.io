@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>SSH Essentials</title>
+      <link>https://kipronokoech.github.io/posts/ssh_essentials/</link>
+      <pubDate>Thu, 24 Nov 2022 22:37:56 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/ssh_essentials/</guid>
+      <description>This post discusses how to connect to a remote server using SSH.</description>
+    </item>
+    
+    <item>
       <title>Notes on Hugo and Markdown</title>
       <link>https://kipronokoech.github.io/posts/notes-for-markdown-and-hugo/</link>
       <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
