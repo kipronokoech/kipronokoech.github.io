@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Kiprono Elijah Koech</title>
-    <link>https://kipronokoech.github.io/</link>
-    <description>Recent content on Kiprono Elijah Koech</description>
+    <title>SQL on Kiprono Elijah Koech</title>
+    <link>https://kipronokoech.github.io/tags/sql/</link>
+    <description>Recent content in SQL on Kiprono Elijah Koech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Sep 2023 22:24:21 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Sep 2023 22:24:21 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating Database Objects</title>
       <link>https://kipronokoech.github.io/posts/sql/8_defining_database_object/</link>
@@ -116,53 +116,6 @@ Tables are identified by name Table names must be unique within a database. Typi
 Columns are identified by name Column names are unique within each table, but the same column name can appear in different tables. Both tables above, for example, have COUNTRY columns.
 Rows are identified by their contents The rows of a table do not have names, nor is their position in a table fixed. Therefore, we refer to the rows of tables by describing the data values they contain: &amp;lsquo;Person number 2,&amp;rsquo; for instance, or &amp;lsquo;Al English-speaking countries.</description>
     </item>
-    
-    <item>
-      <title>How to Install Python Manually in Linux</title>
-      <link>https://kipronokoech.github.io/posts/how-to-install-python-manually-in-linux/</link>
-      <pubDate>Mon, 28 Nov 2022 14:09:52 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/how-to-install-python-manually-in-linux/</guid>
-      <description>This post covers the steps to install Python manually and how to remove it.</description>
-    </item>
-    
-    <item>
-      <title>SSH Essentials</title>
-      <link>https://kipronokoech.github.io/posts/ssh_essentials/</link>
-      <pubDate>Thu, 24 Nov 2022 22:37:56 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/ssh_essentials/</guid>
-      <description>This post discusses how to connect to a remote server using SSH.</description>
-    </item>
-    
-    <item>
-      <title>Notes on Hugo and Markdown</title>
-      <link>https://kipronokoech.github.io/posts/notes-for-markdown-and-hugo/</link>
-      <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/notes-for-markdown-and-hugo/</guid>
-      <description>This article disccusses some MarkDown Syntax. Notes for self kind of.</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://kipronokoech.github.io/about-me/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kipronokoech.github.io/about-me/</guid>
-      <description>This is a page about me. The content here is very brief. If you need a detailed information about me check my CV on the first section</description>
-    </item>
-    
-    
-    <item>
-      <title>Blog</title>
-      <link>https://kipronokoech.github.io/blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kipronokoech.github.io/blog/</guid>
-      <description>blog</description>
-    </item>
-    
     
   </channel>
 </rss>
