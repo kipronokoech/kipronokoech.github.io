@@ -55,7 +55,7 @@ Single-valued queries can be used in comparisons Subqueries are enclosed in pare
     </item>
     
     <item>
-      <title>Aggregations Function in SQL</title>
+      <title>Aggregation Functions in SQL</title>
       <link>https://kipronokoech.github.io/posts/sql/5_aggregation_functions/</link>
       <pubDate>Sat, 30 Sep 2023 22:10:07 +0300</pubDate>
       
