@@ -77,8 +77,8 @@ Filters rows where the &ldquo;user&rdquo; column starts with &ldquo;Abd&rdquo; f
 1 2 3 SELECT * FROM angaza_users WHERE user LIKE &#39;F___m%&#39;; Fetch accounts are registered in August of any year." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kipronokoech.github.io/posts/sql/3_advanced_operators/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-09-30T22:10:04+03:00" />
-<meta property="article:modified_time" content="2023-09-30T22:10:04+03:00" />
+<meta property="article:published_time" content="2023-09-30T22:30:04+03:00" />
+<meta property="article:modified_time" content="2023-09-30T22:30:04+03:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Advanced Operators in SQL (Not Really Advanced 😜)"/>
@@ -124,8 +124,8 @@ Filters rows where the &ldquo;user&rdquo; column starts with &ldquo;Abd&rdquo; f
   "articleBody": "The LIKE Operator The LIKE operator is used to find values that match a pattern. Patterns are always entered in quotes.\nA per cent symbol is used to represent zero or more unknown characters; an underscore represents any single character.\nNote: The LIKE operator is added to the WHERE clause, as shown in the examples below.\nFilters rows where the “user” column starts with “Abd” followed by any characters.\n1 2 3 SELECT * FROM angaza_users WHERE user LIKE 'Abd%'; It’s looking for values in the “user” column that start with “De” and end with “ni,” with any characters in between.\n1 2 3 SELECT * FROM angaza_users WHERE user LIKE 'De%ni'; It searches for rows where the “user” column starts with ‘F,’ followed by three characters, ends with ’m,’ or has additional characters afterwards.\n1 2 3 SELECT * FROM angaza_users WHERE user LIKE 'F___m%'; Fetch accounts are registered in August of any year.\n1 2 3 SELECT * FROM accounts WHERE registration_date LIKE '%-08-%'; Key Points:\nLIKE finds values that match a pattern Percent (%) represents zero or more characters Underscore (_) represents one character Questions:\nFind all accounts registered in September 2023. Fetch all clusters in angaza_users that start with “O” The AND Operator The AND operator is used to combine two comparisons, creating a compound comparison. The keyword AND is placed between the two comparisons. Both comparisons must evaluate to true for the compound comparison to be true.\n1 2 3 SELECT * FROM accounts WHERE country=\"Tanzania\" AND days_to_cutoff\u003e=0; 1 2 3 4 SELECT * FROM accounts WHERE country=\"Kenya\" AND days_to_cutoff\u003e=0 AND daily_price\u003e50 AND registration_date LIKE '2023-09%'; Key Points:\nSyntax 1 2 3 4 SELECT cols_list FROM table_name WHERE condition1 AND condition2 AND condition3; AND combines two comparisons AND is placed between two comparisons Both comparisons must evaluate to true Questions:\nSelect all accounts from Abeokuta, Nigeria. Find all enabled accounts in Kenya. Just get the accounts registered in August 2023. The BETWEEN Operator Some compound comparisons using the AND operator can be more conveniently expressed using the BETWEEN operator. BETWEEN compares each column value with a range of values. The range always includes the endpoints.\nThe following SQL query\n1 2 3 4 SELECT * FROM accounts WHERE country='Tanzania' AND days_to_cutoff\u003e=4 AND days_to_cutoff\u003c=20; translates to this\n1 2 3 4 SELECT * FROM accounts WHERE country='Tanzania' AND days_to_cutoff BETWEEN 4 AND 20; Key Points:\nBETWEEN compares each column value to a range The range includes both endpoints The second value must be greater than the first The OR Operator The OR operator is used to combine two comparisons, creating a compound comparison. The keyword OR is placed between the two comparisons. Either or both comparisons must evaluate to true for the compound comparison to be true.\n1 2 3 4 SELECT * FROM accounts WHERE country ='Tanzania' OR days_to_cutoff\u003e10; Key Points:\nOR combines two comparisons OR is placed between two comparisons Either or both comparisons must evaluate to true Question:\nDisplay all columns and records in Eastern Africa. The IN Operator Some compound comparisons using the OR operator can be more conveniently expressed using the IN operator. IN compares each column value with a list of values. The list is enclosed in parentheses; the values are separated with commas.\n1 2 3 SELECT * FROM accounts WHERE area IN (\"Kawangware\", \"Tongareni\", \"Sumbawanga\"); The IS NULL Operator A null value is a missing entry in a column. Nul means ‘unknown’ or ‘does not apply.’ Nulls are neither blanks nor zeros (two nulls are not necessarily equal, and you cannot do arithmetic with nulls). The IS NULL operator locates rows with null values.\nThere are no columns with null values in the three tables we are working with. Here is the syntax.\n1 2 3 SELECT cols_list FROM table_name WHERE col IS NULL; Key Points:\nNulls are missing values Nulls are not the same as blanks Nulls are not the same as zeros (Not entirely) IS NULL locates null values Precedence and Negation Parentheses are used to indicate precedence - the order in which comparisons are evaluated. SQL evaluates comparisons enclosed in parentheses first. The keyword NOT is used to negate or reverse the result of a comparison.\n1 2 3 4 SELECT * FROM angaza_users WHERE user_angaza_id LIKE \"US16%\" AND (user LIKE \"C%\" OR user LIKE \"%a\") AND field_level \u003c\u003e \"\"; 1 2 3 4 SELECT * FROM angaza_users WHERE user_angaza_id LIKE \"US16%\" AND NOT (user LIKE \"C%\" OR user LIKE \"%a\") AND field_level \u003c\u003e \"\"; Key Points:\nComparisons in parentheses are evaluated first NOT is placed in front of a comparison NOT reverses the result of a comparison ",
   "wordCount" : "773",
   "inLanguage": "en",
-  "datePublished": "2023-09-30T22:10:04+03:00",
-  "dateModified": "2023-09-30T22:10:04+03:00",
+  "datePublished": "2023-09-30T22:30:04+03:00",
+  "dateModified": "2023-09-30T22:30:04+03:00",
   "author":[{
     "@type": "Person",
     "name": "Kiprono"
@@ -225,7 +225,7 @@ Filters rows where the &ldquo;user&rdquo; column starts with &ldquo;Abd&rdquo; f
     <h1 class="post-title">
       Advanced Operators in SQL (Not Really Advanced 😜)
     </h1>
-    <div class="post-meta"><span title='2023-09-30 22:10:04 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;773 words&nbsp;·&nbsp;Kiprono
+    <div class="post-meta"><span title='2023-09-30 22:30:04 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;773 words&nbsp;·&nbsp;Kiprono
 
 </div>
   </header> <div class="toc">
@@ -507,15 +507,15 @@ Filters rows where the &ldquo;user&rdquo; column starts with &ldquo;Abd&rdquo; f
       <li><a href="https://kipronokoech.github.io/tags/sql/">SQL</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://kipronokoech.github.io/posts/sql/4_expressions/">
+  <a class="prev" href="https://kipronokoech.github.io/posts/sql/2_basic_queries/">
     <span class="title">« Prev</span>
     <br>
-    <span>Expressions in SQL</span>
+    <span>Basic Queries in SQL</span>
   </a>
-  <a class="next" href="https://kipronokoech.github.io/posts/sql/2_basic_queries/">
+  <a class="next" href="https://kipronokoech.github.io/posts/sql/4_expressions/">
     <span class="title">Next »</span>
     <br>
-    <span>Basic Queries in SQL</span>
+    <span>Expressions in SQL</span>
   </a>
 </nav>
 

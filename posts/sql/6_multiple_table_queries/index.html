@@ -69,8 +69,8 @@ INNER JOIN: returns rows when there is a match in both tables. LEFT JOIN: return
 1 2 3 4 SELECT * FROM accounts AS acc INNER JOIN angaza_users AS angaza ON acc.responsible_user_angaza_id = angaza.user_angaza_id; 1 2 3 4 SELECT * FROM angaza_users AS angaza LEFT JOIN accounts AS acc ON acc." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kipronokoech.github.io/posts/sql/6_multiple_table_queries/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-09-30T22:22:15+03:00" />
-<meta property="article:modified_time" content="2023-09-30T22:22:15+03:00" />
+<meta property="article:published_time" content="2023-09-30T22:15:15+03:00" />
+<meta property="article:modified_time" content="2023-09-30T22:15:15+03:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Aggregation Function in SQL"/>
@@ -112,8 +112,8 @@ INNER JOIN: returns rows when there is a match in both tables. LEFT JOIN: return
   "articleBody": "Joins The SQL Joins clause is used to combine records from two or more tables in a database. A JOIN is a means of merging two tables based on common fields.\nINNER JOIN: returns rows when there is a match in both tables. LEFT JOIN: returns all rows from the left table, even if there are no matches in the right table. RIGHT JOIN: returns all rows from the right table, even if there are no matches in the left table. FULL JOIN: returns rows when there is a match in one of the tables. Note: FULL JOIN cannot be implemented directly in MySQL dialet. In this dialect, FULL JOIN is the UNION between RIGHT JOIN and LEFT JOIN.\n1 2 3 4 SELECT * FROM accounts AS acc INNER JOIN angaza_users AS angaza ON acc.responsible_user_angaza_id = angaza.user_angaza_id; 1 2 3 4 SELECT * FROM angaza_users AS angaza LEFT JOIN accounts AS acc ON acc.responsible_user_angaza_id = angaza.user_angaza_id; 1 2 3 4 SELECT * FROM angaza_users AS angaza RIGHT JOIN accounts AS acc ON acc.responsible_user_angaza_id = angaza.user_angaza_id; UNION and Full Join: A union combines the rows of two similar queries into a single result with no duplicates. The keyword UNION is placed between the queries. The ORDER BY clause, if used, must specify column positions and appear in the final query only.\n1 2 3 4 5 6 7 8 9 10 11 SELECT * FROM angaza_users AS angaza LEFT JOIN accounts AS acc ON acc.responsible_user_angaza_id = angaza.user_angaza_id UNION SELECT * FROM angaza_users AS angaza RIGHT JOIN accounts AS acc ON acc.responsible_user_angaza_id = angaza.user_angaza_id; Key Points on UNION:\nThe number and type of columns must match The UNION keyword is placed between the queries ORDER BY, if used, must be the last clause ORDER BY must specify column positions Duplicate rows are not included in the result Table Aliases The keyword AS can be used in the FROM clause to define a table alias - a user-assigned name for a table. Table aliases can be specified for any table, but they are most frequently used in multi-table queries to shorten full column names.\nExample queries are shown in the “Joins” section above.\nKey Points:\nTable aliases are defined in the FROM clause Table aliases can be used in any clause Once an alias is defined, the original cannot be used AS is optional in some dialects ",
   "wordCount" : "395",
   "inLanguage": "en",
-  "datePublished": "2023-09-30T22:22:15+03:00",
-  "dateModified": "2023-09-30T22:22:15+03:00",
+  "datePublished": "2023-09-30T22:15:15+03:00",
+  "dateModified": "2023-09-30T22:15:15+03:00",
   "author":[{
     "@type": "Person",
     "name": "Kiprono"
@@ -213,7 +213,7 @@ INNER JOIN: returns rows when there is a match in both tables. LEFT JOIN: return
     <h1 class="post-title">
       Aggregation Function in SQL
     </h1>
-    <div class="post-meta"><span title='2023-09-30 22:22:15 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;395 words&nbsp;·&nbsp;Kiprono
+    <div class="post-meta"><span title='2023-09-30 22:15:15 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;395 words&nbsp;·&nbsp;Kiprono
 
 </div>
   </header> <div class="toc">
@@ -339,10 +339,10 @@ INNER JOIN: returns rows when there is a match in both tables. LEFT JOIN: return
       <li><a href="https://kipronokoech.github.io/tags/sql/">SQL</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://kipronokoech.github.io/posts/sql/9_maintaining_tables/">
+  <a class="prev" href="https://kipronokoech.github.io/posts/sql/5_aggregation_functions/">
     <span class="title">« Prev</span>
     <br>
-    <span>Maintaining and Managing Database Objects in SQL</span>
+    <span>Aggregation Functions in SQL</span>
   </a>
   <a class="next" href="https://kipronokoech.github.io/posts/sql/7_queries_within_queries/">
     <span class="title">Next »</span>

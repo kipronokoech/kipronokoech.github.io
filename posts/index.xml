@@ -6,82 +6,35 @@
     <description>Recent content in Posts on Kiprono Elijah Koech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Sep 2023 22:24:21 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Sep 2023 22:40:59 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Creating Database Objects</title>
-      <link>https://kipronokoech.github.io/posts/sql/8_defining_database_object/</link>
-      <pubDate>Sat, 30 Sep 2023 22:24:21 +0300</pubDate>
+      <title>Introduction to SQL and Relational Databases</title>
+      <link>https://kipronokoech.github.io/posts/sql/1_intro_to_sql/</link>
+      <pubDate>Sat, 30 Sep 2023 22:40:59 +0300</pubDate>
       
-      <guid>https://kipronokoech.github.io/posts/sql/8_defining_database_object/</guid>
-      <description>Creating Tables in SQL New tables are defined in a database by entering a CREATE TABLE statement. In its simplest form, the CREATE TABLE statement includes a new table name and one or more column definitions. Tables are removed using the DROP TABLE statement.
-SQL Syntax for Creating Tables:
-1 2 3 4 5 CREATE TABLE table_name ( column1 datatype constraints, column2 datatype constraints, ... ); table_name: The name of the table you want to create. column1, column2, etc.: The names of the columns in the table. datatype: The data type for each column (e.g., INT, VARCHAR, DATE, etc.). constraints: Optional constraints (discussed in the next section) Example: Creating a simple table with basic columns:
-1 2 3 4 5 6 7 CREATE TABLE Employees ( EmployeeID INT PRIMARY KEY, FirstName VARCHAR(50), LastName VARCHAR(50), Salary DECIMAL(10, 2), HireDate DATE ); You can check the structure of a specific table using the DESCRIBE statement.</description>
+      <guid>https://kipronokoech.github.io/posts/sql/1_intro_to_sql/</guid>
+      <description>Introduction What is a Relational Database? A relational database is a collection of data stored in tables. Each table consists of one or more vertical columns and zero or more horizontal rows.
+Tables are identified by name Table names must be unique within a database. Typical SQL databases allow up to 18 characters in a table name. The first character must be a letter, while the remaining characters can be letters, numbers, or underscores.
+Columns are identified by name Column names are unique within each table, but the same column name can appear in different tables. Both tables above, for example, have COUNTRY columns.
+Rows are identified by their contents The rows of a table do not have names, nor is their position in a table fixed. Therefore, we refer to the rows of tables by describing the data values they contain: &amp;lsquo;Person number 2,&amp;rsquo; for instance, or &amp;lsquo;Al English-speaking countries.</description>
     </item>
     
     <item>
-      <title>Maintaining and Managing Database Objects in SQL</title>
-      <link>https://kipronokoech.github.io/posts/sql/9_maintaining_tables/</link>
-      <pubDate>Sat, 30 Sep 2023 22:24:21 +0300</pubDate>
+      <title>Basic Queries in SQL</title>
+      <link>https://kipronokoech.github.io/posts/sql/2_basic_queries/</link>
+      <pubDate>Sat, 30 Sep 2023 22:35:02 +0300</pubDate>
       
-      <guid>https://kipronokoech.github.io/posts/sql/9_maintaining_tables/</guid>
-      <description>Before we learn how to update data in SQL tables, let&amp;rsquo;s create two tables we will use: customers and orders.
-customers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE TABLE customers ( id INT PRIMARY KEY, name VARCHAR(30) NOT NULL, age INT DEFAULT - 99, address VARCHAR(45), salary DECIMAL(18 , 2 ) DEFAULT 2000.00 ); orders table 1 2 3 4 5 6 7 CREATE TABLE orders ( id INT NOT NULL, date datetime, customer_id INT REFERENCES customers (id), amount DOUBLE, PRIMARY KEY (id) ); Inserting Rows Updating Rows New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause.</description>
-    </item>
-    
-    <item>
-      <title>Aggregation Function in SQL</title>
-      <link>https://kipronokoech.github.io/posts/sql/6_multiple_table_queries/</link>
-      <pubDate>Sat, 30 Sep 2023 22:22:15 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/sql/6_multiple_table_queries/</guid>
-      <description>Joins The SQL Joins clause is used to combine records from two or more tables in a database. A JOIN is a means of merging two tables based on common fields.
-INNER JOIN: returns rows when there is a match in both tables. LEFT JOIN: returns all rows from the left table, even if there are no matches in the right table. RIGHT JOIN: returns all rows from the right table, even if there are no matches in the left table. FULL JOIN: returns rows when there is a match in one of the tables. Note: FULL JOIN cannot be implemented directly in MySQL dialet. In this dialect, FULL JOIN is the UNION between RIGHT JOIN and LEFT JOIN.
-1 2 3 4 SELECT * FROM accounts AS acc INNER JOIN angaza_users AS angaza ON acc.responsible_user_angaza_id = angaza.user_angaza_id; 1 2 3 4 SELECT * FROM angaza_users AS angaza LEFT JOIN accounts AS acc ON acc.</description>
-    </item>
-    
-    <item>
-      <title>Queries with Queries with SQL</title>
-      <link>https://kipronokoech.github.io/posts/sql/7_queries_within_queries/</link>
-      <pubDate>Sat, 30 Sep 2023 22:14:21 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/sql/7_queries_within_queries/</guid>
-      <description>Single-Valued Subqueries A single-valued subquery is a query that 1) produces a result with a single column and a single row and 2) is &amp;rsquo;nested&amp;rsquo; in the WHERE clause of another query. Subqueries must be enclosed in parentheses.
-A single-valued queries:
-1 2 SELECT AVG(days_to_cutoff) FROM accounts; Sing-valued sub-query:
-1 2 3 4 5 SELECT * FROM accounts WHERE days_to_cutoff &amp;gt; (SELECT AVG(days_to_cutoff) FROM accounts) ORDER BY days_to_cutoff; Key Points:
-Single-valued queries can be used in comparisons Subqueries are enclosed in parentheses Multi-Valued Subqueries A multi-valued subquery is a query that 1) returns a single-column result with zero, one, or more rows and 2) is &amp;rsquo;nested&amp;rsquo; in the WHERE clause of another query. Multi-valued subqueries always follow the IN operator.
-1 2 3 4 5 SELECT AVG(days_to_cutoff) FROM accounts WHERE angaza_id IN (SELECT angaza_id FROM accounts WHERE area=&amp;#34;Ilorin&amp;#34;); Key Point: Multi-valued subqueries follow the IN operator.</description>
-    </item>
-    
-    <item>
-      <title>Aggregation Functions in SQL</title>
-      <link>https://kipronokoech.github.io/posts/sql/5_aggregation_functions/</link>
-      <pubDate>Sat, 30 Sep 2023 22:10:07 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/sql/5_aggregation_functions/</guid>
-      <description>Aggregation Functions An aggregation (statistical) function is a built-in program that accepts a parameter and returns a summary value. The parameter may be either a column name or an expression. The five statistical functions supported by standard SQL are shown in the following table.
-Statistical functions accept parameters Parameters are either column names or expressions. Parameters must always be enclosed in parentheses. Note that spaces inside and outside the parentheses are optional but are shown in the examples above for readability.
-Statistical functions return summary values SUM and AVG can only be used with columns that contain numeric values. COUNT, MIN, and MAX can be used with columns of any data type. All statistical functions operate on a single column or expression.
-COUNT accepts a variety of parameters COUNT(*) produces a count of rows. COUNT(column) produces a count of rows where the specified column contains non-null values.</description>
-    </item>
-    
-    <item>
-      <title>Expressions in SQL</title>
-      <link>https://kipronokoech.github.io/posts/sql/4_expressions/</link>
-      <pubDate>Sat, 30 Sep 2023 22:10:06 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/sql/4_expressions/</guid>
-      <description>Arithmetic Expressions An arithmetic expression is a phrase formed with operands (numeric values and/or column names) and arithmetic operators (shown below). Arithmetic expressions are evaluated by SQL and replaced with the appropriate numeric value.
-Operands can be numeric values or column names In an expression, valid operands include numbers, column names, and other expressions. When a column is used in an expression, the values in that column must be numeric or valid dates. Only addition and subtraction are valid with dates.
-Operators are specified between operands Expressions in parentheses are evaluated first Along with the asterisk and column names, expressions can be specified in the column list of a SELECT clause. SQL inserts a calculated column in the result table at the given position. The new column name defaults to the expression itself.
-1 2 SELECT *, follow_on_paid +upfront_price FROM accounts; 1 2 SELECT *, expected_paid - follow_on_paid FROM accounts; Key Points:</description>
+      <guid>https://kipronokoech.github.io/posts/sql/2_basic_queries/</guid>
+      <description>A SQL statement is a collection of clauses, keywords, and parameters that perform a particular function. In the examples below, each clause is shown on a separate line; keywords appear in all uppercase letters, parameters in all lowercase letters.
+Clauses The various clauses of SQL statements are named after their initial words: the SELECT clause, for example, or the FROM clause. SQL allows multiple clauses per line, but most SQL programmers use separate lines for clarity and ease of editing.
+Keywords SQL reserves a small number of words, called keywords, for specific purposes. Keywords can be entered ni upper, lower, or mixed-case letters; they are shown here in all uppercase. Keywords may not be used as table or column names.
+Parameters Parameters are the &amp;lsquo;variable&amp;rsquo; parts of each clause. When formulating a SQL statement, you insert the appropriate column names, table names, and other such values in place of the lowercase parameters shown above.</description>
     </item>
     
     <item>
       <title>Advanced Operators in SQL (Not Really Advanced 😜)</title>
       <link>https://kipronokoech.github.io/posts/sql/3_advanced_operators/</link>
-      <pubDate>Sat, 30 Sep 2023 22:10:04 +0300</pubDate>
+      <pubDate>Sat, 30 Sep 2023 22:30:04 +0300</pubDate>
       
       <guid>https://kipronokoech.github.io/posts/sql/3_advanced_operators/</guid>
       <description>The LIKE Operator The LIKE operator is used to find values that match a pattern. Patterns are always entered in quotes.
@@ -94,27 +47,74 @@ Filters rows where the &amp;ldquo;user&amp;rdquo; column starts with &amp;ldquo;
     </item>
     
     <item>
-      <title>Basic Queries in SQL</title>
-      <link>https://kipronokoech.github.io/posts/sql/2_basic_queries/</link>
-      <pubDate>Sat, 30 Sep 2023 22:10:02 +0300</pubDate>
+      <title>Expressions in SQL</title>
+      <link>https://kipronokoech.github.io/posts/sql/4_expressions/</link>
+      <pubDate>Sat, 30 Sep 2023 22:25:06 +0300</pubDate>
       
-      <guid>https://kipronokoech.github.io/posts/sql/2_basic_queries/</guid>
-      <description>A SQL statement is a collection of clauses, keywords, and parameters that perform a particular function. In the examples below, each clause is shown on a separate line; keywords appear in all uppercase letters, parameters in all lowercase letters.
-Clauses The various clauses of SQL statements are named after their initial words: the SELECT clause, for example, or the FROM clause. SQL allows multiple clauses per line, but most SQL programmers use separate lines for clarity and ease of editing.
-Keywords SQL reserves a small number of words, called keywords, for specific purposes. Keywords can be entered ni upper, lower, or mixed-case letters; they are shown here in all uppercase. Keywords may not be used as table or column names.
-Parameters Parameters are the &amp;lsquo;variable&amp;rsquo; parts of each clause. When formulating a SQL statement, you insert the appropriate column names, table names, and other such values in place of the lowercase parameters shown above.</description>
+      <guid>https://kipronokoech.github.io/posts/sql/4_expressions/</guid>
+      <description>Arithmetic Expressions An arithmetic expression is a phrase formed with operands (numeric values and/or column names) and arithmetic operators (shown below). Arithmetic expressions are evaluated by SQL and replaced with the appropriate numeric value.
+Operands can be numeric values or column names In an expression, valid operands include numbers, column names, and other expressions. When a column is used in an expression, the values in that column must be numeric or valid dates. Only addition and subtraction are valid with dates.
+Operators are specified between operands Expressions in parentheses are evaluated first Along with the asterisk and column names, expressions can be specified in the column list of a SELECT clause. SQL inserts a calculated column in the result table at the given position. The new column name defaults to the expression itself.
+1 2 SELECT *, follow_on_paid +upfront_price FROM accounts; 1 2 SELECT *, expected_paid - follow_on_paid FROM accounts; Key Points:</description>
     </item>
     
     <item>
-      <title>Introduction to SQL and Relational Databases</title>
-      <link>https://kipronokoech.github.io/posts/sql/1_intro_to_sql/</link>
-      <pubDate>Sat, 30 Sep 2023 22:09:59 +0300</pubDate>
+      <title>Aggregation Functions in SQL</title>
+      <link>https://kipronokoech.github.io/posts/sql/5_aggregation_functions/</link>
+      <pubDate>Sat, 30 Sep 2023 22:20:07 +0300</pubDate>
       
-      <guid>https://kipronokoech.github.io/posts/sql/1_intro_to_sql/</guid>
-      <description>Introduction What is a Relational Database? A relational database is a collection of data stored in tables. Each table consists of one or more vertical columns and zero or more horizontal rows.
-Tables are identified by name Table names must be unique within a database. Typical SQL databases allow up to 18 characters in a table name. The first character must be a letter, while the remaining characters can be letters, numbers, or underscores.
-Columns are identified by name Column names are unique within each table, but the same column name can appear in different tables. Both tables above, for example, have COUNTRY columns.
-Rows are identified by their contents The rows of a table do not have names, nor is their position in a table fixed. Therefore, we refer to the rows of tables by describing the data values they contain: &amp;lsquo;Person number 2,&amp;rsquo; for instance, or &amp;lsquo;Al English-speaking countries.</description>
+      <guid>https://kipronokoech.github.io/posts/sql/5_aggregation_functions/</guid>
+      <description>Aggregation Functions An aggregation (statistical) function is a built-in program that accepts a parameter and returns a summary value. The parameter may be either a column name or an expression. The five statistical functions supported by standard SQL are shown in the following table.
+Statistical functions accept parameters Parameters are either column names or expressions. Parameters must always be enclosed in parentheses. Note that spaces inside and outside the parentheses are optional but are shown in the examples above for readability.
+Statistical functions return summary values SUM and AVG can only be used with columns that contain numeric values. COUNT, MIN, and MAX can be used with columns of any data type. All statistical functions operate on a single column or expression.
+COUNT accepts a variety of parameters COUNT(*) produces a count of rows. COUNT(column) produces a count of rows where the specified column contains non-null values.</description>
+    </item>
+    
+    <item>
+      <title>Aggregation Function in SQL</title>
+      <link>https://kipronokoech.github.io/posts/sql/6_multiple_table_queries/</link>
+      <pubDate>Sat, 30 Sep 2023 22:15:15 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/sql/6_multiple_table_queries/</guid>
+      <description>Joins The SQL Joins clause is used to combine records from two or more tables in a database. A JOIN is a means of merging two tables based on common fields.
+INNER JOIN: returns rows when there is a match in both tables. LEFT JOIN: returns all rows from the left table, even if there are no matches in the right table. RIGHT JOIN: returns all rows from the right table, even if there are no matches in the left table. FULL JOIN: returns rows when there is a match in one of the tables. Note: FULL JOIN cannot be implemented directly in MySQL dialet. In this dialect, FULL JOIN is the UNION between RIGHT JOIN and LEFT JOIN.
+1 2 3 4 SELECT * FROM accounts AS acc INNER JOIN angaza_users AS angaza ON acc.responsible_user_angaza_id = angaza.user_angaza_id; 1 2 3 4 SELECT * FROM angaza_users AS angaza LEFT JOIN accounts AS acc ON acc.</description>
+    </item>
+    
+    <item>
+      <title>Queries with Queries with SQL</title>
+      <link>https://kipronokoech.github.io/posts/sql/7_queries_within_queries/</link>
+      <pubDate>Sat, 30 Sep 2023 22:10:21 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/sql/7_queries_within_queries/</guid>
+      <description>Single-Valued Subqueries A single-valued subquery is a query that 1) produces a result with a single column and a single row and 2) is &amp;rsquo;nested&amp;rsquo; in the WHERE clause of another query. Subqueries must be enclosed in parentheses.
+A single-valued queries:
+1 2 SELECT AVG(days_to_cutoff) FROM accounts; Sing-valued sub-query:
+1 2 3 4 5 SELECT * FROM accounts WHERE days_to_cutoff &amp;gt; (SELECT AVG(days_to_cutoff) FROM accounts) ORDER BY days_to_cutoff; Key Points:
+Single-valued queries can be used in comparisons Subqueries are enclosed in parentheses Multi-Valued Subqueries A multi-valued subquery is a query that 1) returns a single-column result with zero, one, or more rows and 2) is &amp;rsquo;nested&amp;rsquo; in the WHERE clause of another query. Multi-valued subqueries always follow the IN operator.
+1 2 3 4 5 SELECT AVG(days_to_cutoff) FROM accounts WHERE angaza_id IN (SELECT angaza_id FROM accounts WHERE area=&amp;#34;Ilorin&amp;#34;); Key Point: Multi-valued subqueries follow the IN operator.</description>
+    </item>
+    
+    <item>
+      <title>Creating Database Objects</title>
+      <link>https://kipronokoech.github.io/posts/sql/8_defining_database_object/</link>
+      <pubDate>Sat, 30 Sep 2023 22:05:21 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/sql/8_defining_database_object/</guid>
+      <description>Creating Tables in SQL New tables are defined in a database by entering a CREATE TABLE statement. In its simplest form, the CREATE TABLE statement includes a new table name and one or more column definitions. Tables are removed using the DROP TABLE statement.
+SQL Syntax for Creating Tables:
+1 2 3 4 5 CREATE TABLE table_name ( column1 datatype constraints, column2 datatype constraints, ... ); table_name: The name of the table you want to create. column1, column2, etc.: The names of the columns in the table. datatype: The data type for each column (e.g., INT, VARCHAR, DATE, etc.). constraints: Optional constraints (discussed in the next section) Example: Creating a simple table with basic columns:
+1 2 3 4 5 6 7 CREATE TABLE Employees ( EmployeeID INT PRIMARY KEY, FirstName VARCHAR(50), LastName VARCHAR(50), Salary DECIMAL(10, 2), HireDate DATE ); You can check the structure of a specific table using the DESCRIBE statement.</description>
+    </item>
+    
+    <item>
+      <title>Maintaining and Managing Database Objects in SQL</title>
+      <link>https://kipronokoech.github.io/posts/sql/9_maintaining_tables/</link>
+      <pubDate>Sat, 30 Sep 2023 22:00:21 +0300</pubDate>
+      
+      <guid>https://kipronokoech.github.io/posts/sql/9_maintaining_tables/</guid>
+      <description>Before we learn how to update data in SQL tables, let&amp;rsquo;s create two tables we will use: customers and orders.
+customers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE TABLE customers ( id INT PRIMARY KEY, name VARCHAR(30) NOT NULL, age INT DEFAULT - 99, address VARCHAR(45), salary DECIMAL(18 , 2 ) DEFAULT 2000.00 ); orders table 1 2 3 4 5 6 7 CREATE TABLE orders ( id INT NOT NULL, date datetime, customer_id INT REFERENCES customers (id), amount DOUBLE, PRIMARY KEY (id) ); Inserting Rows Updating Rows New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause.</description>
     </item>
     
     <item>

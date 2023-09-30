@@ -71,8 +71,8 @@ Statistical functions return summary values SUM and AVG can only be used with co
 COUNT accepts a variety of parameters COUNT(*) produces a count of rows. COUNT(column) produces a count of rows where the specified column contains non-null values." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kipronokoech.github.io/posts/sql/5_aggregation_functions/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-09-30T22:10:07+03:00" />
-<meta property="article:modified_time" content="2023-09-30T22:10:07+03:00" />
+<meta property="article:published_time" content="2023-09-30T22:20:07+03:00" />
+<meta property="article:modified_time" content="2023-09-30T22:20:07+03:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Aggregation Functions in SQL"/>
@@ -115,8 +115,8 @@ COUNT accepts a variety of parameters COUNT(*) produces a count of rows. COUNT(c
   "articleBody": "Aggregation Functions An aggregation (statistical) function is a built-in program that accepts a parameter and returns a summary value. The parameter may be either a column name or an expression. The five statistical functions supported by standard SQL are shown in the following table.\nStatistical functions accept parameters Parameters are either column names or expressions. Parameters must always be enclosed in parentheses. Note that spaces inside and outside the parentheses are optional but are shown in the examples above for readability.\nStatistical functions return summary values SUM and AVG can only be used with columns that contain numeric values. COUNT, MIN, and MAX can be used with columns of any data type. All statistical functions operate on a single column or expression.\nCOUNT accepts a variety of parameters COUNT(*) produces a count of rows. COUNT(column) produces a count of rows where the specified column contains non-null values. COUNT(DISTINCT column) produces a count of unique, non-null values in the given column\nIf a SELECT clause contains nothing but statistical functions, SQL displays grand totals for the query. The resulting table contains one row, with one column for each statistical function. Column aliases may be used to rename the column(s).\n1 2 SELECT AVG(days_to_cutoff) AS average_days_to_cutoff FROM accounts; 1 2 3 SELECT MIN(daily_price), MAX(daily_price) FROM accounts WHERE country=\"Kenya\"; Key Points:\nOnly functions are specified in the SELECT clause The result contains only one row The result contains one column for each function Column aliases may be assigned Grouping Functions in Other Clauses If a SELECT clause contains column names and functions, SQL displays subtotals. The specified columns must also be listed in the GROUP BY clause. SQL divides the table into groups calculates subtotals for each and displays one row per group.\n1 2 3 SELECT registration_date, COUNT(*) AS \"Unit Sales\" FROM accounts GROUP BY registration_date; 1 2 3 SELECT country, AVG(days_to_cutoff) AS \"AVG Days to Cut Off\" FROM accounts GROUP BY country; 1 2 3 SELECT field_level, COUNT(*) AS Count FROM angaza_users GROUP BY field_level; 1 2 3 SELECT angaza_id, SUM(amount_towards_follow_on) AS Total_Collected FROM payments GROUP BY angaza_id; 1 2 3 SELECT area, country, COUNT(*) AS \"Unit Sales\" FROM accounts GROUP BY area, country; Key Points:\nGroup columns are specified in the SELECT clause Group columns are repeated in the GROUP BY clause Order of clauses FROM, WHERE, GROUP BY Functions in Other Clauses Functions cannot be specified in the WHERE clause because that clause is evaluated before grouping (and function execution) takes place. Functions can, however, appear in the HAVING clause, which is processed after grouping occurs.\nThis will not work:\n1 2 3 4 SELECT area, country, COUNT(*) AS unit_sales FROM accounts WHERE unit_sales\u003e250 GROUP BY area, country; But this will:\n1 2 3 4 SELECT area, country, COUNT(*) AS unit_sales FROM accounts GROUP BY area, country HAVING unit_sales\u003e250; Key Points:\nThe HAVING clause follows the GROUP BY clause The HAVING clause is just like WHERE except… The HAVING clause is executed after grouping ",
   "wordCount" : "495",
   "inLanguage": "en",
-  "datePublished": "2023-09-30T22:10:07+03:00",
-  "dateModified": "2023-09-30T22:10:07+03:00",
+  "datePublished": "2023-09-30T22:20:07+03:00",
+  "dateModified": "2023-09-30T22:20:07+03:00",
   "author":[{
     "@type": "Person",
     "name": "Kiprono"
@@ -216,7 +216,7 @@ COUNT accepts a variety of parameters COUNT(*) produces a count of rows. COUNT(c
     <h1 class="post-title">
       Aggregation Functions in SQL
     </h1>
-    <div class="post-meta"><span title='2023-09-30 22:10:07 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;495 words&nbsp;·&nbsp;Kiprono
+    <div class="post-meta"><span title='2023-09-30 22:20:07 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;495 words&nbsp;·&nbsp;Kiprono
 
 </div>
   </header> <div class="toc">
@@ -398,15 +398,15 @@ the table into groups calculates subtotals for each and displays one row per gro
       <li><a href="https://kipronokoech.github.io/tags/sql/">SQL</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://kipronokoech.github.io/posts/sql/7_queries_within_queries/">
+  <a class="prev" href="https://kipronokoech.github.io/posts/sql/4_expressions/">
     <span class="title">« Prev</span>
     <br>
-    <span>Queries with Queries with SQL</span>
+    <span>Expressions in SQL</span>
   </a>
-  <a class="next" href="https://kipronokoech.github.io/posts/sql/4_expressions/">
+  <a class="next" href="https://kipronokoech.github.io/posts/sql/6_multiple_table_queries/">
     <span class="title">Next »</span>
     <br>
-    <span>Expressions in SQL</span>
+    <span>Aggregation Function in SQL</span>
   </a>
 </nav>
 
