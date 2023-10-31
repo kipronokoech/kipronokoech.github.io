@@ -175,7 +175,7 @@ SQL Syntax for Creating Tables:
 1 2 3 4 5 CREATE TABLE table_name ( column1 datatype constraints, column2 datatype constraints, ... ); table_name: The name of the table you want to create. column1, column2, etc.: The names of the columns in the table. datatype: The data type for each column (e.g., INT, VARCHAR, DATE, etc.). constraints: Optional constraints (discussed in the next section) Example: Creating a simple table with basic columns:
 1 2 3 4 5 6 7 CREATE TABLE Employees ( EmployeeID INT PRIMARY KEY, FirstName VARCHAR(50), LastName VARCHAR(50), Salary DECIMAL(10, 2), HireDate DATE ); You can check the structure of a specific table using the DESCRIBE statement....</p>
   </div>
-  <footer class="entry-footer"><span title='2023-09-30 22:05:21 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;648 words&nbsp;·&nbsp;Kiprono</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2023-09-30 22:05:21 &#43;0300 EAT&#39;&gt;Sep 30, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min&amp;nbsp;·&amp;nbsp;648 words&amp;nbsp;·&amp;nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Creating Database Objects" href="https://kipronokoech.github.io/posts/sql/8_defining_database_object/"></a>
 </article>
 
@@ -188,7 +188,7 @@ SQL Syntax for Creating Tables:
     <p>Before we learn how to update data in SQL tables, let’s create two tables we will use: customers and orders.
 customers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE TABLE customers ( id INT PRIMARY KEY, name VARCHAR(30) NOT NULL, age INT DEFAULT - 99, address VARCHAR(45), salary DECIMAL(18 , 2 ) DEFAULT 2000.00 ); orders table 1 2 3 4 5 6 7 CREATE TABLE orders ( id INT NOT NULL, date datetime, customer_id INT REFERENCES customers (id), amount DOUBLE, PRIMARY KEY (id) ); Inserting Rows Updating Rows New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause....</p>
   </div>
-  <footer class="entry-footer"><span title='2023-09-30 22:00:21 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;650 words&nbsp;·&nbsp;Kiprono</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2023-09-30 22:00:21 &#43;0300 EAT&#39;&gt;Sep 30, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min&amp;nbsp;·&amp;nbsp;650 words&amp;nbsp;·&amp;nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Maintaining and Managing Database Objects in SQL" href="https://kipronokoech.github.io/posts/sql/9_maintaining_tables/"></a>
 </article>
 
@@ -204,7 +204,7 @@ Step 1: Update repositories On Debian-based distributions, execute (modify the c
 1 2 3 4 sudo apt update sudo apt install build-essential zlib1g-dev \ libncurses5-dev libgdbm-dev libnss3-dev \ libssl-dev libreadline-dev libffi-dev curl Step 2: Download the stable release of Python on its official website In this step, go to https://www.python.org/downloads/source/ and download XZ compressed source tarball (.tar.xz) file. This file contains all the source files we can build to get the Python we want (I am downloading Python 3.10.5, so I get, Python-3.10.5.tar.xz file).
 Step 3: Extract the tarball Use the inbuilt extraction functionality to extract the tarball, or you can use the tar command in Python as follows...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-11-28 14:09:52 +0300 EAT'>Nov 28, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;379 words&nbsp;·&nbsp;Kiprono</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-11-28 14:09:52 &#43;0300 EAT&#39;&gt;Nov 28, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;379 words&amp;nbsp;·&amp;nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to How to Install Python Manually in Linux" href="https://kipronokoech.github.io/posts/how-to-install-python-manually-in-linux/"></a>
 </article>
 
@@ -219,7 +219,7 @@ In this article, we will refer to the machine initiating the SSH connection as t
 Note that the installation commands may be different based on the system you are running. Nevertheless, it should be easy to tweak these commands on Linux and MacOS.
 Install an OpenSSH Client on the Local Machine Check if the SSH client is installed by running ssh on the terminal. If the OpenSSH client is not installed, you can install it using the line 1 sudo apt install openssh-client Install an OpenSSH Server on the Remote System Check if OpenSSH Server is installed by running ssh localhost....</p>
   </div>
-  <footer class="entry-footer"><span title='2022-11-24 22:37:56 +0300 EAT'>Nov 24, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;784 words&nbsp;·&nbsp;Kiprono</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-11-24 22:37:56 &#43;0300 EAT&#39;&gt;Nov 24, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min&amp;nbsp;·&amp;nbsp;784 words&amp;nbsp;·&amp;nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to SSH Essentials" href="https://kipronokoech.github.io/posts/ssh_essentials/"></a>
 </article>
 
@@ -236,7 +236,7 @@ Some link Link to Unsplash Use HTML code if you want to open link on a new tab. 
 1 2 3 `&lt;language&gt; (use 3 `) (some code here) ` (use 3 `) Here is some Python code
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 import psycopg2 data_folder = &#34;clean_data/August&#34; import os import pandas as pd import numpy as np #Establishing the connection conn = psycopg2.connect( database=&#34;kiprono_database2&#34;, user=&#39;postgres&#39;, password=&#39;pass1&#39;, host=&#39;127.0.0.1&#39;, port= &#39;5432&#39; ) #Setting auto commit false conn....</p>
   </div>
-  <footer class="entry-footer"><span title='2022-11-21 17:49:17 +0300 EAT'>Nov 21, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;730 words&nbsp;·&nbsp;Kiprono</footer>
+  <footer class="entry-footer">&lt;span title=&#39;2022-11-21 17:49:17 &#43;0300 EAT&#39;&gt;Nov 21, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min&amp;nbsp;·&amp;nbsp;730 words&amp;nbsp;·&amp;nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Notes on Hugo and Markdown" href="https://kipronokoech.github.io/posts/notes-for-markdown-and-hugo/"></a>
 </article>
 <footer class="page-footer">

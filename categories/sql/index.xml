@@ -71,7 +71,7 @@ COUNT accepts a variety of parameters COUNT(*) produces a count of rows. COUNT(c
     </item>
     
     <item>
-      <title>Aggregation Function in SQL</title>
+      <title>Joins</title>
       <link>https://kipronokoech.github.io/posts/sql/6_multiple_table_queries/</link>
       <pubDate>Sat, 30 Sep 2023 22:15:15 +0300</pubDate>
       
