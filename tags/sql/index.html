@@ -160,7 +160,7 @@ Tables are identified by name Table names must be unique within a database. Typi
 Columns are identified by name Column names are unique within each table, but the same column name can appear in different tables. Both tables above, for example, have COUNTRY columns.
 Rows are identified by their contents The rows of a table do not have names, nor is their position in a table fixed. Therefore, we refer to the rows of tables by describing the data values they contain: ‘Person number 2,’ for instance, or ‘Al English-speaking countries....</p>
   </div>
-  <footer class="entry-footer">&lt;span title=&#39;2023-09-30 22:40:59 &#43;0300 EAT&#39;&gt;Sep 30, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;219 words&amp;nbsp;·&amp;nbsp;Kiprono</footer>
+  <footer class="entry-footer"><span title='2023-09-30 22:40:59 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;219 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Introduction to SQL and Relational Databases" href="https://kipronokoech.github.io/posts/sql/1_intro_to_sql/"></a>
 </article>
 
@@ -175,7 +175,7 @@ Clauses The various clauses of SQL statements are named after their initial word
 Keywords SQL reserves a small number of words, called keywords, for specific purposes. Keywords can be entered ni upper, lower, or mixed-case letters; they are shown here in all uppercase. Keywords may not be used as table or column names.
 Parameters Parameters are the ‘variable’ parts of each clause. When formulating a SQL statement, you insert the appropriate column names, table names, and other such values in place of the lowercase parameters shown above....</p>
   </div>
-  <footer class="entry-footer">&lt;span title=&#39;2023-09-30 22:35:02 &#43;0300 EAT&#39;&gt;Sep 30, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;7 min&amp;nbsp;·&amp;nbsp;1308 words&amp;nbsp;·&amp;nbsp;Kiprono</footer>
+  <footer class="entry-footer"><span title='2023-09-30 22:35:02 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;1308 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Basic Queries in SQL" href="https://kipronokoech.github.io/posts/sql/2_basic_queries/"></a>
 </article>
 
@@ -193,7 +193,7 @@ Filters rows where the “user” column starts with “Abd” followed by any c
 1 2 3 SELECT * FROM angaza_users WHERE user LIKE &#39;De%ni&#39;; It searches for rows where the “user” column starts with ‘F,’ followed by three characters, ends with ’m,’ or has additional characters afterwards.
 1 2 3 SELECT * FROM angaza_users WHERE user LIKE &#39;F___m%&#39;; Fetch accounts are registered in August of any year....</p>
   </div>
-  <footer class="entry-footer">&lt;span title=&#39;2023-09-30 22:30:04 &#43;0300 EAT&#39;&gt;Sep 30, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min&amp;nbsp;·&amp;nbsp;773 words&amp;nbsp;·&amp;nbsp;Kiprono</footer>
+  <footer class="entry-footer"><span title='2023-09-30 22:30:04 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;773 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Advanced Operators in SQL (Not Really Advanced 😜)" href="https://kipronokoech.github.io/posts/sql/3_advanced_operators/"></a>
 </article>
 
@@ -208,7 +208,7 @@ Operands can be numeric values or column names In an expression, valid operands 
 Operators are specified between operands Expressions in parentheses are evaluated first Along with the asterisk and column names, expressions can be specified in the column list of a SELECT clause. SQL inserts a calculated column in the result table at the given position. The new column name defaults to the expression itself.
 1 2 SELECT *, follow_on_paid &#43;upfront_price FROM accounts; 1 2 SELECT *, expected_paid - follow_on_paid FROM accounts; Key Points:...</p>
   </div>
-  <footer class="entry-footer">&lt;span title=&#39;2023-09-30 22:25:06 &#43;0300 EAT&#39;&gt;Sep 30, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;341 words&amp;nbsp;·&amp;nbsp;Kiprono</footer>
+  <footer class="entry-footer"><span title='2023-09-30 22:25:06 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;341 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Expressions in SQL" href="https://kipronokoech.github.io/posts/sql/4_expressions/"></a>
 </article>
 
@@ -223,7 +223,7 @@ Statistical functions accept parameters Parameters are either column names or ex
 Statistical functions return summary values SUM and AVG can only be used with columns that contain numeric values. COUNT, MIN, and MAX can be used with columns of any data type. All statistical functions operate on a single column or expression.
 COUNT accepts a variety of parameters COUNT(*) produces a count of rows. COUNT(column) produces a count of rows where the specified column contains non-null values....</p>
   </div>
-  <footer class="entry-footer">&lt;span title=&#39;2023-09-30 22:20:07 &#43;0300 EAT&#39;&gt;Sep 30, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;3 min&amp;nbsp;·&amp;nbsp;495 words&amp;nbsp;·&amp;nbsp;Kiprono</footer>
+  <footer class="entry-footer"><span title='2023-09-30 22:20:07 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;495 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Aggregation Functions in SQL" href="https://kipronokoech.github.io/posts/sql/5_aggregation_functions/"></a>
 </article>
 
@@ -237,7 +237,7 @@ COUNT accepts a variety of parameters COUNT(*) produces a count of rows. COUNT(c
 INNER JOIN: returns rows when there is a match in both tables. LEFT JOIN: returns all rows from the left table, even if there are no matches in the right table. RIGHT JOIN: returns all rows from the right table, even if there are no matches in the left table. FULL JOIN: returns rows when there is a match in one of the tables. Note: FULL JOIN cannot be implemented directly in MySQL dialet. In this dialect, FULL JOIN is the UNION between RIGHT JOIN and LEFT JOIN.
 1 2 3 4 SELECT * FROM accounts AS acc INNER JOIN angaza_users AS angaza ON acc.responsible_user_angaza_id = angaza.user_angaza_id; 1 2 3 4 SELECT * FROM angaza_users AS angaza LEFT JOIN accounts AS acc ON acc....</p>
   </div>
-  <footer class="entry-footer">&lt;span title=&#39;2023-09-30 22:15:15 &#43;0300 EAT&#39;&gt;Sep 30, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;395 words&amp;nbsp;·&amp;nbsp;Kiprono</footer>
+  <footer class="entry-footer"><span title='2023-09-30 22:15:15 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;395 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Joins" href="https://kipronokoech.github.io/posts/sql/6_multiple_table_queries/"></a>
 </article>
 
@@ -254,7 +254,7 @@ A single-valued queries:
 Single-valued queries can be used in comparisons Subqueries are enclosed in parentheses Multi-Valued Subqueries A multi-valued subquery is a query that 1) returns a single-column result with zero, one, or more rows and 2) is ’nested’ in the WHERE clause of another query. Multi-valued subqueries always follow the IN operator.
 1 2 3 4 5 SELECT AVG(days_to_cutoff) FROM accounts WHERE angaza_id IN (SELECT angaza_id FROM accounts WHERE area=&#34;Ilorin&#34;); Key Point: Multi-valued subqueries follow the IN operator....</p>
   </div>
-  <footer class="entry-footer">&lt;span title=&#39;2023-09-30 22:10:21 &#43;0300 EAT&#39;&gt;Sep 30, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;146 words&amp;nbsp;·&amp;nbsp;Kiprono</footer>
+  <footer class="entry-footer"><span title='2023-09-30 22:10:21 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;146 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Queries with Queries with SQL" href="https://kipronokoech.github.io/posts/sql/7_queries_within_queries/"></a>
 </article>
 <footer class="page-footer">
