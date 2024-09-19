@@ -8,7 +8,58 @@
 <title>Maintaining and Managing Database Objects in SQL | Kiprono Elijah Koech</title>
 <meta name="keywords" content="SQL">
 <meta name="description" content="Before we learn how to update data in SQL tables, let&rsquo;s create two tables we will use: customers and orders.
-customers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE TABLE customers ( id INT PRIMARY KEY, name VARCHAR(30) NOT NULL, age INT DEFAULT - 99, address VARCHAR(45), salary DECIMAL(18 , 2 ) DEFAULT 2000.00 ); orders table 1 2 3 4 5 6 7 CREATE TABLE orders ( id INT NOT NULL, date datetime, customer_id INT REFERENCES customers (id), amount DOUBLE, PRIMARY KEY (id) ); Inserting Rows Updating Rows New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause.">
+
+customers table
+
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+USE ds2; # select database
+show tables;
+CREATE TABLE customers (
+    id INT PRIMARY KEY,
+    name VARCHAR(30) NOT NULL,
+    age INT DEFAULT - 99,
+    address VARCHAR(45),
+    salary DECIMAL(18 , 2 ) DEFAULT 2000.00
+);
+
+
+
+orders table
+
+
+
+1
+2
+3
+4
+5
+6
+7
+
+
+CREATE TABLE orders (
+    id INT NOT NULL,
+    date datetime,
+    customer_id INT REFERENCES customers (id),
+    amount DOUBLE,
+    PRIMARY KEY (id)
+);
+
+
+Inserting Rows Updating Rows
+New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause.">
 <meta name="author" content="Kiprono">
 <link rel="canonical" href="https://kipronokoech.github.io/posts/sql/9_maintaining_tables/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6e4fdaddc5811b9e0e9586c59d922c171046ee812d261cad86b46a13ad9a38c3.css" integrity="sha256-bk/a3cWBG54OlYbFnZIsFxBG7oEtJhythrRqE62aOMM=" rel="preload stylesheet" as="style">
@@ -21,6 +72,7 @@ customers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE
 <link rel="mask-icon" href="https://kipronokoech.github.io/images/icon.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://kipronokoech.github.io/posts/sql/9_maintaining_tables/">
 <noscript>
     <style>
         #theme-toggle,
@@ -64,7 +116,58 @@ customers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE
     onload="renderMathInElement(document.body);"></script>
 <meta property="og:title" content="Maintaining and Managing Database Objects in SQL" />
 <meta property="og:description" content="Before we learn how to update data in SQL tables, let&rsquo;s create two tables we will use: customers and orders.
-customers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE TABLE customers ( id INT PRIMARY KEY, name VARCHAR(30) NOT NULL, age INT DEFAULT - 99, address VARCHAR(45), salary DECIMAL(18 , 2 ) DEFAULT 2000.00 ); orders table 1 2 3 4 5 6 7 CREATE TABLE orders ( id INT NOT NULL, date datetime, customer_id INT REFERENCES customers (id), amount DOUBLE, PRIMARY KEY (id) ); Inserting Rows Updating Rows New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause." />
+
+customers table
+
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+USE ds2; # select database
+show tables;
+CREATE TABLE customers (
+    id INT PRIMARY KEY,
+    name VARCHAR(30) NOT NULL,
+    age INT DEFAULT - 99,
+    address VARCHAR(45),
+    salary DECIMAL(18 , 2 ) DEFAULT 2000.00
+);
+
+
+
+orders table
+
+
+
+1
+2
+3
+4
+5
+6
+7
+
+
+CREATE TABLE orders (
+    id INT NOT NULL,
+    date datetime,
+    customer_id INT REFERENCES customers (id),
+    amount DOUBLE,
+    PRIMARY KEY (id)
+);
+
+
+Inserting Rows Updating Rows
+New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kipronokoech.github.io/posts/sql/9_maintaining_tables/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-09-30T22:00:21+03:00" />
@@ -73,7 +176,58 @@ customers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Maintaining and Managing Database Objects in SQL"/>
 <meta name="twitter:description" content="Before we learn how to update data in SQL tables, let&rsquo;s create two tables we will use: customers and orders.
-customers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE TABLE customers ( id INT PRIMARY KEY, name VARCHAR(30) NOT NULL, age INT DEFAULT - 99, address VARCHAR(45), salary DECIMAL(18 , 2 ) DEFAULT 2000.00 ); orders table 1 2 3 4 5 6 7 CREATE TABLE orders ( id INT NOT NULL, date datetime, customer_id INT REFERENCES customers (id), amount DOUBLE, PRIMARY KEY (id) ); Inserting Rows Updating Rows New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause."/>
+
+customers table
+
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+USE ds2; # select database
+show tables;
+CREATE TABLE customers (
+    id INT PRIMARY KEY,
+    name VARCHAR(30) NOT NULL,
+    age INT DEFAULT - 99,
+    address VARCHAR(45),
+    salary DECIMAL(18 , 2 ) DEFAULT 2000.00
+);
+
+
+
+orders table
+
+
+
+1
+2
+3
+4
+5
+6
+7
+
+
+CREATE TABLE orders (
+    id INT NOT NULL,
+    date datetime,
+    customer_id INT REFERENCES customers (id),
+    amount DOUBLE,
+    PRIMARY KEY (id)
+);
+
+
+Inserting Rows Updating Rows
+New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause."/>
 
 
 <script type="application/ld+json">
@@ -102,7 +256,7 @@ customers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE
   "@type": "BlogPosting",
   "headline": "Maintaining and Managing Database Objects in SQL",
   "name": "Maintaining and Managing Database Objects in SQL",
-  "description": "Before we learn how to update data in SQL tables, let\u0026rsquo;s create two tables we will use: customers and orders.\ncustomers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE TABLE customers ( id INT PRIMARY KEY, name VARCHAR(30) NOT NULL, age INT DEFAULT - 99, address VARCHAR(45), salary DECIMAL(18 , 2 ) DEFAULT 2000.00 ); orders table 1 2 3 4 5 6 7 CREATE TABLE orders ( id INT NOT NULL, date datetime, customer_id INT REFERENCES customers (id), amount DOUBLE, PRIMARY KEY (id) ); Inserting Rows Updating Rows New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause.",
+  "description": "Before we learn how to update data in SQL tables, let\u0026rsquo;s create two tables we will use: customers and orders.\ncustomers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE TABLE customers ( id INT PRIMARY KEY, name VARCHAR(30) NOT NULL, age INT DEFAULT - 99, address VARCHAR(45), salary DECIMAL(18 , 2 ) DEFAULT 2000.00 ); orders table 1 2 3 4 5 6 7 CREATE TABLE orders ( id INT NOT NULL, date datetime, customer_id INT REFERENCES customers (id), amount DOUBLE, PRIMARY KEY (id) ); Inserting Rows Updating Rows New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause.\n",
   "keywords": [
     "SQL"
   ],
@@ -170,6 +324,8 @@ customers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </div>
         </div>
         <ul id="menu">

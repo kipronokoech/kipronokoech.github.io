@@ -1,157 +1,91 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://kipronokoech.github.io/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/about-me/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/search/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/sql/1_intro_to_sql/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/sql/2_basic_queries/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/sql/3_advanced_operators/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/sql/4_expressions/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/sql/5_aggregation_functions/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/sql/6_multiple_table_queries/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/sql/7_queries_within_queries/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/page/2/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/files/Kiprono-CV.pdf</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/professional/dedicated_service_award_sunking2/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/page/2/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/tags/sql/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/sql/8_defining_database_object/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/sql/9_maintaining_tables/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/how-to-install-python-manually-in-linux/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/ssh_essentials/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/posts/notes-for-markdown-and-hugo/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/tags/professional/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/tags/awards/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/tags/sql/page/2/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/tags/install/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/tags/python/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/tags/linux/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/tags/ssh/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://kipronokoech.github.io/tags/markdown/</loc>
-  <lastmod>2024-05-29T20:12:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://kipronokoech.github.io/</loc>
+    <lastmod>2024-01-16T19:46:15+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/</loc>
+    <lastmod>2024-01-16T19:46:15+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/categories/</loc>
+    <lastmod>2023-09-30T22:40:59+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/sql/1_intro_to_sql/</loc>
+    <lastmod>2023-09-30T22:40:59+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/tags/sql/</loc>
+    <lastmod>2023-09-30T22:40:59+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/categories/sql/</loc>
+    <lastmod>2023-09-30T22:40:59+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/tags/</loc>
+    <lastmod>2023-09-30T22:40:59+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/sql/2_basic_queries/</loc>
+    <lastmod>2023-09-30T22:35:02+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/sql/3_advanced_operators/</loc>
+    <lastmod>2023-09-30T22:30:04+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/sql/4_expressions/</loc>
+    <lastmod>2023-09-30T22:25:06+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/sql/5_aggregation_functions/</loc>
+    <lastmod>2023-09-30T22:20:07+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/sql/6_multiple_table_queries/</loc>
+    <lastmod>2023-09-30T22:15:15+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/sql/7_queries_within_queries/</loc>
+    <lastmod>2023-09-30T22:10:21+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/sql/8_defining_database_object/</loc>
+    <lastmod>2023-09-30T22:05:21+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/sql/9_maintaining_tables/</loc>
+    <lastmod>2023-09-30T22:00:21+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/how-to-install-python-manually-in-linux/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/tags/install/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/tags/linux/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/categories/linux/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/tags/python/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/categories/python/</loc>
+    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/tags/ssh/</loc>
+    <lastmod>2022-11-24T22:37:56+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/categories/ssh/</loc>
+    <lastmod>2022-11-24T22:37:56+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/ssh_essentials/</loc>
+    <lastmod>2022-11-24T22:37:56+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/tags/markdown/</loc>
+    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/posts/notes-for-markdown-and-hugo/</loc>
+    <lastmod>2022-11-21T17:49:17+03:00</lastmod>
+  </url><url>
+    <loc>https://kipronokoech.github.io/about-me/</loc>
+  </url><url>
+    <loc>https://kipronokoech.github.io/archives/</loc>
+  </url><url>
+    <loc>https://kipronokoech.github.io/blog/</loc>
+  </url><url>
+    <loc>https://kipronokoech.github.io/search/</loc>
+  </url>
 </urlset>

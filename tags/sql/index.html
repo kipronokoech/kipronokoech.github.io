@@ -19,6 +19,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://kipronokoech.github.io/tags/sql/index.xml">
+<link rel="alternate" hreflang="en" href="https://kipronokoech.github.io/tags/sql/">
 <noscript>
     <style>
         #theme-toggle,
@@ -110,6 +111,8 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </div>
         </div>
         <ul id="menu">
@@ -158,7 +161,8 @@
     <p>Introduction What is a Relational Database? A relational database is a collection of data stored in tables. Each table consists of one or more vertical columns and zero or more horizontal rows.
 Tables are identified by name Table names must be unique within a database. Typical SQL databases allow up to 18 characters in a table name. The first character must be a letter, while the remaining characters can be letters, numbers, or underscores.
 Columns are identified by name Column names are unique within each table, but the same column name can appear in different tables. Both tables above, for example, have COUNTRY columns.
-Rows are identified by their contents The rows of a table do not have names, nor is their position in a table fixed. Therefore, we refer to the rows of tables by describing the data values they contain: ‘Person number 2,’ for instance, or ‘Al English-speaking countries....</p>
+Rows are identified by their contents The rows of a table do not have names, nor is their position in a table fixed. Therefore, we refer to the rows of tables by describing the data values they contain: ‘Person number 2,’ for instance, or ‘Al English-speaking countries.’
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-09-30 22:40:59 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;219 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Introduction to SQL and Relational Databases" href="https://kipronokoech.github.io/posts/sql/1_intro_to_sql/"></a>
@@ -173,7 +177,8 @@ Rows are identified by their contents The rows of a table do not have names, nor
     <p>A SQL statement is a collection of clauses, keywords, and parameters that perform a particular function. In the examples below, each clause is shown on a separate line; keywords appear in all uppercase letters, parameters in all lowercase letters.
 Clauses The various clauses of SQL statements are named after their initial words: the SELECT clause, for example, or the FROM clause. SQL allows multiple clauses per line, but most SQL programmers use separate lines for clarity and ease of editing.
 Keywords SQL reserves a small number of words, called keywords, for specific purposes. Keywords can be entered ni upper, lower, or mixed-case letters; they are shown here in all uppercase. Keywords may not be used as table or column names.
-Parameters Parameters are the ‘variable’ parts of each clause. When formulating a SQL statement, you insert the appropriate column names, table names, and other such values in place of the lowercase parameters shown above....</p>
+Parameters Parameters are the ‘variable’ parts of each clause. When formulating a SQL statement, you insert the appropriate column names, table names, and other such values in place of the lowercase parameters shown above.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-09-30 22:35:02 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;1308 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Basic Queries in SQL" href="https://kipronokoech.github.io/posts/sql/2_basic_queries/"></a>
@@ -191,7 +196,7 @@ Note: The LIKE operator is added to the WHERE clause, as shown in the examples b
 Filters rows where the “user” column starts with “Abd” followed by any characters.
 1 2 3 SELECT * FROM angaza_users WHERE user LIKE &#39;Abd%&#39;; It’s looking for values in the “user” column that start with “De” and end with “ni,” with any characters in between.
 1 2 3 SELECT * FROM angaza_users WHERE user LIKE &#39;De%ni&#39;; It searches for rows where the “user” column starts with ‘F,’ followed by three characters, ends with ’m,’ or has additional characters afterwards.
-1 2 3 SELECT * FROM angaza_users WHERE user LIKE &#39;F___m%&#39;; Fetch accounts are registered in August of any year....</p>
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-09-30 22:30:04 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;773 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Advanced Operators in SQL (Not Really Advanced 😜)" href="https://kipronokoech.github.io/posts/sql/3_advanced_operators/"></a>
@@ -206,7 +211,8 @@ Filters rows where the “user” column starts with “Abd” followed by any c
     <p>Arithmetic Expressions An arithmetic expression is a phrase formed with operands (numeric values and/or column names) and arithmetic operators (shown below). Arithmetic expressions are evaluated by SQL and replaced with the appropriate numeric value.
 Operands can be numeric values or column names In an expression, valid operands include numbers, column names, and other expressions. When a column is used in an expression, the values in that column must be numeric or valid dates. Only addition and subtraction are valid with dates.
 Operators are specified between operands Expressions in parentheses are evaluated first Along with the asterisk and column names, expressions can be specified in the column list of a SELECT clause. SQL inserts a calculated column in the result table at the given position. The new column name defaults to the expression itself.
-1 2 SELECT *, follow_on_paid &#43;upfront_price FROM accounts; 1 2 SELECT *, expected_paid - follow_on_paid FROM accounts; Key Points:...</p>
+1 2 SELECT *, follow_on_paid &#43;upfront_price FROM accounts; 1 2 SELECT *, expected_paid - follow_on_paid FROM accounts; Key Points:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-09-30 22:25:06 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;341 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Expressions in SQL" href="https://kipronokoech.github.io/posts/sql/4_expressions/"></a>
@@ -221,7 +227,8 @@ Operators are specified between operands Expressions in parentheses are evaluate
     <p>Aggregation Functions An aggregation (statistical) function is a built-in program that accepts a parameter and returns a summary value. The parameter may be either a column name or an expression. The five statistical functions supported by standard SQL are shown in the following table.
 Statistical functions accept parameters Parameters are either column names or expressions. Parameters must always be enclosed in parentheses. Note that spaces inside and outside the parentheses are optional but are shown in the examples above for readability.
 Statistical functions return summary values SUM and AVG can only be used with columns that contain numeric values. COUNT, MIN, and MAX can be used with columns of any data type. All statistical functions operate on a single column or expression.
-COUNT accepts a variety of parameters COUNT(*) produces a count of rows. COUNT(column) produces a count of rows where the specified column contains non-null values....</p>
+COUNT accepts a variety of parameters COUNT(*) produces a count of rows. COUNT(column) produces a count of rows where the specified column contains non-null values. COUNT(DISTINCT column) produces a count of unique, non-null values in the given column
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-09-30 22:20:07 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;495 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Aggregation Functions in SQL" href="https://kipronokoech.github.io/posts/sql/5_aggregation_functions/"></a>
@@ -235,7 +242,8 @@ COUNT accepts a variety of parameters COUNT(*) produces a count of rows. COUNT(c
   <div class="entry-content">
     <p>Joins The SQL Joins clause is used to combine records from two or more tables in a database. A JOIN is a means of merging two tables based on common fields.
 INNER JOIN: returns rows when there is a match in both tables. LEFT JOIN: returns all rows from the left table, even if there are no matches in the right table. RIGHT JOIN: returns all rows from the right table, even if there are no matches in the left table. FULL JOIN: returns rows when there is a match in one of the tables. Note: FULL JOIN cannot be implemented directly in MySQL dialet. In this dialect, FULL JOIN is the UNION between RIGHT JOIN and LEFT JOIN.
-1 2 3 4 SELECT * FROM accounts AS acc INNER JOIN angaza_users AS angaza ON acc.responsible_user_angaza_id = angaza.user_angaza_id; 1 2 3 4 SELECT * FROM angaza_users AS angaza LEFT JOIN accounts AS acc ON acc....</p>
+1 2 3 4 SELECT * FROM accounts AS acc INNER JOIN angaza_users AS angaza ON acc.responsible_user_angaza_id = angaza.user_angaza_id; 1 2 3 4 SELECT * FROM angaza_users AS angaza LEFT JOIN accounts AS acc ON acc.responsible_user_angaza_id = angaza.user_angaza_id; 1 2 3 4 SELECT * FROM angaza_users AS angaza RIGHT JOIN accounts AS acc ON acc.responsible_user_angaza_id = angaza.user_angaza_id; UNION and Full Join: A union combines the rows of two similar queries into a single result with no duplicates. The keyword UNION is placed between the queries. The ORDER BY clause, if used, must specify column positions and appear in the final query only.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-09-30 22:15:15 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;395 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Joins" href="https://kipronokoech.github.io/posts/sql/6_multiple_table_queries/"></a>
@@ -252,7 +260,8 @@ A single-valued queries:
 1 2 SELECT AVG(days_to_cutoff) FROM accounts; Sing-valued sub-query:
 1 2 3 4 5 SELECT * FROM accounts WHERE days_to_cutoff &gt; (SELECT AVG(days_to_cutoff) FROM accounts) ORDER BY days_to_cutoff; Key Points:
 Single-valued queries can be used in comparisons Subqueries are enclosed in parentheses Multi-Valued Subqueries A multi-valued subquery is a query that 1) returns a single-column result with zero, one, or more rows and 2) is ’nested’ in the WHERE clause of another query. Multi-valued subqueries always follow the IN operator.
-1 2 3 4 5 SELECT AVG(days_to_cutoff) FROM accounts WHERE angaza_id IN (SELECT angaza_id FROM accounts WHERE area=&#34;Ilorin&#34;); Key Point: Multi-valued subqueries follow the IN operator....</p>
+1 2 3 4 5 SELECT AVG(days_to_cutoff) FROM accounts WHERE angaza_id IN (SELECT angaza_id FROM accounts WHERE area=&#34;Ilorin&#34;); Key Point: Multi-valued subqueries follow the IN operator.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-09-30 22:10:21 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;146 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Queries with Queries with SQL" href="https://kipronokoech.github.io/posts/sql/7_queries_within_queries/"></a>
