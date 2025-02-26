@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>professional on Kiprono Elijah Koech</title>
-    <link>https://kipronokoech.github.io/categories/professional/</link>
-    <description>Recent content in professional on Kiprono Elijah Koech</description>
+    <title>Professional on Kiprono Elijah Koech</title>
+    <link>http://localhost:1313/categories/professional/</link>
+    <description>Recent content in Professional on Kiprono Elijah Koech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Jan 2024 19:46:15 +0300</lastBuildDate><atom:link href="https://kipronokoech.github.io/categories/professional/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jan 2024 19:46:15 +0300</lastBuildDate><atom:link href="http://localhost:1313/categories/professional/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Awards Offered to Me</title>
-      <link>https://kipronokoech.github.io/posts/professional/dedicated_service_award_sunking2/</link>
+      <link>http://localhost:1313/posts/professional/dedicated_service_award_sunking2/</link>
       <pubDate>Tue, 16 Jan 2024 19:46:15 +0300</pubDate>
       
-      <guid>https://kipronokoech.github.io/posts/professional/dedicated_service_award_sunking2/</guid>
+      <guid>http://localhost:1313/posts/professional/dedicated_service_award_sunking2/</guid>
       <description>This page highlights awards given to me in various institutions where I have either worked or pursued my studies.</description>
     </item>
     

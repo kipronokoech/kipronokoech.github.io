@@ -281,6 +281,52 @@ Single-valued queries can be used in comparisons Subqueries are enclosed in pare
   <footer class="entry-footer"><span title='2023-09-30 22:10:21 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;146 words&nbsp;·&nbsp;Kiprono</footer>
   <a class="entry-link" aria-label="post link to Queries with Queries with SQL" href="https://kipronokoech.github.io/posts/sql/7_queries_within_queries/"></a>
 </article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Creating Database Objects
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Creating Tables in SQL New tables are defined in a database by entering a CREATE TABLE statement. In its simplest form, the CREATE TABLE statement includes a new table name and one or more column definitions. Tables are removed using the DROP TABLE statement.
+SQL Syntax for Creating Tables:
+1 2 3 4 5 CREATE TABLE table_name ( column1 datatype constraints, column2 datatype constraints, ... ); table_name: The name of the table you want to create. column1, column2, etc.: The names of the columns in the table. datatype: The data type for each column (e.g., INT, VARCHAR, DATE, etc.). constraints: Optional constraints (discussed in the next section) Example: Creating a simple table with basic columns:
+1 2 3 4 5 6 7 CREATE TABLE Employees ( EmployeeID INT PRIMARY KEY, FirstName VARCHAR(50), LastName VARCHAR(50), Salary DECIMAL(10, 2), HireDate DATE ); You can check the structure of a specific table using the DESCRIBE statement. For example,
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-09-30 22:05:21 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;648 words&nbsp;·&nbsp;Kiprono</footer>
+  <a class="entry-link" aria-label="post link to Creating Database Objects" href="https://kipronokoech.github.io/posts/sql/8_defining_database_object/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Maintaining and Managing Database Objects in SQL
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Before we learn how to update data in SQL tables, let’s create two tables we will use: customers and orders.
+customers table 1 2 3 4 5 6 7 8 9 USE ds2; # select database show tables; CREATE TABLE customers ( id INT PRIMARY KEY, name VARCHAR(30) NOT NULL, age INT DEFAULT - 99, address VARCHAR(45), salary DECIMAL(18 , 2 ) DEFAULT 2000.00 ); orders table 1 2 3 4 5 6 7 CREATE TABLE orders ( id INT NOT NULL, date datetime, customer_id INT REFERENCES customers (id), amount DOUBLE, PRIMARY KEY (id) ); Inserting Rows Updating Rows New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-09-30 22:00:21 +0300 EAT'>Sep 30, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;650 words&nbsp;·&nbsp;Kiprono</footer>
+  <a class="entry-link" aria-label="post link to Maintaining and Managing Database Objects in SQL" href="https://kipronokoech.github.io/posts/sql/9_maintaining_tables/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>How to Install Python Manually in Linux
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This guide will discuss how to install Python manually on a Linux machine. For your convenience, we will also discuss how to uninstall Python installed in this way.
+Steps to Follow to Install Python Manually First of all, we need to update package repositories and install dependencies.
+Step 1: Update repositories On Debian-based distributions, execute (modify the commands according to the distro you are running):
+1 2 3 4 sudo apt update sudo apt install build-essential zlib1g-dev \ libncurses5-dev libgdbm-dev libnss3-dev \ libssl-dev libreadline-dev libffi-dev curl Step 2: Download the stable release of Python on its official website In this step, go to https://www.python.org/downloads/source/ and download XZ compressed source tarball (.tar.xz) file. This file contains all the source files we can build to get the Python we want (I am downloading Python 3.10.5, so I get, Python-3.10.5.tar.xz file).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-11-28 14:09:52 +0300 EAT'>Nov 28, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;379 words&nbsp;·&nbsp;Kiprono</footer>
+  <a class="entry-link" aria-label="post link to How to Install Python Manually in Linux" href="https://kipronokoech.github.io/posts/how-to-install-python-manually-in-linux/"></a>
+</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="next" href="https://kipronokoech.github.io/posts/page/2/">Next&nbsp;&nbsp;»
@@ -297,7 +343,7 @@ Single-valued queries can be used in comparisons Subqueries are enclosed in pare
     <span>
         &copy;
         <a href="https://kipronokoech.github.io/" style="color:#939393;">Kiprono Elijah Koech</a>
-        2022-2024
+        2022-2025
     </span>
 
 </footer>
