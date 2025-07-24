@@ -399,15 +399,6 @@ Multi-valued subqueries follow the IN operator.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Notes on Hugo and Markdown</title>
-      <link>https://kipronokoech.github.io/posts/notes-for-markdown-and-hugo/</link>
-      <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
-      
-      <guid>https://kipronokoech.github.io/posts/notes-for-markdown-and-hugo/</guid>
-      <description>This article disccusses some MarkDown Syntax. Notes for self kind of.</description>
-    </item>
-    
-    <item>
       <title>About Me</title>
       <link>https://kipronokoech.github.io/about-me/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
