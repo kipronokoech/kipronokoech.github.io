@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)chrome-extension://jhnleheckmknfcgijgkadoemagpecfol/data/options/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title data-i18n="options_title">Options Page :: Auto Tab Discard</title>
+    <link rel="stylesheet" href="chrome-extension://jhnleheckmknfcgijgkadoemagpecfol/data/options/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <p>
+      </p><div class="wnt" data-i18n="options_save_notice">Please be sure to click the "Save Options" button at the bottom of this page once you have finished making changes.</div>
+    <p></p>
+
+    <table width="100%">
+      <colgroup>
+        <col width="24">
+        <col>
+        <col width="80">
+      </colgroup>
+      <thead>
+        <tr>
+          <th colspan="3" data-i18n="options_discarding_options">Discarding options</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3"><span data-i18n="options_period01_a">Discard inactive tabs after </span> <input type="number" id="period" min="0"> <span data-i18n="options_period02">minutes (zero to disable) when the number of inactive tabs exceeds </span> <input type="number" id="number" min="0"></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span data-i18n="options_period04">Maximum number of tabs to check for discarding per single automatic discarding request </span> <input type="number" id="max.single.discard" min="0"></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="url-based"></td>
+          <td colspan="2"><label for="url-based"><span data-i18n="options_url_based">Only discard the following inactive hostnames or regular expression rules</span> <a target="_blank" data-i18n="options_read_more" data-href="faq13" href="https://webextension.org/listing/tab-discard.html#faq13">(Read More Here)</a></label></td>
+        </tr>
+        <tr>
+          <td colspan="3"><textarea rows="3" id="whitelist-url" data-i18n="options_list" data-i18n-value="placeholder" placeholder="Comma-separated list of hostnames"></textarea></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="tab.context"></td>
+          <td colspan="2"><label for="tab.context" data-i18n="options_tab_context">Display discarding items in the "tab" context menu (currently supported by Firefox)</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="page.context"></td>
+          <td colspan="2"><label for="page.context" data-i18n="options_page_context">Display discarding items in the "page" context menu</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="link.context"></td>
+          <td colspan="2"><label for="link.context" data-i18n="options_link_context">Display "Open in New Discarded Tab" item in the "link" context menu</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="favicon"></td>
+          <td colspan="2"><label for="favicon" data-i18n="options_favicon">Change favicon of discarded tabs (if possible)</label></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label for="prepends" data-i18n="options_prepends">Prepend a symbol to the discarded tabs (e.g. 💤 or ⏻︎) (if possible)</label></td>
+          <td><input type="text" id="prepends"></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="startup-unpinned"></td>
+          <td colspan="2"><label for="startup-unpinned" data-i18n="options_startup_unpinned">Discard all unpinned tabs on a browser or extension startup</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="startup-pinned"></td>
+          <td colspan="2"><label for="startup-pinned" data-i18n="options_startup_pinned">Discard all pinned tabs on a browser or extension startup</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="startup-release-pinned"></td>
+          <td colspan="2"><label for="startup-release-pinned" data-i18n="options_startup_release_pinned">Release discarding state of all pinned tabs on a browser or extension startup</label></td>
+        </tr>
+        <tr id="memory">
+          <td><input type="checkbox" id="memory-enabled"></td>
+          <td><label for="memory-enabled"><span data-i18n="options_memory">Discard a background tab if its memory usage (totalJSHeapSize) exceeds (in MB)</span> <a target="_blank" data-i18n="options_read_more" data-href="faq14" href="https://webextension.org/listing/tab-discard.html#faq14">(Read More Here)</a></label></td>
+          <td><input type="number" id="memory-value" min="10"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label for="favicon-delay" data-i18n="options_favicon_delay">Delay for painting the discarded favicon (in milliseconds)</label></td>
+          <td><input type="number" id="favicon-delay" min="100"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label for="simultaneous-jobs" data-i18n="options_simultaneous_jobs">Number of allowed simultaneous discarding jobs</label></td>
+          <td><input type="number" id="simultaneous-jobs" min="1"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label for="idle-timeout" data-i18n="options_idle_timeout">Inactive interval to determine if the computer is in idle state or not (in minutes)</label></td>
+          <td><input type="number" id="idle-timeout" min="1"></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="3" data-i18n="options_discarding_conditions">Discarding conditions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" id="audio"></td>
+          <td colspan="2"><label for="audio" data-i18n="options_audio">Do not discard a tab when media is playing</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="paused"></td>
+          <td colspan="2"><label for="paused" data-i18n="options_paused">Do not discard a tab when there is a paused media player</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="pinned"></td>
+          <td colspan="2"><label for="pinned" data-i18n="options_pinned">Do not discard a tab when it is pinned</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="form"></td>
+          <td colspan="2"><label for="form" data-i18n="options_form">Do not discard a tab when form changes are not yet submitted</label></td>
+        </tr>
+        <tr id="battery">
+          <td><input type="checkbox" id="battery_enabled"></td>
+          <td colspan="2"><label for="battery" data-i18n="options_battery">Do not discard tabs when the computer is connected to a power source</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="online"></td>
+          <td colspan="2"><label for="online" data-i18n="options_online">Do not discard tabs when there is no internet connection and the tab is not cached</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="notification.permission"></td>
+          <td colspan="2"><label for="notification.permission" data-i18n="options_notification_permission">Do not discard a tab if it can display desktop notifications</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="idle"></td>
+          <td colspan="2"><label for="idle" data-i18n="options_idle">Only discard tabs if the computer is in the 'idle' state</label></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="3" data-i18n="options_exceptions">Exceptions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3">
+            <span style="display: block; padding-bottom: 10px;"><span data-i18n="options_whitelist">Tabs with the following hostnames or regular expression rules are not being discarded. It is recommended to use the popup interface to modify this list. Use the "Shift" key while appending a rule from the popup interface to generate a regular expression rule.</span></span>
+            <textarea rows="3" id="whitelist" data-i18n="options_list" data-i18n-value="placeholder" placeholder="Comma-separated list of hostnames"></textarea>
+          </td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="3" data-i18n="options_left_click">Toolbar left-click action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="radio" name="left-click" id="click.popup"></td>
+          <td colspan="2"><label for="click.popup" data-i18n="options_click_popup">Open popup</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="left-click" id="click.discard-tab"></td>
+          <td colspan="2"><label for="click.discard-tab" data-i18n="options_click_discard_tab">Discard Tab</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="left-click" id="click.discard-tabs"></td>
+          <td colspan="2"><label for="click.discard-tabs" data-i18n="options_click_discard_tabs">Discard All Other Tabs</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="left-click" id="click.release-tabs"></td>
+          <td colspan="2"><label for="click.release-tabs" data-i18n="options_click_release_tabs">Release All Other Tabs</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="left-click" id="click.discard-window"></td>
+          <td colspan="2"><label for="click.discard-window" data-i18n="options_click_discard_window">Discard Other Tabs in This Window</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="left-click" id="click.release-window"></td>
+          <td colspan="2"><label for="click.release-window" data-i18n="options_click_release_window">Release Other Tabs in This Window</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="left-click" id="click.discard-other-windows"></td>
+          <td colspan="2"><label for="click.discard-other-windows" data-i18n="options_click_discard_other_windows">Discard Tabs in Other Windows</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="left-click" id="click.release-other-windows"></td>
+          <td colspan="2"><label for="click.release-other-windows" data-i18n="options_click_release_other_windows">Release Tabs in Other Windows</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="left-click" id="click.toggle-allowed"></td>
+          <td colspan="2"><label for="click.toggle-allowed" data-i18n="options_click_toggle_allowed">Toggle 'Keep This Tab for This Session' option</label></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="3" data-i18n="options_plugins">Plug-ins</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="disabled">
+          <td><input type="checkbox" id="./plugins/dummy/core.js"></td>
+          <td colspan="2"><label for="./plugins/dummy/core.js" data-i18n="options_plugin_dummy">When discarding, replace the page with a local dummy alternative (beta)</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="./plugins/blank/core.js"></td>
+          <td colspan="2"><label for="./plugins/blank/core.js" data-i18n="options_plugin_blank">Open a temporary blank page when all tabs in an inactive window are discarded (to be able to discard the active tab on this window)</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="./plugins/focus/core.js"></td>
+          <td colspan="2"><label for="./plugins/focus/core.js" data-i18n="options_plugin_focus">Release discarding of all tabs in the active window. If enabled, no tab in the active window will be discarded.</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="./plugins/next/core.js"></td>
+          <td colspan="2"><label for="./plugins/next/core.js" data-i18n="options_release_next_tab">Release discarding of the next tab (tab to the right of the active tab)</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="./plugins/previous/core.js"></td>
+          <td colspan="2"><label for="./plugins/previous/core.js" data-i18n="options_release_previous_tab">Release discarding of the previous tab (tab to the left of the active tab)</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="./plugins/new/core.js"></td>
+          <td colspan="2"><label for="./plugins/new/core.js" data-i18n="options_plugin_new">Discard all newly opened inactive tabs after they get loaded</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="./plugins/unloaded/core.js"></td>
+          <td colspan="2"><label for="./plugins/unloaded/core.js" data-i18n="options_plugin_unloaded">Discard all unloaded tabs on browser startup. This method discards almost all inactive tabs.</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="./plugins/youtube/core.js"></td>
+          <td colspan="2"><label for="./plugins/youtube/core.js" data-i18n="options_plugin_youtube">Store YouTube's timestamp before discarding</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="./plugins/trash/core.js"></td>
+          <td colspan="2">
+              <label for="./plugins/trash/core.js" data-i18n="options_plugin_trash01">Permanently delete (remove) old discarded tabs if they are inactive for</label>
+              <input type="number" id="trash.period" min="0">
+              <label for="./plugins/trash/core.js" data-i18n="options_plugin_trash02">hours</label>
+          </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2">
+                <span style="display: block; padding-bottom: 10px;"><span data-i18n="options_plugin_trash_whitelist">Only trash tabs matching the following URL patterns</span> <a target="_blank" data-i18n="options_read_more" data-href="faq15" href="https://webextension.org/listing/tab-discard.html#faq15">(Read More Here)</a></span>
+                <textarea rows="3" id="trash.whitelist-url" data-i18n="options_list_trash" data-i18n-value="placeholder" placeholder="Comma-separated list of hostnames, leave blank for all"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="trash.unloaded"></td>
+            <td><label for="trash.unloaded" data-i18n="options_plugin_trash_unloaded">Also, consider old unloaded tabs</label></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;"><input type="checkbox" id="./plugins/force/core.js"></td>
+          <td colspan="2">
+            <label style="display: block; padding-bottom: 10px;" for="./plugins/force/core.js" data-i18n="options_plugin_force">Immediately discard the following hostnames when their tab is not active</label>
+            <textarea rows="3" id="force.hostnames" data-i18n="options_list" data-i18n-value="placeholder" placeholder="Comma-separated list of hostnames"></textarea>
+          </td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="3" data-i18n="options_misc">Misc</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" id="log"></td>
+          <td colspan="2"><label for="log" data-i18n="options_log">Display logs (for debugging purpose only)</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="go-hidden"></td>
+          <td colspan="2"><label for="go-hidden" data-i18n="options_go_hidden">Discard a tab if it is hidden</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="faqs"></td>
+          <td colspan="2"><label for="faqs" data-i18n="options_faqs">Open FAQs page on updates</label></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="rate">
+      <label data-i18n="options_rate_desc">If you like to rate the extension, click</label>
+      <input type="button" value="Rate it" data-i18n="options_rate_btn" data-i18n-value="value">
+    </div>
+
+    <p>
+      </p><div class="wnt">
+        <span data-i18n="options_managed_1">This extension has the ability to use managed storage, allowing domain administrators to preconfigure preferences.</span>
+        <a data-i18n="options_managed_2" target="_blank" data-href="faq10" href="https://webextension.org/listing/tab-discard.html#faq10">Read more here.</a>
+      </div>
+      <table width="100%">
+        <colgroup>
+          <col width="1">
+          <col width="1">
+        </colgroup>
+        <tbody><tr>
+          <td><input type="button" id="import" data-i18n="options_import" data-i18n-value="value" value="Import Settings"></td>
+          <td><input type="button" id="reset" data-i18n="options_reset" data-i18n-value="value" value="Factory Reset"></td>
+          <td><input type="button" id="save" data-i18n="options_save" data-i18n-value="value" value="Save Options"></td>
+        </tr>
+        <tr>
+          <td><input type="button" id="export" data-i18n="options_export" data-i18n-value="value" value="Export Settings"></td>
+          <td><input type="button" id="support" data-i18n="options_support" data-i18n-value="value" value="Support Development"></td>
+          <td><span id="info"></span></td>
+        </tr>
+      </tbody></table>
+    <p></p>
+
+    <script src="chrome-extension://jhnleheckmknfcgijgkadoemagpecfol/data/options/index.js"></script>
+  
+
+</body></html>
