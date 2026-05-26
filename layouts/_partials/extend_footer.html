@@ -1,0 +1,74 @@
+<script>
+(function () {
+  var copyIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>';
+  var checkIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>';
+
+  document.querySelectorAll('pre').forEach(function (pre) {
+    var wrapper = document.createElement('div');
+    wrapper.className = 'code-block-wrapper';
+    pre.parentNode.insertBefore(wrapper, pre);
+    wrapper.appendChild(pre);
+
+    var btn = document.createElement('button');
+    btn.className = 'copy-code-btn';
+    btn.setAttribute('aria-label', 'Copy code');
+    btn.innerHTML = copyIcon;
+    wrapper.appendChild(btn);
+
+    btn.addEventListener('click', function () {
+      var code = pre.querySelector('code');
+      var lines = pre.querySelectorAll('.cl');
+      var text = lines.length
+        ? Array.from(lines).map(function (l) { return l.textContent; }).join('')
+        : (code || pre).innerText;
+      navigator.clipboard.writeText(text).then(function () {
+        btn.innerHTML = checkIcon + '<span>Copied!</span>';
+        btn.classList.add('copied');
+        setTimeout(function () {
+          btn.innerHTML = copyIcon;
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var toc = document.querySelector('.toc');
+  if (!toc) return;
+
+  function syncOpen() {
+    if (window.innerWidth >= 1280) toc.setAttribute('open', '');
+  }
+  syncOpen();
+  window.addEventListener('resize', syncOpen);
+
+  var links = Array.from(toc.querySelectorAll('a[href^="#"]'));
+  var headings = Array.from(
+    document.querySelectorAll('.post-content h1[id], .post-content h2[id], .post-content h3[id], .post-content h4[id]')
+  );
+  if (!links.length || !headings.length) return;
+
+  links.forEach(function (a) {
+    a.addEventListener('click', function () {
+      links.forEach(function (l) { l.classList.remove('toc-active'); });
+      a.classList.add('toc-active');
+    });
+  });
+
+  var observer = new IntersectionObserver(function (entries) {
+    var visible = entries.filter(function (e) { return e.isIntersecting; });
+    if (!visible.length) return;
+    var topmost = visible.reduce(function (a, b) {
+      return a.boundingClientRect.top < b.boundingClientRect.top ? a : b;
+    });
+    links.forEach(function (a) {
+      a.classList.toggle('toc-active', a.getAttribute('href') === '#' + topmost.target.id);
+    });
+  }, { rootMargin: '-5% 0px -80% 0px' });
+
+  headings.forEach(function (h) { observer.observe(h); });
+})();
+</script>

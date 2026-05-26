@@ -1,0 +1,149 @@
+baseURL: https://kipronokoech.github.io/
+title: Kiprono Dev
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: false
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Kiprono Elijah
+  description: "Personal site of Kiprono Elijah — Data Scientist based in Nairobi. Notes on Python, SQL, machine learning, AWS, and applied statistics."
+  keywords: [Data Science, Machine Learning, Python, SQL, Statistics, AWS, Blog, Portfolio]
+  author: Kiprono Elijah
+  images: ["/images/example1.jpg"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "favicon_io.icon"
+    favicon16x16: "images/icon.png"
+    favicon32x32: "images/icon.png"
+    apple_touch_icon: "images/icon.png"
+    safari_pinned_tab: "images/icon.png"
+
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: Kiprono
+    subtitle: "Data Scientist"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi, I'm Kiprono"
+    Content: >
+      Statistician turned data scientist, based in Nairobi.
+      I hold two master's degrees from Stellenbosch University on full
+      [AIMS](https://aims.ac.za/) scholarships, and work as a **Data Scientist**
+      at [Sun King](https://sunking.com), building and deploying ML models at scale
+      that help people across Africa access solar energy through affordable loan programs.
+
+
+      Here I document what I'm learning: Python, AWS, SQL, machine learning, and more.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/kipronokoech"
+    - name: linkedin
+      url: "https://linkedin.com/in/kipronokoech"
+
+  analytics:
+    google:
+      SiteVerificationTag: "" # add your Google Search Console tag when ready
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/kipronokoech/kipronokoech.github.io/blob/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: about
+      name: About Me
+      url: /about-me/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: now
+      name: Now
+      url: /now/
+      weight: 30
+    - identifier: categories
+      name: Categories
+      url: /blog/
+      weight: 40
+    - identifier: posts
+      name: Posts
+      url: /archives/
+      weight: 50
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai

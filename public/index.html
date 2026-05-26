@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.161.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Kiprono Dev</title>
+<meta name="keywords" content="Data Science, Machine Learning, Python, SQL, Statistics, AWS, Blog, Portfolio">
+<meta name="description" content="Personal site of Kiprono Elijah — Data Scientist based in Nairobi. Notes on Python, SQL, machine learning, AWS, and applied statistics.">
+<meta name="author" content="Kiprono Elijah">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.605d11a1066eaee18410b4cca1b4e16061220d81465dce688122458be66837ed.css" integrity="sha256-YF0RoQZuruGEELTMobThYGEiDYFGXc5ogSJFi&#43;ZoN&#43;0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon_io.icon">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/images/icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/images/icon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/images/icon.png">
+<link rel="mask-icon" href="http://localhost:1313/images/icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:site_name" content="Kiprono Dev">
+  <meta property="og:title" content="Kiprono Dev">
+  <meta property="og:description" content="Personal site of Kiprono Elijah — Data Scientist based in Nairobi. Notes on Python, SQL, machine learning, AWS, and applied statistics.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="http://localhost:1313/images/example1.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/example1.jpg">
+  <meta name="twitter:title" content="Kiprono Dev">
+  <meta name="twitter:description" content="Personal site of Kiprono Elijah — Data Scientist based in Nairobi. Notes on Python, SQL, machine learning, AWS, and applied statistics.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Kiprono Dev",
+  "url": "http://localhost:1313/",
+  "description": "Personal site of Kiprono Elijah — Data Scientist based in Nairobi. Notes on Python, SQL, machine learning, AWS, and applied statistics.",
+  "logo": "http://localhost:1313/favicon_io.icon",
+  "sameAs": [
+      "https://github.com/kipronokoech", "https://linkedin.com/in/kipronokoech"
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">
+                <img src="http://localhost:1313/apple-touch-icon.png" alt="" aria-label="logo"
+                    height="35">Home</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/about-me/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/now/" title="Now">
+                    <span>Now</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>Hi, I&rsquo;m Kiprono</h1>
+    </header>
+    <div class="entry-content md-content">
+        
+        <p>Statistician turned data scientist, based in Nairobi. I hold two master&rsquo;s degrees from Stellenbosch University on full <a href="https://aims.ac.za/">AIMS</a> scholarships, and work as a <strong>Data Scientist</strong> at <a href="https://sunking.com">Sun King</a>, building and deploying ML models at scale that help people across Africa access solar energy through affordable loan programs.</p>
+<p>Here I document what I&rsquo;m learning: Python, AWS, SQL, machine learning, and more.</p>
+
+    </div>
+    <footer class="entry-footer">
+        <div class="social-icons" >
+    <a href="https://github.com/kipronokoech" target="_blank" rel="noopener noreferrer me"
+        title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="https://linkedin.com/in/kipronokoech" target="_blank" rel="noopener noreferrer me"
+        title="Linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+    </a>
+</div>
+
+    </footer>
+</article>
+<div class="recent-posts">
+  <h2 class="recent-posts-title">Recent Posts</h2>
+  <article class="post-entry"> 
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">Awards Offered to Me
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>Dedicated Service Award Issuer: Sun King Limited
+Details about my Employment My job title: Data Intelligence Analyst
+My tenure at Sun King: January 3, 2023 till date.
+Award date: November 28, 2023 (10 months into the role)
+Total employees at Sun King: 2700 (as at January 2023)
+Sun King Offices: 11 (across different countries)
+Employees offered the award are listed in the Figure below: Comment from CEO Patrick Walsh, the CEO had the following to say when offering the award:
+...</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2024-01-16 19:46:15 +0300 EAT'>January 16, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>156 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+    <a class="entry-link" aria-label="post link to Awards Offered to Me" href="http://localhost:1313/posts/professional/dedicated_service_award_sunking2/"></a>
+  </article>
+  <article class="post-entry"> 
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">Introduction to SQL and Relational Databases
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>Introduction What is a Relational Database? A relational database is a collection of data stored in tables. Each table consists of one or more vertical columns and zero or more horizontal rows.
+Tables are identified by name Table names must be unique within a database. Typical SQL databases allow up to 18 characters in a table name. The first character must be a letter, while the remaining characters can be letters, numbers, or underscores.
+...</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2023-09-30 22:40:59 +0300 EAT'>September 30, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>219 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+    <a class="entry-link" aria-label="post link to Introduction to SQL and Relational Databases" href="http://localhost:1313/posts/sql/1_intro_to_sql/"></a>
+  </article>
+  <article class="post-entry"> 
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">Basic Queries in SQL
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>A SQL statement is a collection of clauses, keywords, and parameters that perform a particular function. In the examples below, each clause is shown on a separate line; keywords appear in all uppercase letters, parameters in all lowercase letters.
+Clauses The various clauses of SQL statements are named after their initial words: the SELECT clause, for example, or the FROM clause. SQL allows multiple clauses per line, but most SQL programmers use separate lines for clarity and ease of editing.
+...</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2023-09-30 22:35:02 +0300 EAT'>September 30, 2023</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>1236 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+    <a class="entry-link" aria-label="post link to Basic Queries in SQL" href="http://localhost:1313/posts/sql/2_basic_queries/"></a>
+  </article>
+  <article class="post-entry"> 
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">Advanced Operators in SQL (Not Really Advanced 😜)
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>The LIKE Operator The LIKE operator is used to find values that match a pattern. Patterns are always entered in quotes.
+A per cent symbol is used to represent zero or more unknown characters; an underscore represents any single character.
+Note: The LIKE operator is added to the WHERE clause, as shown in the examples below.
+Filters rows where the “user” column starts with “Abd” followed by any characters.
+SELECT * FROM angaza_users WHERE user LIKE &#39;Abd%&#39;; It’s looking for values in the “user” column that start with “De” and end with “ni,” with any characters in between.
+...</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2023-09-30 22:30:04 +0300 EAT'>September 30, 2023</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>724 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+    <a class="entry-link" aria-label="post link to Advanced Operators in SQL (Not Really Advanced 😜)" href="http://localhost:1313/posts/sql/3_advanced_operators/"></a>
+  </article>
+  <div class="recent-posts-footer">
+    <a href="/archives/">View all posts →</a>
+  </div>
+</div>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Kiprono Dev</a></span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a><script>
+(function () {
+  var copyIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>';
+  var checkIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>';
+
+  document.querySelectorAll('pre').forEach(function (pre) {
+    var wrapper = document.createElement('div');
+    wrapper.className = 'code-block-wrapper';
+    pre.parentNode.insertBefore(wrapper, pre);
+    wrapper.appendChild(pre);
+
+    var btn = document.createElement('button');
+    btn.className = 'copy-code-btn';
+    btn.setAttribute('aria-label', 'Copy code');
+    btn.innerHTML = copyIcon;
+    wrapper.appendChild(btn);
+
+    btn.addEventListener('click', function () {
+      var code = pre.querySelector('code');
+      var lines = pre.querySelectorAll('.cl');
+      var text = lines.length
+        ? Array.from(lines).map(function (l) { return l.textContent; }).join('')
+        : (code || pre).innerText;
+      navigator.clipboard.writeText(text).then(function () {
+        btn.innerHTML = checkIcon + '<span>Copied!</span>';
+        btn.classList.add('copied');
+        setTimeout(function () {
+          btn.innerHTML = copyIcon;
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var toc = document.querySelector('.toc');
+  if (!toc) return;
+
+  function syncOpen() {
+    if (window.innerWidth >= 1280) toc.setAttribute('open', '');
+  }
+  syncOpen();
+  window.addEventListener('resize', syncOpen);
+
+  var links = Array.from(toc.querySelectorAll('a[href^="#"]'));
+  var headings = Array.from(
+    document.querySelectorAll('.post-content h1[id], .post-content h2[id], .post-content h3[id], .post-content h4[id]')
+  );
+  if (!links.length || !headings.length) return;
+
+  links.forEach(function (a) {
+    a.addEventListener('click', function () {
+      links.forEach(function (l) { l.classList.remove('toc-active'); });
+      a.classList.add('toc-active');
+    });
+  });
+
+  var observer = new IntersectionObserver(function (entries) {
+    var visible = entries.filter(function (e) { return e.isIntersecting; });
+    if (!visible.length) return;
+    var topmost = visible.reduce(function (a, b) {
+      return a.boundingClientRect.top < b.boundingClientRect.top ? a : b;
+    });
+    links.forEach(function (a) {
+      a.classList.toggle('toc-active', a.getAttribute('href') === '#' + topmost.target.id);
+    });
+  }, { rootMargin: '-5% 0px -80% 0px' });
+
+  headings.forEach(function (h) { observer.observe(h); });
+})();
+</script>
+
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+</script>
+</body>
+
+</html>

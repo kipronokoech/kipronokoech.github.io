@@ -1,0 +1,35 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description }}</div>
+  {{- end }}
+</header>
+
+{{- range $name, $taxonomy := site.Taxonomies.tags }}
+{{- $pages := $taxonomy.Pages }}
+<div class="archive-year">
+  <h2 class="archive-year-header" id="{{ $name | urlize }}">
+    <a class="archive-header-link" href="#{{ $name | urlize }}">
+      {{- $name | title -}}
+    </a>
+    <sup class="archive-count">&nbsp;{{ len $pages }}</sup>
+  </h2>
+  <div class="archive-posts">
+    {{- range $pages }}
+    <div class="archive-entry">
+      <h3 class="archive-entry-title entry-hint-parent">
+        {{- .Title | markdownify }}
+      </h3>
+      <div class="archive-meta">
+        {{- partial "post_meta.html" . -}}
+      </div>
+      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+    </div>
+    {{- end }}
+  </div>
+</div>
+{{- end }}
+
+{{- end }}{{/* end main */}}

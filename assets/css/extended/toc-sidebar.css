@@ -1,0 +1,72 @@
+/* ── TOC: sidebar on wide screens ───────────────────────── */
+@media (min-width: 1280px) {
+  .toc {
+    position: fixed;
+    left: calc(50% + var(--main-width) / 2 + 1.5rem);
+    top: 80px;
+    width: 260px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    z-index: 99;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+
+  .toc summary {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .toc .inner {
+    padding: 0;
+  }
+
+  .toc ul {
+    margin: 0;
+    padding-left: 0.75rem;
+    list-style: none;
+  }
+
+  .toc li {
+    margin: 0.2rem 0;
+  }
+
+  .toc a {
+    color: var(--secondary);
+    text-decoration: none;
+    display: block;
+    padding: 2px 6px;
+    border-left: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .toc a:hover {
+    color: var(--primary);
+  }
+
+  .toc a.toc-active {
+    color: var(--primary);
+    font-weight: 600;
+    border-left-color: var(--primary);
+  }
+}
+
+/* ── TOC: inline on mobile (default PaperMod style) ─────── */
+@media (max-width: 1279px) {
+  .toc {
+    margin-bottom: 1.5rem;
+  }
+}

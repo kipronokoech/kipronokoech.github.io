@@ -1,0 +1,145 @@
+/* ── Skills ─────────────────────────────────────────── */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.skills-block {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+
+.skills-block h5 {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--primary);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.skills-block ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.skills-block li {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: var(--primary);
+}
+
+.skills-block p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+/* ── Education & Work entries ───────────────────────── */
+.edu-work {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  gap: 0 1.25rem;
+  align-items: start;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.edu-work:last-of-type {
+  border-bottom: none;
+}
+
+.edu-work1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0.2rem;
+}
+
+.edu-work1 img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  padding: 4px;
+  background: var(--theme);
+}
+
+.work-school-name {
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.work-school-name:hover {
+  text-decoration: underline;
+}
+
+.edu-work2 p {
+  margin: 0.15rem 0 0.4rem;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.edu-work2 ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.edu-work2 li {
+  font-size: 0.875rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+
+.edu-work3 {
+  text-align: right;
+  font-size: 0.8rem;
+  color: var(--secondary);
+  white-space: nowrap;
+  padding-top: 0.25rem;
+  line-height: 1.6;
+}
+
+/* ── Awards ─────────────────────────────────────────── */
+.award ul {
+  padding-left: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.award li {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.award li p {
+  display: inline;
+  color: var(--secondary);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 640px) {
+  .edu-work {
+    grid-template-columns: 56px 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .edu-work3 {
+    grid-column: 2;
+    text-align: left;
+    padding-top: 0.25rem;
+  }
+}
