@@ -5,13 +5,22 @@
     <loc>http://localhost:1313/posts/professional/dedicated_service_award_sunking2/</loc>
     <lastmod>2024-01-16T19:46:15+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/awards/</loc>
-    <lastmod>2024-01-16T19:46:15+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-01-16T19:46:15+03:00</lastmod>
+    <lastmod>2026-05-26T23:26:33+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-05-26T23:26:33+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/projects/</loc>
+    <lastmod>2026-05-26T23:26:33+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/your-project-name/</loc>
+    <lastmod>2026-05-26T23:26:33+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/my-first-post/</loc>
+    <lastmod>2026-05-26T23:16:19+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/awards/</loc>
     <lastmod>2024-01-16T19:46:15+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
@@ -25,6 +34,39 @@
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-01-16T19:46:15+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/aws/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/lightgbm/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/loan-repayment-forecasting/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/machine-learning/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/test/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/time-series/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/airflow/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/docker/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/solar-credit-scoring/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/xgboost/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/sql/1_intro_to_sql/</loc>
     <lastmod>2023-09-30T22:40:59+03:00</lastmod>
@@ -59,6 +101,18 @@
     <loc>http://localhost:1313/posts/sql/9_maintaining_tables/</loc>
     <lastmod>2023-09-30T22:00:21+03:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/mysql/</loc>
+    <lastmod>2023-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/postgresql/</loc>
+    <lastmod>2023-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/sql-tutorial-series/</loc>
+    <lastmod>2023-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/teaching/</loc>
+    <lastmod>2023-09-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/how-to-install-python-manually-in-linux/</loc>
     <lastmod>2022-11-28T14:09:52+03:00</lastmod>
   </url><url>
@@ -72,9 +126,6 @@
     <lastmod>2022-11-28T14:09:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/python/</loc>
-    <lastmod>2022-11-28T14:09:52+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2022-11-28T14:09:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ssh/</loc>
@@ -92,6 +143,48 @@
     <loc>http://localhost:1313/posts/notes-for-markdown-and-hugo/</loc>
     <lastmod>2022-11-21T17:49:17+03:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/projects/ml-weather-forecasting/</loc>
+    <lastmod>2022-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/numpy/</loc>
+    <lastmod>2022-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/research/</loc>
+    <lastmod>2022-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tensorflow/</loc>
+    <lastmod>2022-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/wrf/</loc>
+    <lastmod>2022-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/applied-mathematics/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/matlab/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/msc-thesis/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/statistics/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/computer-vision/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/object-detection-robot-navigation/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/opencv/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pytorch/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/yolo/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/about-me/</loc>
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
@@ -99,8 +192,6 @@
     <loc>http://localhost:1313/now/</loc>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url>

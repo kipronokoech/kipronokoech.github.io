@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Kiprono Dev</title>
+    <link>http://localhost:1313/categories/projects/</link>
+    <description>Recent content in Projects on Kiprono Dev</description>
+    <image>
+      <title>Kiprono Dev</title>
+      <url>http://localhost:1313/images/example1.jpg</url>
+      <link>http://localhost:1313/images/example1.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 26 May 2026 23:26:33 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Your Project Name</title>
+      <link>http://localhost:1313/projects/your-project-name/</link>
+      <pubDate>Tue, 26 May 2026 23:26:33 +0300</pubDate>
+      <guid>http://localhost:1313/projects/your-project-name/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;h2 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h2&gt;
+&lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;h2 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Loan Repayment Forecasting</title>
+      <link>http://localhost:1313/projects/loan-repayment-forecasting/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/loan-repayment-forecasting/</guid>
+      <description>Time series model forecasting weekly repayment rates to surface at-risk accounts before they default.</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/projects/test/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/test/</guid>
+      <description>Time series model forecasting weekly repayment rates to surface at-risk accounts before they default.</description>
+    </item>
+    <item>
+      <title>Solar Energy Credit Scoring</title>
+      <link>http://localhost:1313/projects/solar-credit-scoring/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/solar-credit-scoring/</guid>
+      <description>End-to-end credit scoring pipeline that determines loan eligibility for solar product purchases across Africa.</description>
+    </item>
+    <item>
+      <title>SQL from Scratch — Tutorial Series</title>
+      <link>http://localhost:1313/projects/sql-tutorial-series/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/sql-tutorial-series/</guid>
+      <description>A structured nine-part SQL series covering relational databases, queries, joins, aggregation, subqueries, and schema design with real datasets.</description>
+    </item>
+    <item>
+      <title>ML-Enhanced Weather Forecasting</title>
+      <link>http://localhost:1313/projects/ml-weather-forecasting/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ml-weather-forecasting/</guid>
+      <description>Applying machine learning to improve short-range weather forecasts at the Kenya Meteorological Department, including optimised data assimilation for the WRF model.</description>
+    </item>
+    <item>
+      <title>MSc Thesis — Applied Mathematics (Data Science)</title>
+      <link>http://localhost:1313/projects/msc-thesis/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/msc-thesis/</guid>
+      <description>Master&amp;#39;s research at Stellenbosch University under full AIMS scholarship, supervised by Dr. Bubacarr Bah. Awarded Cum Laude.</description>
+    </item>
+    <item>
+      <title>Object Detection for Robot Navigation</title>
+      <link>http://localhost:1313/projects/object-detection-robot-navigation/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/object-detection-robot-navigation/</guid>
+      <description>Real-time object detection system to support autonomous robot navigation in unstructured environments, developed at Technische Universität Berlin.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Research on Kiprono Dev</title>
+    <link>http://localhost:1313/tags/research/</link>
+    <description>Recent content in Research on Kiprono Dev</description>
+    <image>
+      <title>Kiprono Dev</title>
+      <url>http://localhost:1313/images/example1.jpg</url>
+      <link>http://localhost:1313/images/example1.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML-Enhanced Weather Forecasting</title>
+      <link>http://localhost:1313/projects/ml-weather-forecasting/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ml-weather-forecasting/</guid>
+      <description>Applying machine learning to improve short-range weather forecasts at the Kenya Meteorological Department, including optimised data assimilation for the WRF model.</description>
+    </item>
+    <item>
+      <title>MSc Thesis — Applied Mathematics (Data Science)</title>
+      <link>http://localhost:1313/projects/msc-thesis/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/msc-thesis/</guid>
+      <description>Master&amp;#39;s research at Stellenbosch University under full AIMS scholarship, supervised by Dr. Bubacarr Bah. Awarded Cum Laude.</description>
+    </item>
+    <item>
+      <title>Object Detection for Robot Navigation</title>
+      <link>http://localhost:1313/projects/object-detection-robot-navigation/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/object-detection-robot-navigation/</guid>
+      <description>Real-time object detection system to support autonomous robot navigation in unstructured environments, developed at Technische Universität Berlin.</description>
+    </item>
+  </channel>
+</rss>

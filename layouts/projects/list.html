@@ -1,0 +1,75 @@
+{{- define "main" }}
+
+{{- $accentColors := dict "ml" "#3b82f6" "research" "#8b5cf6" "teaching" "#f59e0b" "data-eng" "#10b981" }}
+{{- $badgeBg      := dict "ml" "#dbeafe"  "research" "#ede9fe"  "teaching" "#fef3c7"  "data-eng" "#d1fae5" }}
+{{- $badgeText    := dict "ml" "#1d4ed8"  "research" "#6d28d9"  "teaching" "#b45309"  "data-eng" "#065f46" }}
+{{- $badgeLabel   := dict "ml" "ML"       "research" "Research" "teaching" "Teaching" "data-eng" "Data Eng" }}
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+  <div class="post-content">
+
+    {{- with .Content }}<div class="projects-intro">{{ . }}</div>{{ end }}
+
+    <div class="project-filters">
+      <button class="project-filter-btn active" data-filter="all">All</button>
+      <button class="project-filter-btn" data-filter="ml">Machine Learning</button>
+      <button class="project-filter-btn" data-filter="research">Research</button>
+      <button class="project-filter-btn" data-filter="data-eng">Data Engineering</button>
+      <button class="project-filter-btn" data-filter="teaching">Teaching</button>
+    </div>
+
+    <div class="projects-grid">
+      {{- range sort .Pages "Date" "desc" }}
+        {{- $cat    := .Params.projectCategory | default "ml" }}
+        {{- $accent := index $accentColors $cat | default "#3b82f6" }}
+        {{- $bg     := index $badgeBg     $cat  | default "#dbeafe" }}
+        {{- $fg     := index $badgeText   $cat  | default "#1d4ed8" }}
+        {{- $label  := index $badgeLabel  $cat  | default "ML" }}
+        <div class="project-card" data-category="{{ $cat }}">
+          <div class="project-card-accent" style="background:{{ $accent }};"></div>
+          <div class="project-card-body">
+            <div class="project-card-header">
+              <h3 class="project-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <span class="project-badge" style="background:{{ $bg }};color:{{ $fg }};">{{ $label }}</span>
+            </div>
+            <p class="project-desc">{{ .Description }}</p>
+            <div class="project-tags">
+              {{- range .Params.tags }}
+              <span class="project-tag">{{ . }}</span>
+              {{- end }}
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="{{ .Permalink }}">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      {{- end }}
+    </div>
+
+  </div>
+</article>
+
+<script>
+(function () {
+  var btns = document.querySelectorAll('.project-filter-btn');
+  var cards = document.querySelectorAll('.project-card');
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      btns.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.getAttribute('data-filter');
+      cards.forEach(function (card) {
+        card.style.display = filter === 'all' || card.getAttribute('data-category') === filter ? 'flex' : 'none';
+      });
+    });
+  });
+})();
+</script>
+
+{{- end }}

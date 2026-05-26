@@ -1,7 +1,5 @@
 ---
 title: "Projects"
-url: "/projects/"
-summary: "Projects"
+url: "/projects-legacy/"
+draft: true
 ---
-
-Coming soon.

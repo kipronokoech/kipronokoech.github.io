@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>WRF on Kiprono Dev</title>
+    <link>http://localhost:1313/tags/wrf/</link>
+    <description>Recent content in WRF on Kiprono Dev</description>
+    <image>
+      <title>Kiprono Dev</title>
+      <url>http://localhost:1313/images/example1.jpg</url>
+      <link>http://localhost:1313/images/example1.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/wrf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML-Enhanced Weather Forecasting</title>
+      <link>http://localhost:1313/projects/ml-weather-forecasting/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ml-weather-forecasting/</guid>
+      <description>Applying machine learning to improve short-range weather forecasts at the Kenya Meteorological Department, including optimised data assimilation for the WRF model.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LightGBM on Kiprono Dev</title>
+    <link>http://localhost:1313/tags/lightgbm/</link>
+    <description>Recent content in LightGBM on Kiprono Dev</description>
+    <image>
+      <title>Kiprono Dev</title>
+      <url>http://localhost:1313/images/example1.jpg</url>
+      <link>http://localhost:1313/images/example1.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 02 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/lightgbm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Loan Repayment Forecasting</title>
+      <link>http://localhost:1313/projects/loan-repayment-forecasting/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/loan-repayment-forecasting/</guid>
+      <description>Time series model forecasting weekly repayment rates to surface at-risk accounts before they default.</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/projects/test/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/test/</guid>
+      <description>Time series model forecasting weekly repayment rates to surface at-risk accounts before they default.</description>
+    </item>
+  </channel>
+</rss>
