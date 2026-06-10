@@ -1,0 +1,75 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "layout",
+          "name": "layout",
+          "type": "string"
+        },
+        {
+          "title": "url",
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "title": "summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "comments",
+          "name": "comments",
+          "type": "boolean"
+        }
+      ]
+    }
+  ],
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "content",
+      "path": "[[workspace]]/content"
+    },
+    {
+      "path": "[[workspace]]/content/SQL",
+      "title": "SQL"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/content/posts"
+    },
+    {
+      "title": "projects",
+      "path": "[[workspace]]/content/projects"
+    },
+    {
+      "title": "professional",
+      "path": "[[workspace]]/content/posts/professional"
+    },
+    {
+      "title": "SQL",
+      "path": "[[workspace]]/content/posts/SQL"
+    }
+  ],
+  "frontMatter.content.snippets": {
+    "'todo": {
+      "description": "",
+      "body": "This is a todo snipet",
+      "fields": []
+    }
+  }
+}

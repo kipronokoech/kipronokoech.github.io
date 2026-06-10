@@ -10,8 +10,8 @@
 <meta name="description" content="Personal site of Kiprono Elijah — Data Scientist based in Nairobi. Notes on Python, SQL, machine learning, AWS, and applied statistics.">
 <meta name="author" content="Kiprono Elijah">
 <link rel="canonical" href="http://localhost:1313/tags/aws/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.953301b582a2ce18e6228d28ebb95d0ffd1468a7ead746e01757285eecb56e4a.css" integrity="sha256-lTMBtYKizhjmIo0o67ldD/0UaKfq10bgF1coXuy1bko=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon_io.icon">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b96187c52f2ccea0fd570f4bdfbc3476a06af421513adcb227ea7d10cd73bc4e.css" integrity="sha256-uWGHxS8szqD9Vw9L37w0dqBq9CFROtyyJ&#43;p9EM1zvE4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/images/icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/images/icon.png">
 <link rel="apple-touch-icon" href="http://localhost:1313/images/icon.png">
@@ -116,6 +116,11 @@
                 </a>
             </li>
             <li>
+                <a href="http://localhost:1313/archives/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
                 <a href="http://localhost:1313/projects/" title="Projects">
                     <span>Projects</span>
                 </a>
@@ -131,8 +136,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="Posts">
-                    <span>Posts</span>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
                 </a>
             </li>
         </ul>
@@ -166,52 +171,34 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Loan Repayment Forecasting
+    <h2 class="entry-hint-parent">ECS vs EKS — When to Use Each on AWS
     </h2>
   </header>
   <div class="entry-content">
-    <p>Overview Brief description of the project, problem it solves, and its impact.
-Problem Statement What business or research problem did this project address?
-Approach How did you approach the problem? What methods, models, or architectures did you use?
-Results What were the outcomes? Include metrics where possible.
-Tech Stack Modelling — LightGBM, pandas, NumPy Visualisation — Looker / LookML, Matplotlib Infrastructure — AWS Redshift, S3 Links GitHub ← update when repo is public Sun King </p>
+    <p>If you’re deploying containerised workloads on AWS, you’ll quickly hit the ECS vs EKS question. Both run containers. Both integrate with the AWS ecosystem. But they solve the problem differently, and picking the wrong one creates unnecessary complexity.
+What They Are Amazon ECS (Elastic Container Service) is AWS’s own container orchestration service. You define tasks (container specs), put them in services, and ECS handles scheduling and scaling. It’s opinionated, tightly integrated with AWS, and designed to be simple.
+...</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2024-01-02 00:00:00 +0000 UTC'>January 2, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>75 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
-  <a class="entry-link" aria-label="post link to Loan Repayment Forecasting" href="http://localhost:1313/projects/loan-repayment-forecasting/"></a>
+<span title='2026-06-10 00:00:00 +0300 EAT'>June 10, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>515 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+  <a class="entry-link" aria-label="post link to ECS vs EKS — When to Use Each on AWS" href="http://localhost:1313/posts/ecs-vs-eks/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Test
+    <h2 class="entry-hint-parent">How to Install Docker on Ubuntu (Including EC2)
     </h2>
   </header>
   <div class="entry-content">
-    <p></p>
+    <p>Ubuntu is the most common Linux distribution for running Docker — whether on a local dev machine, a CI runner, or an EC2 instance. The install process is the same in all three cases.
+Update the System sudo apt update &amp;&amp; sudo apt upgrade -y Install Required Packages sudo apt install -y apt-transport-https ca-certificates curl software-properties-common Add Docker’s Official GPG Key curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg Add the Docker Repository echo \ &#34;deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] \ https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&#34; \ | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null Install Docker Engine sudo apt update sudo apt install -y docker-ce docker-ce-cli containerd.io Start Docker and Enable at Boot sudo systemctl start docker sudo systemctl enable docker Allow Non-Root Usage (Recommended) By default, Docker commands require sudo. Add your user to the docker group to remove that requirement:
+...</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2024-01-02 00:00:00 +0000 UTC'>January 2, 2024</span>&nbsp;·&nbsp;<span>0 min</span>&nbsp;·&nbsp;<span>0 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
-  <a class="entry-link" aria-label="post link to Test" href="http://localhost:1313/projects/test/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Solar Energy Credit Scoring
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Overview Brief description of the project, problem it solves, and its impact.
-Problem Statement What business or research problem did this project address?
-Approach How did you approach the problem? What methods, models, or architectures did you use?
-Results What were the outcomes? Include metrics where possible (e.g. AUC, precision, recall, or business impact).
-Tech Stack Modelling — XGBoost, scikit-learn, SHAP Pipeline — Apache Airflow, Docker Infrastructure — AWS SageMaker, S3, ECR Data — AWS Redshift, PostgreSQL Links GitHub ← update when repo is public Sun King </p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>87 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
-  <a class="entry-link" aria-label="post link to Solar Energy Credit Scoring" href="http://localhost:1313/projects/solar-credit-scoring/"></a>
+<span title='2026-06-10 00:00:00 +0300 EAT'>June 10, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>383 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+  <a class="entry-link" aria-label="post link to How to Install Docker on Ubuntu (Including EC2)" href="http://localhost:1313/posts/how-to-install-docker-on-ubuntu/"></a>
 </article>
     </main>
     

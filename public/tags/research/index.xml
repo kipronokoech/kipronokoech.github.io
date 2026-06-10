@@ -14,6 +14,13 @@
     <lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Object Detection for Robot Navigation</title>
+      <link>http://localhost:1313/projects/object-detection-robot-navigation/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/object-detection-robot-navigation/</guid>
+      <description>Real-time object detection system to support autonomous robot navigation in unstructured environments, developed at Technische Universität Berlin.</description>
+    </item>
+    <item>
       <title>ML-Enhanced Weather Forecasting</title>
       <link>http://localhost:1313/projects/ml-weather-forecasting/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
@@ -26,13 +33,6 @@
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/msc-thesis/</guid>
       <description>Master&amp;#39;s research at Stellenbosch University under full AIMS scholarship, supervised by Dr. Bubacarr Bah. Awarded Cum Laude.</description>
-    </item>
-    <item>
-      <title>Object Detection for Robot Navigation</title>
-      <link>http://localhost:1313/projects/object-detection-robot-navigation/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/object-detection-robot-navigation/</guid>
-      <description>Real-time object detection system to support autonomous robot navigation in unstructured environments, developed at Technische Universität Berlin.</description>
     </item>
   </channel>
 </rss>

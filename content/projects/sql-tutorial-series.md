@@ -3,8 +3,8 @@ title: "SQL from Scratch — Tutorial Series"
 date: 2023-09-30
 draft: false
 tags: ["SQL", "PostgreSQL", "MySQL", "Teaching"]
-categories: ["Projects"]
 projectCategory: "teaching"
+weight: 6
 description: "A structured nine-part SQL series covering relational databases, queries, joins, aggregation, subqueries, and schema design with real datasets."
 ---
 

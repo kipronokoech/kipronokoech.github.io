@@ -11,8 +11,148 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 Jan 2024 19:46:15 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 00:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS</title>
+      <link>http://localhost:1313/tags/aws/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Containers</title>
+      <link>http://localhost:1313/tags/containers/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/tags/containers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>http://localhost:1313/tags/devops/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ECS</title>
+      <link>http://localhost:1313/tags/ecs/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/tags/ecs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>EKS</title>
+      <link>http://localhost:1313/tags/eks/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/tags/eks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubuntu</title>
+      <link>http://localhost:1313/tags/ubuntu/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Make</title>
+      <link>http://localhost:1313/tags/make/</link>
+      <pubDate>Sat, 06 Jun 2026 01:00:59 +0300</pubDate>
+      <guid>http://localhost:1313/tags/make/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Sat, 06 Jun 2026 01:00:59 +0300</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tooling</title>
+      <link>http://localhost:1313/tags/tooling/</link>
+      <pubDate>Sat, 06 Jun 2026 01:00:59 +0300</pubDate>
+      <guid>http://localhost:1313/tags/tooling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AWS Lambda</title>
+      <link>http://localhost:1313/tags/aws-lambda/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aws-lambda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AWS SageMaker</title>
+      <link>http://localhost:1313/tags/aws-sagemaker/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aws-sagemaker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FastAPI</title>
+      <link>http://localhost:1313/tags/fastapi/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fastapi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MLOps</title>
+      <link>http://localhost:1313/tags/mlops/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mlops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AWS S3</title>
+      <link>http://localhost:1313/tags/aws-s3/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aws-s3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>XGBoost</title>
+      <link>http://localhost:1313/tags/xgboost/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/xgboost/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AWS Step Functions</title>
+      <link>http://localhost:1313/tags/aws-step-functions/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aws-step-functions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IAM</title>
+      <link>http://localhost:1313/tags/iam/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/iam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hyperparameter Tuning</title>
+      <link>http://localhost:1313/tags/hyperparameter-tuning/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hyperparameter-tuning/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Awards</title>
       <link>http://localhost:1313/tags/awards/</link>
@@ -25,62 +165,6 @@
       <link>http://localhost:1313/tags/professional/</link>
       <pubDate>Tue, 16 Jan 2024 19:46:15 +0300</pubDate>
       <guid>http://localhost:1313/tags/professional/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AWS</title>
-      <link>http://localhost:1313/tags/aws/</link>
-      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/aws/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LightGBM</title>
-      <link>http://localhost:1313/tags/lightgbm/</link>
-      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/lightgbm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Machine Learning</title>
-      <link>http://localhost:1313/tags/machine-learning/</link>
-      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
-      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Time Series</title>
-      <link>http://localhost:1313/tags/time-series/</link>
-      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/time-series/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Airflow</title>
-      <link>http://localhost:1313/tags/airflow/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/airflow/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/docker/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>XGBoost</title>
-      <link>http://localhost:1313/tags/xgboost/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/xgboost/</guid>
       <description></description>
     </item>
     <item>
@@ -119,13 +203,6 @@
       <description></description>
     </item>
     <item>
-      <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
-      <pubDate>Mon, 28 Nov 2022 14:09:52 +0300</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Ssh</title>
       <link>http://localhost:1313/tags/ssh/</link>
       <pubDate>Thu, 24 Nov 2022 22:37:56 +0300</pubDate>
@@ -137,83 +214,6 @@
       <link>http://localhost:1313/tags/markdown/</link>
       <pubDate>Mon, 21 Nov 2022 17:49:17 +0300</pubDate>
       <guid>http://localhost:1313/tags/markdown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>NumPy</title>
-      <link>http://localhost:1313/tags/numpy/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/numpy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Research</title>
-      <link>http://localhost:1313/tags/research/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/research/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TensorFlow</title>
-      <link>http://localhost:1313/tags/tensorflow/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tensorflow/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>WRF</title>
-      <link>http://localhost:1313/tags/wrf/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wrf/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Applied Mathematics</title>
-      <link>http://localhost:1313/tags/applied-mathematics/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/applied-mathematics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MATLAB</title>
-      <link>http://localhost:1313/tags/matlab/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/matlab/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Statistics</title>
-      <link>http://localhost:1313/tags/statistics/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/statistics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Computer Vision</title>
-      <link>http://localhost:1313/tags/computer-vision/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/computer-vision/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OpenCV</title>
-      <link>http://localhost:1313/tags/opencv/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/opencv/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PyTorch</title>
-      <link>http://localhost:1313/tags/pytorch/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pytorch/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>YOLO</title>
-      <link>http://localhost:1313/tags/yolo/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/yolo/</guid>
       <description></description>
     </item>
   </channel>

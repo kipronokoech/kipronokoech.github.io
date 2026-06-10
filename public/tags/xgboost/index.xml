@@ -11,14 +11,21 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/xgboost/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Solar Energy Credit Scoring</title>
-      <link>http://localhost:1313/projects/solar-credit-scoring/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/solar-credit-scoring/</guid>
-      <description>End-to-end credit scoring pipeline that determines loan eligibility for solar product purchases across Africa.</description>
+      <title>End-to-End ML Pipeline with SageMaker Pipelines</title>
+      <link>http://localhost:1313/projects/sagemaker-pipelines/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/sagemaker-pipelines/</guid>
+      <description>A four-step SageMaker Pipeline covering data preprocessing, XGBoost model training, model creation, and batch inference — fully orchestrated and reproducible.</description>
+    </item>
+    <item>
+      <title>SageMaker Jobs: Processing, Training, Inference &amp; HPT</title>
+      <link>http://localhost:1313/projects/sagemaker-xgboost-jobs/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/sagemaker-xgboost-jobs/</guid>
+      <description>Hands-on walkthrough of SageMaker&amp;#39;s four core job types — Processing, Training, Batch Transform, and Hyperparameter Tuning — on a retail sales dataset.</description>
     </item>
   </channel>
 </rss>

@@ -10,8 +10,8 @@
 <meta name="description" content="Posts - Kiprono Dev">
 <meta name="author" content="Kiprono Elijah">
 <link rel="canonical" href="http://localhost:1313/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.953301b582a2ce18e6228d28ebb95d0ffd1468a7ead746e01757285eecb56e4a.css" integrity="sha256-lTMBtYKizhjmIo0o67ldD/0UaKfq10bgF1coXuy1bko=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon_io.icon">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b96187c52f2ccea0fd570f4bdfbc3476a06af421513adcb227ea7d10cd73bc4e.css" integrity="sha256-uWGHxS8szqD9Vw9L37w0dqBq9CFROtyyJ&#43;p9EM1zvE4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/images/icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/images/icon.png">
 <link rel="apple-touch-icon" href="http://localhost:1313/images/icon.png">
@@ -131,6 +131,11 @@
                 </a>
             </li>
             <li>
+                <a href="http://localhost:1313/archives/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
                 <a href="http://localhost:1313/projects/" title="Projects">
                     <span>Projects</span>
                 </a>
@@ -146,8 +151,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="Posts">
-                    <span>Posts</span>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
                 </a>
             </li>
         </ul>
@@ -173,6 +178,73 @@
     </a>
   </h1>
 </header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ECS vs EKS — When to Use Each on AWS
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>If you’re deploying containerised workloads on AWS, you’ll quickly hit the ECS vs EKS question. Both run containers. Both integrate with the AWS ecosystem. But they solve the problem differently, and picking the wrong one creates unnecessary complexity.
+What They Are Amazon ECS (Elastic Container Service) is AWS’s own container orchestration service. You define tasks (container specs), put them in services, and ECS handles scheduling and scaling. It’s opinionated, tightly integrated with AWS, and designed to be simple.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-06-10 00:00:00 +0300 EAT'>June 10, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>515 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+  <a class="entry-link" aria-label="post link to ECS vs EKS — When to Use Each on AWS" href="http://localhost:1313/posts/ecs-vs-eks/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to Install Docker on Ubuntu (Including EC2)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Ubuntu is the most common Linux distribution for running Docker — whether on a local dev machine, a CI runner, or an EC2 instance. The install process is the same in all three cases.
+Update the System sudo apt update &amp;&amp; sudo apt upgrade -y Install Required Packages sudo apt install -y apt-transport-https ca-certificates curl software-properties-common Add Docker’s Official GPG Key curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg Add the Docker Repository echo \ &#34;deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] \ https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&#34; \ | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null Install Docker Engine sudo apt update sudo apt install -y docker-ce docker-ce-cli containerd.io Start Docker and Enable at Boot sudo systemctl start docker sudo systemctl enable docker Allow Non-Root Usage (Recommended) By default, Docker commands require sudo. Add your user to the docker group to remove that requirement:
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-06-10 00:00:00 +0300 EAT'>June 10, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>383 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+  <a class="entry-link" aria-label="post link to How to Install Docker on Ubuntu (Including EC2)" href="http://localhost:1313/posts/how-to-install-docker-on-ubuntu/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Makefile Explained
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Makefile? A Makefile is a declarative build script used by the make tool to automate tasks like compiling code, running scripts, cleaning directories, or managing dependencies.
+It’s most useful when:
+You want to codify a repeatable workflow You want one-liner commands for multi-step processes You work across environments (e.g., Docker, EC2, CI/CD) Basic Syntax and Anatomy # Syntax: #target: dependency1, dependency2, … #&lt;TAB&gt;recipe (command 1) #&lt;TAB&gt;recipe (command 2) # ... # Example of Makefile entry train: data/processed.csv python src/train.py --input data/processed.csv --output model.pkl Key Concepts: target: The name of the file or alias you want to build (e.g. train) dependencies: Files that the target depends on, in the case above data/processed.csv is the dependency. recipe: Command(s) to run if dependencies are newer than target. in the example above recipe is python src/train.py --input data/processed.csv --output model.pkl Tab is required. Space will break it.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-06-06 01:00:59 +0300 EAT'>June 6, 2026</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>1159 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+  <a class="entry-link" aria-label="post link to Makefile Explained" href="http://localhost:1313/posts/makefile_explained/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Docker Commands Cheat Sheet
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Here’s a curated list of the most important Docker commands, grouped by what you actually do — not alphabetically.
+1. Build &amp; Tag Images docker build -t name:tag . Builds an image from a Dockerfile in the current directory.
+docker build -t my_app:latest . Most common flags:
+-f — specify a different Dockerfile path . — the build context (current directory); omit -f when the Dockerfile is in the same directory --no-cache — force a full rebuild, skipping the layer cache -t / --tag — give the image a name and optional version tag; defaults to latest if omitted Pro tip: Add a .dockerignore file to exclude unnecessary files (__pycache__, .git, data dumps) from the build context — it can dramatically speed up builds.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2025-07-26 00:00:00 +0000 UTC'>July 26, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>773 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+  <a class="entry-link" aria-label="post link to Docker Commands Cheat Sheet" href="http://localhost:1313/posts/docker-commands-cheat-sheet/"></a>
+</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -276,74 +348,6 @@ Statistical functions accept parameters Parameters are either column names or ex
 
 <span title='2023-09-30 22:20:07 +0300 EAT'>September 30, 2023</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>467 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
   <a class="entry-link" aria-label="post link to Aggregation Functions in SQL" href="http://localhost:1313/posts/sql/5_aggregation_functions/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Joins
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Joins The SQL Joins clause is used to combine records from two or more tables in a database. A JOIN is a means of merging two tables based on common fields.
-INNER JOIN: returns rows when there is a match in both tables. LEFT JOIN: returns all rows from the left table, even if there are no matches in the right table. RIGHT JOIN: returns all rows from the right table, even if there are no matches in the left table. FULL JOIN: returns rows when there is a match in one of the tables. Note: FULL JOIN cannot be implemented directly in MySQL dialet. In this dialect, FULL JOIN is the UNION between RIGHT JOIN and LEFT JOIN.
-...</p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2023-09-30 22:15:15 +0300 EAT'>September 30, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>372 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
-  <a class="entry-link" aria-label="post link to Joins" href="http://localhost:1313/posts/sql/6_multiple_table_queries/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Queries with Queries with SQL
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Single-Valued Subqueries A single-valued subquery is a query that 1) produces a result with a single column and a single row and 2) is ’nested’ in the WHERE clause of another query. Subqueries must be enclosed in parentheses.
-A single-valued queries:
-SELECT AVG(days_to_cutoff) FROM accounts; Sing-valued sub-query:
-SELECT * FROM accounts WHERE days_to_cutoff &gt; (SELECT AVG(days_to_cutoff) FROM accounts) ORDER BY days_to_cutoff; Key Points:
-Single-valued queries can be used in comparisons Subqueries are enclosed in parentheses Multi-Valued Subqueries A multi-valued subquery is a query that 1) returns a single-column result with zero, one, or more rows and 2) is ’nested’ in the WHERE clause of another query. Multi-valued subqueries always follow the IN operator.
-...</p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2023-09-30 22:10:21 +0300 EAT'>September 30, 2023</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>134 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
-  <a class="entry-link" aria-label="post link to Queries with Queries with SQL" href="http://localhost:1313/posts/sql/7_queries_within_queries/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Creating Database Objects
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Creating Tables in SQL New tables are defined in a database by entering a CREATE TABLE statement. In its simplest form, the CREATE TABLE statement includes a new table name and one or more column definitions. Tables are removed using the DROP TABLE statement.
-SQL Syntax for Creating Tables:
-CREATE TABLE table_name ( column1 datatype constraints, column2 datatype constraints, ... ); table_name: The name of the table you want to create. column1, column2, etc.: The names of the columns in the table. datatype: The data type for each column (e.g., INT, VARCHAR, DATE, etc.). constraints: Optional constraints (discussed in the next section) Example: Creating a simple table with basic columns:
-...</p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2023-09-30 22:05:21 +0300 EAT'>September 30, 2023</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>602 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
-  <a class="entry-link" aria-label="post link to Creating Database Objects" href="http://localhost:1313/posts/sql/8_defining_database_object/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Maintaining and Managing Database Objects in SQL
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Before we learn how to update data in SQL tables, let’s create two tables we will use: customers and orders.
-customers table USE ds2; # select database show tables; CREATE TABLE customers ( id INT PRIMARY KEY, name VARCHAR(30) NOT NULL, age INT DEFAULT - 99, address VARCHAR(45), salary DECIMAL(18 , 2 ) DEFAULT 2000.00 ); orders table CREATE TABLE orders ( id INT NOT NULL, date datetime, customer_id INT REFERENCES customers (id), amount DOUBLE, PRIMARY KEY (id) ); Inserting Rows Updating Rows New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause.
-...</p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2023-09-30 22:00:21 +0300 EAT'>September 30, 2023</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>599 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
-  <a class="entry-link" aria-label="post link to Maintaining and Managing Database Objects in SQL" href="http://localhost:1313/posts/sql/9_maintaining_tables/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

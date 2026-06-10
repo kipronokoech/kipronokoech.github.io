@@ -8,6 +8,12 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 minify:
   disableXML: true
   minifyOutput: false
@@ -42,7 +48,7 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "favicon_io.icon"
+    favicon: "favicon.ico"
     favicon16x16: "images/icon.png"
     favicon32x32: "images/icon.png"
     apple_touch_icon: "images/icon.png"
@@ -72,14 +78,18 @@ params:
   homeInfoParams:
     Title: "Hi, I'm Kiprono"
     Content: >
-      Statistician turned data scientist, based in Nairobi.
-      I hold two master's degrees from Stellenbosch University on full
-      [AIMS](https://aims.ac.za/) scholarships, and work as a **Data Scientist**
-      at [Sun King](https://sunking.com), building and deploying ML models at scale
-      that help people across Africa access solar energy through affordable loan programs.
+      Data Scientist based in Nairobi, building ML systems that help people across Africa
+      access solar energy through affordable credit at [Sun King](https://sunking.com).
 
 
-      Here I document what I'm learning: Python, AWS, SQL, machine learning, and more.
+      I studied statistics — two master's degrees from Stellenbosch University on full
+      [AIMS](https://aims.ac.za/) scholarships — and have spent the years since turning
+      that foundation into production ML: credit scoring models, pipelines on AWS, and
+      ML infrastructure that ships and stays running.
+
+
+      This is where I write about what I'm building and learning: Python, AWS, SQL,
+      machine learning, and applied statistics.
 
   socialIcons:
     - name: github
@@ -108,8 +118,8 @@ params:
     shouldSort: true
     location: 0
     distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
+    threshold: 0.3
+    minMatchCharLength: 2
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
 menu:
@@ -118,6 +128,10 @@ menu:
       name: About Me
       url: /about-me/
       weight: 10
+    - identifier: posts
+      name: Posts
+      url: /archives/
+      weight: 15
     - identifier: projects
       name: Projects
       url: /projects/
@@ -130,10 +144,10 @@ menu:
       name: Categories
       url: /blog/
       weight: 40
-    - identifier: posts
-      name: Posts
-      url: /archives/
-      weight: 50
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 60
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:

@@ -1,9 +1,20 @@
 {{- define "main" }}
 
-{{- $accentColors := dict "ml" "#3b82f6" "research" "#8b5cf6" "teaching" "#f59e0b" "data-eng" "#10b981" }}
-{{- $badgeBg      := dict "ml" "#dbeafe"  "research" "#ede9fe"  "teaching" "#fef3c7"  "data-eng" "#d1fae5" }}
-{{- $badgeText    := dict "ml" "#1d4ed8"  "research" "#6d28d9"  "teaching" "#b45309"  "data-eng" "#065f46" }}
-{{- $badgeLabel   := dict "ml" "ML"       "research" "Research" "teaching" "Teaching" "data-eng" "Data Eng" }}
+{{- $badgeLabel := dict "ml" "ML" "research" "Research" "teaching" "Teaching" "data-eng" "Data Eng" }}
+
+{{- /* Collect unique categories from all project pages */ -}}
+{{- $cats := slice }}
+{{- range .Pages }}
+  {{- $cat := .Params.projectCategory | default "ml" }}
+  {{- if not (in $cats $cat) }}
+    {{- $cats = $cats | append $cat }}
+  {{- end }}
+{{- end }}
+{{- $cats = sort $cats }}
+
+{{- /* Split into featured and regular, sorted by weight then date */ -}}
+{{- $featured := sort (sort (where .Pages "Params.featured" true)    "Date" "desc") "Params.weight" }}
+{{- $regular  := sort (sort (where .Pages "Params.featured" "!=" true) "Date" "desc") "Params.weight" }}
 
 <article class="post-single">
   <header class="post-header">
@@ -15,57 +26,59 @@
 
     <div class="project-filters">
       <button class="project-filter-btn active" data-filter="all">All</button>
-      <button class="project-filter-btn" data-filter="ml">Machine Learning</button>
-      <button class="project-filter-btn" data-filter="research">Research</button>
-      <button class="project-filter-btn" data-filter="data-eng">Data Engineering</button>
-      <button class="project-filter-btn" data-filter="teaching">Teaching</button>
-    </div>
-
-    <div class="projects-grid">
-      {{- range sort .Pages "Date" "desc" }}
-        {{- $cat    := .Params.projectCategory | default "ml" }}
-        {{- $accent := index $accentColors $cat | default "#3b82f6" }}
-        {{- $bg     := index $badgeBg     $cat  | default "#dbeafe" }}
-        {{- $fg     := index $badgeText   $cat  | default "#1d4ed8" }}
-        {{- $label  := index $badgeLabel  $cat  | default "ML" }}
-        <div class="project-card" data-category="{{ $cat }}">
-          <div class="project-card-accent" style="background:{{ $accent }};"></div>
-          <div class="project-card-body">
-            <div class="project-card-header">
-              <h3 class="project-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-              <span class="project-badge" style="background:{{ $bg }};color:{{ $fg }};">{{ $label }}</span>
-            </div>
-            <p class="project-desc">{{ .Description }}</p>
-            <div class="project-tags">
-              {{- range .Params.tags }}
-              <span class="project-tag">{{ . }}</span>
-              {{- end }}
-            </div>
-            <div class="project-links">
-              <a class="project-link" href="{{ .Permalink }}">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
+      {{- range $cats }}
+        {{- $label := index $badgeLabel . | default (. | title) }}
+        <button class="project-filter-btn" data-filter="{{ . }}">{{ $label }}</button>
       {{- end }}
     </div>
+
+    {{- if $featured }}
+    <div class="projects-featured">
+      <h2 class="projects-section-title">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        Featured
+      </h2>
+      <div class="projects-grid">
+        {{- range $featured }}{{ partial "project-card.html" . }}{{ end }}
+      </div>
+    </div>
+    {{- end }}
+
+    {{- if $regular }}
+    <div class="projects-regular">
+      {{- if $featured }}<h2 class="projects-section-title">All Projects</h2>{{ end }}
+      <div class="projects-grid">
+        {{- range $regular }}{{ partial "project-card.html" . }}{{ end }}
+      </div>
+    </div>
+    {{- end }}
 
   </div>
 </article>
 
 <script>
 (function () {
-  var btns = document.querySelectorAll('.project-filter-btn');
+  var btns  = document.querySelectorAll('.project-filter-btn');
   var cards = document.querySelectorAll('.project-card');
+
   btns.forEach(function (btn) {
     btn.addEventListener('click', function () {
       btns.forEach(function (b) { b.classList.remove('active'); });
       btn.classList.add('active');
+
       var filter = btn.getAttribute('data-filter');
       cards.forEach(function (card) {
-        card.style.display = filter === 'all' || card.getAttribute('data-category') === filter ? 'flex' : 'none';
+        card.style.display =
+          filter === 'all' || card.getAttribute('data-category') === filter
+            ? 'flex' : 'none';
+      });
+
+      ['projects-featured', 'projects-regular'].forEach(function (cls) {
+        var section = document.querySelector('.' + cls);
+        if (!section) return;
+        var anyVisible = Array.from(section.querySelectorAll('.project-card'))
+          .some(function (c) { return c.style.display !== 'none'; });
+        section.style.display = anyVisible ? '' : 'none';
       });
     });
   });

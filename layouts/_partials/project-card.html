@@ -1,0 +1,36 @@
+{{- $accentColors := dict "ml" "#3b82f6" "research" "#8b5cf6" "teaching" "#f59e0b" "data-eng" "#10b981" }}
+{{- $badgeBg      := dict "ml" "#dbeafe"  "research" "#ede9fe"  "teaching" "#fef3c7"  "data-eng" "#d1fae5" }}
+{{- $badgeText    := dict "ml" "#1d4ed8"  "research" "#6d28d9"  "teaching" "#b45309"  "data-eng" "#065f46" }}
+{{- $badgeLabel   := dict "ml" "ML"       "research" "Research" "teaching" "Teaching" "data-eng" "Data Eng" }}
+{{- $cat    := .Params.projectCategory | default "ml" }}
+{{- $accent := index $accentColors $cat | default "#3b82f6" }}
+{{- $bg     := index $badgeBg     $cat  | default "#dbeafe" }}
+{{- $fg     := index $badgeText   $cat  | default "#1d4ed8" }}
+{{- $label  := index $badgeLabel  $cat  | default ($cat | title) }}
+<div class="project-card{{ if .Params.featured }} project-card--featured{{ end }}" data-category="{{ $cat }}">
+  <div class="project-card-accent" style="background:{{ $accent }};"></div>
+  {{- if .Params.featured }}
+  <div class="project-featured-badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+    Featured
+  </div>
+  {{- end }}
+  <div class="project-card-body">
+    <div class="project-card-header">
+      <h3 class="project-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <span class="project-badge" style="background:{{ $bg }};color:{{ $fg }};">{{ $label }}</span>
+    </div>
+    <p class="project-desc">{{ .Description }}</p>
+    <div class="project-tags">
+      {{- range .Params.tags }}
+      <span class="project-tag">{{ . }}</span>
+      {{- end }}
+    </div>
+    <div class="project-links">
+      <a class="project-link" href="{{ .Permalink }}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+        Read More
+      </a>
+    </div>
+  </div>
+</div>

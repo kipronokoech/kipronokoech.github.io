@@ -10,8 +10,8 @@
 <meta name="description" content="Personal site of Kiprono Elijah — Data Scientist based in Nairobi. Notes on Python, SQL, machine learning, AWS, and applied statistics.">
 <meta name="author" content="Kiprono Elijah">
 <link rel="canonical" href="http://localhost:1313/tags/xgboost/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.953301b582a2ce18e6228d28ebb95d0ffd1468a7ead746e01757285eecb56e4a.css" integrity="sha256-lTMBtYKizhjmIo0o67ldD/0UaKfq10bgF1coXuy1bko=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon_io.icon">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b96187c52f2ccea0fd570f4bdfbc3476a06af421513adcb227ea7d10cd73bc4e.css" integrity="sha256-uWGHxS8szqD9Vw9L37w0dqBq9CFROtyyJ&#43;p9EM1zvE4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/images/icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/images/icon.png">
 <link rel="apple-touch-icon" href="http://localhost:1313/images/icon.png">
@@ -116,6 +116,11 @@
                 </a>
             </li>
             <li>
+                <a href="http://localhost:1313/archives/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
                 <a href="http://localhost:1313/projects/" title="Projects">
                     <span>Projects</span>
                 </a>
@@ -131,8 +136,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="Posts">
-                    <span>Posts</span>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
                 </a>
             </li>
         </ul>
@@ -166,20 +171,35 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Solar Energy Credit Scoring
+    <h2 class="entry-hint-parent">End-to-End ML Pipeline with SageMaker Pipelines
     </h2>
   </header>
   <div class="entry-content">
-    <p>Overview Brief description of the project, problem it solves, and its impact.
-Problem Statement What business or research problem did this project address?
-Approach How did you approach the problem? What methods, models, or architectures did you use?
-Results What were the outcomes? Include metrics where possible (e.g. AUC, precision, recall, or business impact).
-Tech Stack Modelling — XGBoost, scikit-learn, SHAP Pipeline — Apache Airflow, Docker Infrastructure — AWS SageMaker, S3, ECR Data — AWS Redshift, PostgreSQL Links GitHub ← update when repo is public Sun King </p>
+    <p>Overview SageMaker Pipelines lets you define a directed acyclic graph (DAG) of ML steps that SageMaker executes, tracks, and makes reproducible. This project builds a complete pipeline over a retail sales dataset: raw data in S3 goes in, predictions come out, with every intermediate artefact versioned and auditable.
+The four steps in the pipeline:
+PreprocessData → TrainModel → CreateInferenceModel → BatchInference The Dataset Walmart retail sales data with three source tables (features, sales, stores). The target is weekly sales per store — a regression problem.
+...</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>87 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
-  <a class="entry-link" aria-label="post link to Solar Energy Credit Scoring" href="http://localhost:1313/projects/solar-credit-scoring/"></a>
+<span title='2025-09-01 00:00:00 +0000 UTC'>September 1, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>495 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+  <a class="entry-link" aria-label="post link to End-to-End ML Pipeline with SageMaker Pipelines" href="http://localhost:1313/projects/sagemaker-pipelines/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">SageMaker Jobs: Processing, Training, Inference &amp; HPT
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Overview Before building automated pipelines, it helps to understand SageMaker’s individual building blocks. This project exercises all four core SageMaker job types using a Walmart retail sales dataset and SageMaker’s built-in XGBoost algorithm. Each job type solves a distinct phase of the ML workflow and runs on managed, ephemeral compute — no servers to provision or maintain.
+Job Type Purpose Processing Job Data prep, feature engineering, evaluation Training Job Model fitting Batch Transform Job Offline inference on large datasets Hyperparameter Tuning Job Automated hyperparameter search The Dataset Three CSV tables from Walmart historical sales data — features, weekly sales, and store metadata — merged and engineered into a regression dataset predicting weekly store sales.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2025-07-01 00:00:00 +0000 UTC'>July 1, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>513 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+  <a class="entry-link" aria-label="post link to SageMaker Jobs: Processing, Training, Inference & HPT" href="http://localhost:1313/projects/sagemaker-xgboost-jobs/"></a>
 </article>
     </main>
     

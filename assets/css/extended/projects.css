@@ -6,6 +6,60 @@
   line-height: 1.7;
 }
 
+/* ── Section titles ──────────────────────────────────────── */
+.projects-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--secondary);
+  margin: 0 0 1rem;
+  border: none;
+}
+
+.projects-section-title svg {
+  width: 14px;
+  height: 14px;
+  fill: #f59e0b;
+  flex-shrink: 0;
+}
+
+.projects-featured {
+  margin-bottom: 2.5rem;
+}
+
+.projects-regular {
+  margin-bottom: 1rem;
+}
+
+/* ── Featured card ───────────────────────────────────────── */
+.project-card--featured {
+  border-color: #f59e0b;
+}
+
+.project-featured-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #b45309;
+  background: #fef3c7;
+  border-bottom: 1px solid #f59e0b;
+}
+
+.project-featured-badge svg {
+  width: 11px;
+  height: 11px;
+  fill: #f59e0b;
+}
+
 /* ── Filter bar ──────────────────────────────────────────── */
 .project-filters {
   display: flex;

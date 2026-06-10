@@ -11,28 +11,42 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 01:00:59 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Loan Repayment Forecasting</title>
-      <link>http://localhost:1313/projects/loan-repayment-forecasting/</link>
-      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/loan-repayment-forecasting/</guid>
-      <description>Time series model forecasting weekly repayment rates to surface at-risk accounts before they default.</description>
+      <title>End-to-End ML Pipeline with SageMaker Pipelines</title>
+      <link>http://localhost:1313/projects/sagemaker-pipelines/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/sagemaker-pipelines/</guid>
+      <description>A four-step SageMaker Pipeline covering data preprocessing, XGBoost model training, model creation, and batch inference — fully orchestrated and reproducible.</description>
     </item>
     <item>
-      <title>Test</title>
-      <link>http://localhost:1313/projects/test/</link>
-      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/test/</guid>
-      <description>Time series model forecasting weekly repayment rates to surface at-risk accounts before they default.</description>
+      <title>ML Workflow Orchestration with AWS Step Functions</title>
+      <link>http://localhost:1313/projects/step-functions-ml/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/step-functions-ml/</guid>
+      <description>Orchestrating SageMaker Processing, Training, and Inference jobs end-to-end using AWS Step Functions state machines.</description>
     </item>
     <item>
-      <title>Solar Energy Credit Scoring</title>
-      <link>http://localhost:1313/projects/solar-credit-scoring/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/solar-credit-scoring/</guid>
-      <description>End-to-end credit scoring pipeline that determines loan eligibility for solar product purchases across Africa.</description>
+      <title>SageMaker Jobs: Processing, Training, Inference &amp; HPT</title>
+      <link>http://localhost:1313/projects/sagemaker-xgboost-jobs/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/sagemaker-xgboost-jobs/</guid>
+      <description>Hands-on walkthrough of SageMaker&amp;#39;s four core job types — Processing, Training, Batch Transform, and Hyperparameter Tuning — on a retail sales dataset.</description>
+    </item>
+    <item>
+      <title>Deploying an ML Model with a SageMaker Real-Time Endpoint</title>
+      <link>http://localhost:1313/projects/sagemaker-endpoint-deployment/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/sagemaker-endpoint-deployment/</guid>
+      <description>End-to-end deployment of a LightGBM bank churn model as a SageMaker real-time endpoint — custom Docker inference server, ECR, and a Lambda function for automated S3-triggered inference.</description>
+    </item>
+    <item>
+      <title>Makefile Explained</title>
+      <link>http://localhost:1313/posts/makefile_explained/</link>
+      <pubDate>Sat, 06 Jun 2026 01:00:59 +0300</pubDate>
+      <guid>http://localhost:1313/posts/makefile_explained/</guid>
+      <description>A practical guide to Makefiles for data scientists and engineers — syntax, variables, dependencies, and real-world use cases.</description>
     </item>
     <item>
       <title>How to Install Python Manually in Linux</title>
@@ -40,27 +54,6 @@
       <pubDate>Mon, 28 Nov 2022 14:09:52 +0300</pubDate>
       <guid>http://localhost:1313/posts/how-to-install-python-manually-in-linux/</guid>
       <description>This post covers the steps to install Python manually and how to remove it.</description>
-    </item>
-    <item>
-      <title>ML-Enhanced Weather Forecasting</title>
-      <link>http://localhost:1313/projects/ml-weather-forecasting/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/ml-weather-forecasting/</guid>
-      <description>Applying machine learning to improve short-range weather forecasts at the Kenya Meteorological Department, including optimised data assimilation for the WRF model.</description>
-    </item>
-    <item>
-      <title>MSc Thesis — Applied Mathematics (Data Science)</title>
-      <link>http://localhost:1313/projects/msc-thesis/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/msc-thesis/</guid>
-      <description>Master&amp;#39;s research at Stellenbosch University under full AIMS scholarship, supervised by Dr. Bubacarr Bah. Awarded Cum Laude.</description>
-    </item>
-    <item>
-      <title>Object Detection for Robot Navigation</title>
-      <link>http://localhost:1313/projects/object-detection-robot-navigation/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/object-detection-robot-navigation/</guid>
-      <description>Real-time object detection system to support autonomous robot navigation in unstructured environments, developed at Technische Universität Berlin.</description>
     </item>
   </channel>
 </rss>

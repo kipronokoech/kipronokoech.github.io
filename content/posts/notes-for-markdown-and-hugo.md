@@ -1,7 +1,7 @@
 ---
 title: "Notes on Hugo and Markdown"
 date: 2022-11-21T17:49:17+03:00
-draft: false
+draft: true
 tags: ["Markdown"]
 categories: ["Linux"]
 description: "This article disccusses some MarkDown Syntax. Notes for self kind of."
@@ -43,7 +43,7 @@ Here is some Python code
 ```Python 3
 import psycopg2
 data_folder = "clean_data/August"
-import os 
+import os
 import pandas as pd
 import numpy as np
 
@@ -145,7 +145,7 @@ params:
 ```
 
 
-Examples 
+Examples
 
 ```Markdown
 **The Cauchy-Schwarz Inequality**
@@ -170,7 +170,7 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 ```
 ![Alt text of image](/images/example1.jpg)
 ```
-rendered as 
+rendered as
 
 ![Alt text of image](/images/example1.jpg)
 
@@ -219,7 +219,7 @@ Numbered list on Markdown:
 
 ## Notes about Hugo
 Use `hugo server -D` to open a local server which renderes drafts.
-By default, hugo organizes posts by date. 
+By default, hugo organizes posts by date.
 
 If you want to override that provide the `weight: <int>` on the front-matter. The smaller the `<int>` the higher the article in the list. I have provided the value 99 for this article.
 
@@ -227,10 +227,10 @@ Use at least H2 on the title headings. H1 headings do not show on the Table of C
 
 ## Possible Problems you will run into in Hugo and how to self them
 
-**Problem 1:** 
+**Problem 1:**
 Module "PaperMod" is not compatible with this Hugo version;  run "hugo mod graph" for more information.
 
-**Solution 1:** Hugo is probably outdated. Updated it by installing the [latest version](https://github.com/gohugoio/hugo/releases). You can install the downloaded .deb file by running 
+**Solution 1:** Hugo is probably outdated. Updated it by installing the [latest version](https://github.com/gohugoio/hugo/releases). You can install the downloaded .deb file by running
 
 ```bash
 sudo dpkg --install <path_to_the_deb_file>

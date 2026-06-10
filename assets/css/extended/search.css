@@ -1,0 +1,30 @@
+.searchResults li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.search-result-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.search-result-snippet {
+    font-size: 0.82rem;
+    color: var(--secondary);
+    line-height: 1.55;
+}
+
+#searchResults mark {
+    background: #fef08a;
+    color: #1a1a1a;
+    border-radius: 2px;
+    padding: 0 1px;
+    font-style: normal;
+}
+
+.dark #searchResults mark {
+    background: #854d0e;
+    color: #fef9c3;
+}

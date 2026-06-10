@@ -2,7 +2,6 @@
 title: "Awards Offered to Me"
 date: 2024-01-16T19:46:15+03:00
 draft: false
-weight: 100
 categories: ["professional"]
 tags: ["professional", "awards"]
 description: "This page highlights awards given to me in various institutions where I have either worked or pursued my studies."
@@ -10,7 +9,7 @@ description: "This page highlights awards given to me in various institutions wh
 
 ## Dedicated Service Award
 
-Issuer: [Sun King Limited](https://sunking.com/) 
+Issuer: [Sun King Limited](https://sunking.com/)
 
 ### Details about my Employment
 **My job title:** Data Intelligence Analyst
@@ -23,7 +22,7 @@ Issuer: [Sun King Limited](https://sunking.com/)
 
 **Sun King Offices:** 11 (across different countries)
 
-Employees offered the award are listed in the Figure below: 
+Employees offered the award are listed in the Figure below:
 ![Awardees](/files/dsa2.png#center)
 
 ### Comment from CEO

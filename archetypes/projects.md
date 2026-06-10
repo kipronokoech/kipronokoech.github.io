@@ -1,11 +1,12 @@
 ---
 title: "{{ replace .File.ContentBaseName "-" " " | title }}"
 date: {{ .Date }}
-draft: false
-description: ""
+draft: true
+description: "One-line summary of what the project does and its impact."
 tags: []
-categories: ["Projects"]
 projectCategory: "ml"
+weight: 10
+featured: false
 ---
 
 ## Overview

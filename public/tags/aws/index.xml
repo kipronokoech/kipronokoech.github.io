@@ -11,28 +11,21 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 00:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Loan Repayment Forecasting</title>
-      <link>http://localhost:1313/projects/loan-repayment-forecasting/</link>
-      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/loan-repayment-forecasting/</guid>
-      <description>Time series model forecasting weekly repayment rates to surface at-risk accounts before they default.</description>
+      <title>ECS vs EKS — When to Use Each on AWS</title>
+      <link>http://localhost:1313/posts/ecs-vs-eks/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/ecs-vs-eks/</guid>
+      <description>A clear breakdown of Amazon ECS and Amazon EKS — what they are, how they differ, and the decision criteria for choosing between them.</description>
     </item>
     <item>
-      <title>Test</title>
-      <link>http://localhost:1313/projects/test/</link>
-      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/test/</guid>
-      <description>Time series model forecasting weekly repayment rates to surface at-risk accounts before they default.</description>
-    </item>
-    <item>
-      <title>Solar Energy Credit Scoring</title>
-      <link>http://localhost:1313/projects/solar-credit-scoring/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/solar-credit-scoring/</guid>
-      <description>End-to-end credit scoring pipeline that determines loan eligibility for solar product purchases across Africa.</description>
+      <title>How to Install Docker on Ubuntu (Including EC2)</title>
+      <link>http://localhost:1313/posts/how-to-install-docker-on-ubuntu/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/how-to-install-docker-on-ubuntu/</guid>
+      <description>Step-by-step guide to installing Docker Engine and Docker Compose on Ubuntu — works identically on a local machine or an AWS EC2 instance.</description>
     </item>
   </channel>
 </rss>

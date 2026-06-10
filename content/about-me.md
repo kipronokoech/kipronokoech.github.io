@@ -1,10 +1,11 @@
 ---
-title: "About Me"
-layout: "about-me"
-url: "/about-me/"
-summary: "About Me"
-description: "This is a page about me. The content here is very brief. If you need a detailed information about me check my CV on the first section"
+title: About Me
+layout: about-me
+url: /about-me/
+summary: About Me
+description: This is a page about me. The content here is very brief. If you need a detailed information about me check my CV on the first section
 comments: false
+slug: ""
 ---
 ## Downloadable CV
 
@@ -56,7 +57,7 @@ My current curriculum vitae can be downloaded or viewed from <a href="/files/Kip
             </ul>
      </div>
      <div class ="edu-work3">
-        Cape Town, South Africa 
+        Cape Town, South Africa
         <br>
         2020-2022
      </div>
@@ -120,7 +121,7 @@ My current curriculum vitae can be downloaded or viewed from <a href="/files/Kip
      <div class ="edu-work3">
         Nairobi, Kenya
         <br>
-        Jan 2023 - 
+        Jan 2023 -
      </div>
 </div>
 <div class="edu-work">
@@ -197,4 +198,3 @@ My current curriculum vitae can be downloaded or viewed from <a href="/files/Kip
         <li>First place, Mathematics contest with 1954 contestants <p>(2012)</p>.</li>
     </ul>
  </div>
-

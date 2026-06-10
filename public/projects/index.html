@@ -7,11 +7,11 @@
 <meta name="robots" content="index, follow">
 <title>Projects | Kiprono Dev</title>
 <meta name="keywords" content="">
-<meta name="description" content="Projects - Kiprono Dev">
+<meta name="description" content="A collection of machine learning, data science, and research projects by Kiprono Elijah.">
 <meta name="author" content="Kiprono Elijah">
 <link rel="canonical" href="http://localhost:1313/projects/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.953301b582a2ce18e6228d28ebb95d0ffd1468a7ead746e01757285eecb56e4a.css" integrity="sha256-lTMBtYKizhjmIo0o67ldD/0UaKfq10bgF1coXuy1bko=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon_io.icon">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b96187c52f2ccea0fd570f4bdfbc3476a06af421513adcb227ea7d10cd73bc4e.css" integrity="sha256-uWGHxS8szqD9Vw9L37w0dqBq9CFROtyyJ&#43;p9EM1zvE4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/images/icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/images/icon.png">
 <link rel="apple-touch-icon" href="http://localhost:1313/images/icon.png">
@@ -68,7 +68,7 @@
 </script><meta property="og:url" content="http://localhost:1313/projects/">
   <meta property="og:site_name" content="Kiprono Dev">
   <meta property="og:title" content="Projects">
-  <meta property="og:description" content="Personal site of Kiprono Elijah — Data Scientist based in Nairobi. Notes on Python, SQL, machine learning, AWS, and applied statistics.">
+  <meta property="og:description" content="A collection of machine learning, data science, and research projects by Kiprono Elijah.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/example1.jpg">
@@ -76,7 +76,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/images/example1.jpg">
   <meta name="twitter:title" content="Projects">
-  <meta name="twitter:description" content="Personal site of Kiprono Elijah — Data Scientist based in Nairobi. Notes on Python, SQL, machine learning, AWS, and applied statistics.">
+  <meta name="twitter:description" content="A collection of machine learning, data science, and research projects by Kiprono Elijah.">
 
 
 <script type="application/ld+json">
@@ -131,6 +131,11 @@
                 </a>
             </li>
             <li>
+                <a href="http://localhost:1313/archives/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
                 <a href="http://localhost:1313/projects/" title="Projects">
                     <span class="active">Projects</span>
                 </a>
@@ -146,8 +151,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="Posts">
-                    <span>Posts</span>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
                 </a>
             </li>
         </ul>
@@ -159,216 +164,173 @@
   <header class="post-header">
     <h1 class="post-title">Projects</h1>
   </header>
-  <div class="post-content">
+  <div class="post-content"><div class="projects-intro"><p>A selection of projects spanning machine learning, computer vision, and data engineering.</p>
+</div>
 
     <div class="project-filters">
       <button class="project-filter-btn active" data-filter="all">All</button>
-      <button class="project-filter-btn" data-filter="ml">Machine Learning</button>
-      <button class="project-filter-btn" data-filter="research">Research</button>
-      <button class="project-filter-btn" data-filter="data-eng">Data Engineering</button>
-      <button class="project-filter-btn" data-filter="teaching">Teaching</button>
+        <button class="project-filter-btn" data-filter="data-eng">Data Eng</button>
+        <button class="project-filter-btn" data-filter="ml">ML</button>
+        <button class="project-filter-btn" data-filter="teaching">Teaching</button>
     </div>
+    <div class="projects-featured">
+      <h2 class="projects-section-title">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        Featured
+      </h2>
+      <div class="projects-grid">
+<div class="project-card project-card--featured" data-category="ml">
+  <div class="project-card-accent" style="background:#3b82f6;"></div>
+  <div class="project-featured-badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+    Featured
+  </div>
+  <div class="project-card-body">
+    <div class="project-card-header">
+      <h3 class="project-title"><a href="http://localhost:1313/projects/sagemaker-pipelines/">End-to-End ML Pipeline with SageMaker Pipelines</a></h3>
+      <span class="project-badge" style="background:#dbeafe;color:#1d4ed8;">ML</span>
+    </div>
+    <p class="project-desc">A four-step SageMaker Pipeline covering data preprocessing, XGBoost model training, model creation, and batch inference — fully orchestrated and reproducible.</p>
+    <div class="project-tags">
+      <span class="project-tag">Python</span>
+      <span class="project-tag">AWS SageMaker</span>
+      <span class="project-tag">XGBoost</span>
+      <span class="project-tag">MLOps</span>
+      <span class="project-tag">AWS S3</span>
+    </div>
+    <div class="project-links">
+      <a class="project-link" href="http://localhost:1313/projects/sagemaker-pipelines/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+        Read More
+      </a>
+    </div>
+  </div>
+</div>
 
-    <div class="projects-grid">
-        <div class="project-card" data-category="ml">
-          <div class="project-card-accent" style="background:#3b82f6;"></div>
-          <div class="project-card-body">
-            <div class="project-card-header">
-              <h3 class="project-title"><a href="http://localhost:1313/projects/your-project-name/">Your Project Name</a></h3>
-              <span class="project-badge" style="background:#dbeafe;color:#1d4ed8;">ML</span>
-            </div>
-            <p class="project-desc"></p>
-            <div class="project-tags">
-            </div>
-            <div class="project-links">
-              <a class="project-link" href="http://localhost:1313/projects/your-project-name/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-category="ml">
-          <div class="project-card-accent" style="background:#3b82f6;"></div>
-          <div class="project-card-body">
-            <div class="project-card-header">
-              <h3 class="project-title"><a href="http://localhost:1313/projects/my-first-post/">My First Post</a></h3>
-              <span class="project-badge" style="background:#dbeafe;color:#1d4ed8;">ML</span>
-            </div>
-            <p class="project-desc"></p>
-            <div class="project-tags">
-            </div>
-            <div class="project-links">
-              <a class="project-link" href="http://localhost:1313/projects/my-first-post/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-category="ml">
-          <div class="project-card-accent" style="background:#3b82f6;"></div>
-          <div class="project-card-body">
-            <div class="project-card-header">
-              <h3 class="project-title"><a href="http://localhost:1313/projects/loan-repayment-forecasting/">Loan Repayment Forecasting</a></h3>
-              <span class="project-badge" style="background:#dbeafe;color:#1d4ed8;">ML</span>
-            </div>
-            <p class="project-desc">Time series model forecasting weekly repayment rates to surface at-risk accounts before they default.</p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">LightGBM</span>
-              <span class="project-tag">Time Series</span>
-              <span class="project-tag">AWS</span>
-              <span class="project-tag">Machine Learning</span>
-            </div>
-            <div class="project-links">
-              <a class="project-link" href="http://localhost:1313/projects/loan-repayment-forecasting/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-category="ml">
-          <div class="project-card-accent" style="background:#3b82f6;"></div>
-          <div class="project-card-body">
-            <div class="project-card-header">
-              <h3 class="project-title"><a href="http://localhost:1313/projects/test/">Test</a></h3>
-              <span class="project-badge" style="background:#dbeafe;color:#1d4ed8;">ML</span>
-            </div>
-            <p class="project-desc">Time series model forecasting weekly repayment rates to surface at-risk accounts before they default.</p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">LightGBM</span>
-              <span class="project-tag">Time Series</span>
-              <span class="project-tag">AWS</span>
-              <span class="project-tag">Machine Learning</span>
-            </div>
-            <div class="project-links">
-              <a class="project-link" href="http://localhost:1313/projects/test/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-category="ml">
-          <div class="project-card-accent" style="background:#3b82f6;"></div>
-          <div class="project-card-body">
-            <div class="project-card-header">
-              <h3 class="project-title"><a href="http://localhost:1313/projects/solar-credit-scoring/">Solar Energy Credit Scoring</a></h3>
-              <span class="project-badge" style="background:#dbeafe;color:#1d4ed8;">ML</span>
-            </div>
-            <p class="project-desc">End-to-end credit scoring pipeline that determines loan eligibility for solar product purchases across Africa.</p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">XGBoost</span>
-              <span class="project-tag">AWS</span>
-              <span class="project-tag">Machine Learning</span>
-              <span class="project-tag">Docker</span>
-              <span class="project-tag">Airflow</span>
-            </div>
-            <div class="project-links">
-              <a class="project-link" href="http://localhost:1313/projects/solar-credit-scoring/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-category="teaching">
-          <div class="project-card-accent" style="background:#f59e0b;"></div>
-          <div class="project-card-body">
-            <div class="project-card-header">
-              <h3 class="project-title"><a href="http://localhost:1313/projects/sql-tutorial-series/">SQL from Scratch — Tutorial Series</a></h3>
-              <span class="project-badge" style="background:#fef3c7;color:#b45309;">Teaching</span>
-            </div>
-            <p class="project-desc">A structured nine-part SQL series covering relational databases, queries, joins, aggregation, subqueries, and schema design with real datasets.</p>
-            <div class="project-tags">
-              <span class="project-tag">SQL</span>
-              <span class="project-tag">PostgreSQL</span>
-              <span class="project-tag">MySQL</span>
-              <span class="project-tag">Teaching</span>
-            </div>
-            <div class="project-links">
-              <a class="project-link" href="http://localhost:1313/projects/sql-tutorial-series/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-category="research">
-          <div class="project-card-accent" style="background:#8b5cf6;"></div>
-          <div class="project-card-body">
-            <div class="project-card-header">
-              <h3 class="project-title"><a href="http://localhost:1313/projects/ml-weather-forecasting/">ML-Enhanced Weather Forecasting</a></h3>
-              <span class="project-badge" style="background:#ede9fe;color:#6d28d9;">Research</span>
-            </div>
-            <p class="project-desc">Applying machine learning to improve short-range weather forecasts at the Kenya Meteorological Department, including optimised data assimilation for the WRF model.</p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">TensorFlow</span>
-              <span class="project-tag">WRF</span>
-              <span class="project-tag">NumPy</span>
-              <span class="project-tag">Research</span>
-              <span class="project-tag">Machine Learning</span>
-            </div>
-            <div class="project-links">
-              <a class="project-link" href="http://localhost:1313/projects/ml-weather-forecasting/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-category="research">
-          <div class="project-card-accent" style="background:#8b5cf6;"></div>
-          <div class="project-card-body">
-            <div class="project-card-header">
-              <h3 class="project-title"><a href="http://localhost:1313/projects/msc-thesis/">MSc Thesis — Applied Mathematics (Data Science)</a></h3>
-              <span class="project-badge" style="background:#ede9fe;color:#6d28d9;">Research</span>
-            </div>
-            <p class="project-desc">Master&#39;s research at Stellenbosch University under full AIMS scholarship, supervised by Dr. Bubacarr Bah. Awarded Cum Laude.</p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">MATLAB</span>
-              <span class="project-tag">Applied Mathematics</span>
-              <span class="project-tag">Statistics</span>
-              <span class="project-tag">Research</span>
-            </div>
-            <div class="project-links">
-              <a class="project-link" href="http://localhost:1313/projects/msc-thesis/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-category="research">
-          <div class="project-card-accent" style="background:#8b5cf6;"></div>
-          <div class="project-card-body">
-            <div class="project-card-header">
-              <h3 class="project-title"><a href="http://localhost:1313/projects/object-detection-robot-navigation/">Object Detection for Robot Navigation</a></h3>
-              <span class="project-badge" style="background:#ede9fe;color:#6d28d9;">Research</span>
-            </div>
-            <p class="project-desc">Real-time object detection system to support autonomous robot navigation in unstructured environments, developed at Technische Universität Berlin.</p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">PyTorch</span>
-              <span class="project-tag">OpenCV</span>
-              <span class="project-tag">Computer Vision</span>
-              <span class="project-tag">YOLO</span>
-              <span class="project-tag">Research</span>
-            </div>
-            <div class="project-links">
-              <a class="project-link" href="http://localhost:1313/projects/object-detection-robot-navigation/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
+<div class="project-card project-card--featured" data-category="data-eng">
+  <div class="project-card-accent" style="background:#10b981;"></div>
+  <div class="project-featured-badge">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+    Featured
+  </div>
+  <div class="project-card-body">
+    <div class="project-card-header">
+      <h3 class="project-title"><a href="http://localhost:1313/projects/step-functions-ml/">ML Workflow Orchestration with AWS Step Functions</a></h3>
+      <span class="project-badge" style="background:#d1fae5;color:#065f46;">Data Eng</span>
+    </div>
+    <p class="project-desc">Orchestrating SageMaker Processing, Training, and Inference jobs end-to-end using AWS Step Functions state machines.</p>
+    <div class="project-tags">
+      <span class="project-tag">Python</span>
+      <span class="project-tag">AWS Step Functions</span>
+      <span class="project-tag">AWS SageMaker</span>
+      <span class="project-tag">MLOps</span>
+      <span class="project-tag">IAM</span>
+    </div>
+    <div class="project-links">
+      <a class="project-link" href="http://localhost:1313/projects/step-functions-ml/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+        Read More
+      </a>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <div class="projects-regular"><h2 class="projects-section-title">All Projects</h2>
+      <div class="projects-grid">
+<div class="project-card" data-category="ml">
+  <div class="project-card-accent" style="background:#3b82f6;"></div>
+  <div class="project-card-body">
+    <div class="project-card-header">
+      <h3 class="project-title"><a href="http://localhost:1313/projects/sagemaker-xgboost-jobs/">SageMaker Jobs: Processing, Training, Inference &amp; HPT</a></h3>
+      <span class="project-badge" style="background:#dbeafe;color:#1d4ed8;">ML</span>
+    </div>
+    <p class="project-desc">Hands-on walkthrough of SageMaker&#39;s four core job types — Processing, Training, Batch Transform, and Hyperparameter Tuning — on a retail sales dataset.</p>
+    <div class="project-tags">
+      <span class="project-tag">Python</span>
+      <span class="project-tag">AWS SageMaker</span>
+      <span class="project-tag">XGBoost</span>
+      <span class="project-tag">Hyperparameter Tuning</span>
+      <span class="project-tag">MLOps</span>
+    </div>
+    <div class="project-links">
+      <a class="project-link" href="http://localhost:1313/projects/sagemaker-xgboost-jobs/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+        Read More
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card" data-category="ml">
+  <div class="project-card-accent" style="background:#3b82f6;"></div>
+  <div class="project-card-body">
+    <div class="project-card-header">
+      <h3 class="project-title"><a href="http://localhost:1313/projects/sagemaker-endpoint-deployment/">Deploying an ML Model with a SageMaker Real-Time Endpoint</a></h3>
+      <span class="project-badge" style="background:#dbeafe;color:#1d4ed8;">ML</span>
+    </div>
+    <p class="project-desc">End-to-end deployment of a LightGBM bank churn model as a SageMaker real-time endpoint — custom Docker inference server, ECR, and a Lambda function for automated S3-triggered inference.</p>
+    <div class="project-tags">
+      <span class="project-tag">Python</span>
+      <span class="project-tag">AWS SageMaker</span>
+      <span class="project-tag">Docker</span>
+      <span class="project-tag">FastAPI</span>
+      <span class="project-tag">AWS Lambda</span>
+      <span class="project-tag">MLOps</span>
+    </div>
+    <div class="project-links">
+      <a class="project-link" href="http://localhost:1313/projects/sagemaker-endpoint-deployment/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+        Read More
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card" data-category="teaching">
+  <div class="project-card-accent" style="background:#f59e0b;"></div>
+  <div class="project-card-body">
+    <div class="project-card-header">
+      <h3 class="project-title"><a href="http://localhost:1313/projects/sql-tutorial-series/">SQL from Scratch — Tutorial Series</a></h3>
+      <span class="project-badge" style="background:#fef3c7;color:#b45309;">Teaching</span>
+    </div>
+    <p class="project-desc">A structured nine-part SQL series covering relational databases, queries, joins, aggregation, subqueries, and schema design with real datasets.</p>
+    <div class="project-tags">
+      <span class="project-tag">SQL</span>
+      <span class="project-tag">PostgreSQL</span>
+      <span class="project-tag">MySQL</span>
+      <span class="project-tag">Teaching</span>
+    </div>
+    <div class="project-links">
+      <a class="project-link" href="http://localhost:1313/projects/sql-tutorial-series/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+        Read More
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card" data-category="ml">
+  <div class="project-card-accent" style="background:#3b82f6;"></div>
+  <div class="project-card-body">
+    <div class="project-card-header">
+      <h3 class="project-title"><a href="http://localhost:1313/projects/project2/">Deploying ML Model with SageMaker Endpoint</a></h3>
+      <span class="project-badge" style="background:#dbeafe;color:#1d4ed8;">ML</span>
+    </div>
+    <p class="project-desc">One-line summary of what the project does and its impact.</p>
+    <div class="project-tags">
+    </div>
+    <div class="project-links">
+      <a class="project-link" href="http://localhost:1313/projects/project2/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+        Read More
+      </a>
+    </div>
+  </div>
+</div>
+
+      </div>
     </div>
 
   </div>
@@ -376,15 +338,27 @@
 
 <script>
 (function () {
-  var btns = document.querySelectorAll('.project-filter-btn');
+  var btns  = document.querySelectorAll('.project-filter-btn');
   var cards = document.querySelectorAll('.project-card');
+
   btns.forEach(function (btn) {
     btn.addEventListener('click', function () {
       btns.forEach(function (b) { b.classList.remove('active'); });
       btn.classList.add('active');
+
       var filter = btn.getAttribute('data-filter');
       cards.forEach(function (card) {
-        card.style.display = filter === 'all' || card.getAttribute('data-category') === filter ? 'flex' : 'none';
+        card.style.display =
+          filter === 'all' || card.getAttribute('data-category') === filter
+            ? 'flex' : 'none';
+      });
+
+      ['projects-featured', 'projects-regular'].forEach(function (cls) {
+        var section = document.querySelector('.' + cls);
+        if (!section) return;
+        var anyVisible = Array.from(section.querySelectorAll('.project-card'))
+          .some(function (c) { return c.style.display !== 'none'; });
+        section.style.display = anyVisible ? '' : 'none';
       });
     });
   });

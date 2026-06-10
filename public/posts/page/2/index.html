@@ -10,8 +10,8 @@
 <meta name="description" content="Posts - Kiprono Dev">
 <meta name="author" content="Kiprono Elijah">
 <link rel="canonical" href="http://localhost:1313/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.953301b582a2ce18e6228d28ebb95d0ffd1468a7ead746e01757285eecb56e4a.css" integrity="sha256-lTMBtYKizhjmIo0o67ldD/0UaKfq10bgF1coXuy1bko=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon_io.icon">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b96187c52f2ccea0fd570f4bdfbc3476a06af421513adcb227ea7d10cd73bc4e.css" integrity="sha256-uWGHxS8szqD9Vw9L37w0dqBq9CFROtyyJ&#43;p9EM1zvE4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/images/icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/images/icon.png">
 <link rel="apple-touch-icon" href="http://localhost:1313/images/icon.png">
@@ -131,6 +131,11 @@
                 </a>
             </li>
             <li>
+                <a href="http://localhost:1313/archives/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
                 <a href="http://localhost:1313/projects/" title="Projects">
                     <span>Projects</span>
                 </a>
@@ -146,8 +151,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="Posts">
-                    <span>Posts</span>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
                 </a>
             </li>
         </ul>
@@ -173,6 +178,74 @@
     </a>
   </h1>
 </header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Joins
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Joins The SQL Joins clause is used to combine records from two or more tables in a database. A JOIN is a means of merging two tables based on common fields.
+INNER JOIN: returns rows when there is a match in both tables. LEFT JOIN: returns all rows from the left table, even if there are no matches in the right table. RIGHT JOIN: returns all rows from the right table, even if there are no matches in the left table. FULL JOIN: returns rows when there is a match in one of the tables. Note: FULL JOIN cannot be implemented directly in MySQL dialet. In this dialect, FULL JOIN is the UNION between RIGHT JOIN and LEFT JOIN.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-09-30 22:15:15 +0300 EAT'>September 30, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>372 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+  <a class="entry-link" aria-label="post link to Joins" href="http://localhost:1313/posts/sql/6_multiple_table_queries/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Queries with Queries with SQL
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Single-Valued Subqueries A single-valued subquery is a query that 1) produces a result with a single column and a single row and 2) is ’nested’ in the WHERE clause of another query. Subqueries must be enclosed in parentheses.
+A single-valued queries:
+SELECT AVG(days_to_cutoff) FROM accounts; Sing-valued sub-query:
+SELECT * FROM accounts WHERE days_to_cutoff &gt; (SELECT AVG(days_to_cutoff) FROM accounts) ORDER BY days_to_cutoff; Key Points:
+Single-valued queries can be used in comparisons Subqueries are enclosed in parentheses Multi-Valued Subqueries A multi-valued subquery is a query that 1) returns a single-column result with zero, one, or more rows and 2) is ’nested’ in the WHERE clause of another query. Multi-valued subqueries always follow the IN operator.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-09-30 22:10:21 +0300 EAT'>September 30, 2023</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>134 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+  <a class="entry-link" aria-label="post link to Queries with Queries with SQL" href="http://localhost:1313/posts/sql/7_queries_within_queries/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Creating Database Objects
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Creating Tables in SQL New tables are defined in a database by entering a CREATE TABLE statement. In its simplest form, the CREATE TABLE statement includes a new table name and one or more column definitions. Tables are removed using the DROP TABLE statement.
+SQL Syntax for Creating Tables:
+CREATE TABLE table_name ( column1 datatype constraints, column2 datatype constraints, ... ); table_name: The name of the table you want to create. column1, column2, etc.: The names of the columns in the table. datatype: The data type for each column (e.g., INT, VARCHAR, DATE, etc.). constraints: Optional constraints (discussed in the next section) Example: Creating a simple table with basic columns:
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-09-30 22:05:21 +0300 EAT'>September 30, 2023</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>602 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+  <a class="entry-link" aria-label="post link to Creating Database Objects" href="http://localhost:1313/posts/sql/8_defining_database_object/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Maintaining and Managing Database Objects in SQL
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Before we learn how to update data in SQL tables, let’s create two tables we will use: customers and orders.
+customers table USE ds2; # select database show tables; CREATE TABLE customers ( id INT PRIMARY KEY, name VARCHAR(30) NOT NULL, age INT DEFAULT - 99, address VARCHAR(45), salary DECIMAL(18 , 2 ) DEFAULT 2000.00 ); orders table CREATE TABLE orders ( id INT NOT NULL, date datetime, customer_id INT REFERENCES customers (id), amount DOUBLE, PRIMARY KEY (id) ); Inserting Rows Updating Rows New rows may be inserted into a table one at a time using the SQL INSERT statement. A table name and column list are specified in the INTO clause, and a value list, enclosed in parentheses, is entered in the VALUES clause.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2023-09-30 22:00:21 +0300 EAT'>September 30, 2023</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>599 words</span>&nbsp;·&nbsp;<span>Kiprono Elijah</span></footer>
+  <a class="entry-link" aria-label="post link to Maintaining and Managing Database Objects in SQL" href="http://localhost:1313/posts/sql/9_maintaining_tables/"></a>
+</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -212,6 +285,12 @@ Note that the installation commands may be different based on the system you are
 <article class="post-entry"> 
   <header class="entry-header">
     <h2 class="entry-hint-parent">Notes on Hugo and Markdown
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
     </h2>
   </header>
   <div class="entry-content">

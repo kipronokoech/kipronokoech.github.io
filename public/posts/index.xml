@@ -11,8 +11,36 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 Jan 2024 19:46:15 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 00:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECS vs EKS — When to Use Each on AWS</title>
+      <link>http://localhost:1313/posts/ecs-vs-eks/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/ecs-vs-eks/</guid>
+      <description>A clear breakdown of Amazon ECS and Amazon EKS — what they are, how they differ, and the decision criteria for choosing between them.</description>
+    </item>
+    <item>
+      <title>How to Install Docker on Ubuntu (Including EC2)</title>
+      <link>http://localhost:1313/posts/how-to-install-docker-on-ubuntu/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/how-to-install-docker-on-ubuntu/</guid>
+      <description>Step-by-step guide to installing Docker Engine and Docker Compose on Ubuntu — works identically on a local machine or an AWS EC2 instance.</description>
+    </item>
+    <item>
+      <title>Makefile Explained</title>
+      <link>http://localhost:1313/posts/makefile_explained/</link>
+      <pubDate>Sat, 06 Jun 2026 01:00:59 +0300</pubDate>
+      <guid>http://localhost:1313/posts/makefile_explained/</guid>
+      <description>A practical guide to Makefiles for data scientists and engineers — syntax, variables, dependencies, and real-world use cases.</description>
+    </item>
+    <item>
+      <title>Docker Commands Cheat Sheet</title>
+      <link>http://localhost:1313/posts/docker-commands-cheat-sheet/</link>
+      <pubDate>Sat, 26 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/docker-commands-cheat-sheet/</guid>
+      <description>The most useful Docker commands grouped by what you actually do — build, run, inspect, clean, and manage images and containers.</description>
+    </item>
     <item>
       <title>Awards Offered to Me</title>
       <link>http://localhost:1313/posts/professional/dedicated_service_award_sunking2/</link>
