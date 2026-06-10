@@ -185,28 +185,16 @@
   border-top: 1px solid var(--border);
 }
 
-/* First link stretches to cover the whole card */
-.project-link:first-child::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
 .project-link {
   display: inline-flex;
   align-items: center;
   gap: 5px;
   font-size: 0.8rem;
   font-weight: 500;
-  text-decoration: none;
   color: var(--secondary);
-  transition: color 0.15s;
-  position: relative;
-  z-index: 1;
 }
 
-.project-link:hover {
+.project-card:hover .project-link {
   color: var(--primary);
 }
 
