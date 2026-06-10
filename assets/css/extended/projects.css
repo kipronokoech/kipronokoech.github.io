@@ -105,6 +105,9 @@
   display: flex;
   flex-direction: column;
   transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .project-card:hover {
@@ -137,17 +140,6 @@
   color: var(--primary);
   margin: 0;
   line-height: 1.3;
-  position: relative;
-  z-index: 1;
-}
-
-.project-title a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.project-title a:hover {
-  text-decoration: underline;
 }
 
 .project-badge {

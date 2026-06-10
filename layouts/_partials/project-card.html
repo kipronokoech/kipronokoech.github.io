@@ -7,7 +7,7 @@
 {{- $bg     := index $badgeBg     $cat  | default "#dbeafe" }}
 {{- $fg     := index $badgeText   $cat  | default "#1d4ed8" }}
 {{- $label  := index $badgeLabel  $cat  | default ($cat | title) }}
-<div class="project-card{{ if .Params.featured }} project-card--featured{{ end }}" data-category="{{ $cat }}">
+<a class="project-card{{ if .Params.featured }} project-card--featured{{ end }}" href="{{ .Permalink }}" data-category="{{ $cat }}">
   <div class="project-card-accent" style="background:{{ $accent }};"></div>
   {{- if .Params.featured }}
   <div class="project-featured-badge">
@@ -17,7 +17,7 @@
   {{- end }}
   <div class="project-card-body">
     <div class="project-card-header">
-      <h3 class="project-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <h3 class="project-title">{{ .Title }}</h3>
       <span class="project-badge" style="background:{{ $bg }};color:{{ $fg }};">{{ $label }}</span>
     </div>
     <p class="project-desc">{{ .Description }}</p>
@@ -27,10 +27,10 @@
       {{- end }}
     </div>
     <div class="project-links">
-      <a class="project-link" href="{{ .Permalink }}">
+      <span class="project-link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
         Read More
-      </a>
+      </span>
     </div>
   </div>
-</div>
+</a>
