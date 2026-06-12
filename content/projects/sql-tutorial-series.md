@@ -15,15 +15,15 @@ Each part builds on the previous, using consistent real-world datasets throughou
 
 ## What's Covered
 
-1. [Introduction to SQL and Relational Databases](/posts/SQL/1_intro_to_sql/)
-2. [Basic Queries](/posts/SQL/2_basic_queries/)
-3. [Advanced Operators](/posts/SQL/3_advanced_operators/)
-4. [Expressions](/posts/SQL/4_expressions/)
-5. [Aggregation Functions](/posts/SQL/5_aggregation_functions/)
-6. [Multiple Table Queries](/posts/SQL/6_multiple_table_queries/)
-7. [Queries within Queries](/posts/SQL/7_queries_within_queries/)
-8. [Creating Database Objects](/posts/SQL/8_defining_database_object/)
-9. [Maintaining Tables](/posts/SQL/9_maintaining_tables/)
+1. [Introduction to SQL and Relational Databases](/posts/sql/1_intro_to_sql/)
+2. [Basic Queries](/posts/sql/2_basic_queries/)
+3. [Advanced Operators](/posts/sql/3_advanced_operators/)
+4. [Expressions](/posts/sql/4_expressions/)
+5. [Aggregation Functions](/posts/sql/5_aggregation_functions/)
+6. [Multiple Table Queries](/posts/sql/6_multiple_table_queries/)
+7. [Queries within Queries](/posts/sql/7_queries_within_queries/)
+8. [Creating Database Objects](/posts/sql/8_defining_database_object/)
+9. [Maintaining Tables](/posts/sql/9_maintaining_tables/)
 
 ## Datasets Used
 
