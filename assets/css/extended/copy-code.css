@@ -44,3 +44,60 @@
 .recent-posts-title {
   margin-bottom: 1.2rem;
 }
+
+/* ── Share bar ────────────────────────────────────────────── */
+.share-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.share-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--secondary);
+  white-space: nowrap;
+}
+
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 11px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: transparent;
+  font-size: 0.8rem;
+  font-family: inherit;
+  color: var(--secondary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.share-btn svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.share-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.copy-link-icon.copied {
+  color: #22c55e;
+  border-color: #22c55e;
+}
