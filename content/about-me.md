@@ -187,6 +187,15 @@ My current curriculum vitae can be downloaded or viewed from <a href="/files/Kip
      </div>
 </div>
 
+## What I'm Doing Now
+
+- Working as a **Senior Data Scientist** at <a class="work-school-name" href="https://sunking.com/" target="_blank">Sun King Limited</a>, building and deploying ML models at scale across Africa.
+- **Reading** the book *"The Almanack of Naval Ravikant" by Eric Jorgenson*.
+- **Learning** —  Deepening AWS knowledge and working toward the AWS Certified Solutions Architect – Associate (SAA-C03).
+- **Writing Data Science articles** on <a href="https://medium.com/@kiprono_ek" target="_blank">Medium</a> and the <a href="/posts/">Posts</a> section of this site.
+
+---
+
 ## Award and Honors
 <div class ="award">
     <ul>

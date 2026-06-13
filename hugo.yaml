@@ -78,7 +78,7 @@ params:
   homeInfoParams:
     Title: "Hi, I'm Kiprono"
     Content: >
-      Data Scientist based in Nairobi, building ML systems that help people across Africa
+      Senior Data Scientist based in Nairobi, building ML systems that help people across Africa
       access solar energy through affordable credit at [Sun King](https://sunking.com).
 
 
@@ -136,14 +136,14 @@ menu:
       name: Projects
       url: /projects/
       weight: 20
-    - identifier: now
-      name: Now
-      url: /now/
-      weight: 30
     - identifier: categories
       name: Categories
       url: /blog/
       weight: 40
+    - identifier: medium
+      name: Medium
+      url: https://medium.com/@kiprono_ek
+      weight: 55
     - identifier: search
       name: Search
       url: /search/
